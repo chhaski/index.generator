@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Generator Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        #visualization {
+            width: 800px;
+            height: 600px;
+        }
+        #entries {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="visualization"></div>
+</center>
+    <div id="entries"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('mapped_embeddings.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Debugging step: Log the first few entries to inspect their structure
+                    console.log('Raw Data Sample:', data.slice(0, 5));
+
+                    // Process the JSON data
+                    const processedData = data.map((d, i) => ({
+                        id: i + 1,
+                        entry: d.entry,
+                        vector: d.embedding
+                    }));
+
+                    console.log('Processed Data:', processedData); // Debugging step
+
+                    // Check if vectors are valid and have at least two dimensions
+                    const validData = processedData.filter(d => d.vector.length === 2);
+                    console.log('Valid Data:', validData); // Debugging step
+
+                    // Create the data for Plotly
+                    const plotData = {
+                        x: validData.map(d => d.vector[0]),
+                        y: validData.map(d => d.vector[1]),
+                        mode: 'markers',
+                        type: 'scatter',
+                        text: validData.map(d => d.entry),
+                        marker: { 
+                            size: 1, 
+                        }
+                    };
+
+                    const layout = {
+                        title: '',
+                        xaxis: {
+                            title: '',
+                            showticklabels: false
+                        },
+                        yaxis: {
+                            title: '',
+                            showticklabels: false
+                        }
+                    };
+
+                    console.log('Plot Data:', plotData); // Debugging step
+
+                    // Create the Plotly plot
+                    Plotly.newPlot('visualization', [plotData], layout);
+
+                    // Function to generate random subentries
+                    function generateRandomSubentries(data) {
+                        const shuffled = data.sort(() => 0.5 - Math.random());
+                        return shuffled.slice(0, 3);
+                    }
+
+                    // Function to highlight selected subentries
+                    function highlightSubentries(selected) {
+                        const selectedIndices = selected.map(s => s.id - 1);
+                        const update = {
+                            marker: {
+                                color: validData.map((d, i) => selectedIndices.includes(i) ? 'red' : 'black')
+                            }
+                        };
+
+                        Plotly.restyle('visualization', update);
+
+                        const entriesDiv = document.getElementById("entries");
+                        entriesDiv.innerHTML = selected.map(s => `Entry: ${s.entry}`).join("<br>");
+                    }
+
+                    // Generate and highlight random subentries on page load
+                    const randomSubentries = generateRandomSubentries(validData);
+                    highlightSubentries(randomSubentries);
+                })
+                .catch(error => console.error('Error loading the JSON file:', error));
+        });
+    </script>
+</body>
+</html>

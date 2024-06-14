@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2D Index Generator Visualization</title>
+    <title>3D Index Generator Visualization</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         #visualization {
@@ -15,9 +15,6 @@
             width: 600px;
             margin-left: auto;
             margin-right: auto;
-            text-align: left; /* Ensure entries align to the left */
-        }
-        .entry {
             position: relative;
         }
     </style>
@@ -54,16 +51,20 @@
                     const plotData = {
                         x: validData.map(d => d.vector[0]),
                         y: validData.map(d => d.vector[1]),
+                        z: validData.map(d => d.vector[2]),
                         mode: 'markers',
-                        type: 'scatter',
+                        type: 'scatter3d',
                         text: validData.map(d => d.entry),
                         marker: { size: 5 }
                     };
 
                     const layout = {
                         title: '',
-                        xaxis: { title: '', showticklabels: false },
-                        yaxis: { title: '', showticklabels: false }
+                        scene: {
+                            xaxis: { title: '', showticklabels: false },
+                            yaxis: { title: '', showticklabels: false },
+                            zaxis: { title: '', showticklabels: false }
+                        }
                     };
 
                     console.log('Plot Data:', plotData);
@@ -87,29 +88,33 @@
                         Plotly.restyle('visualization', update);
 
                         const entriesDiv = document.getElementById("entries");
-                        entriesDiv.innerHTML = ''; // Clear previous entries
-
-                        // Add the entries below the graph
-                        selected.forEach(s => {
-                            const entryDiv = document.createElement("div");
-                            entryDiv.className = 'entry';
-                            entryDiv.innerText = s.spacedSubentry;
-                            entriesDiv.appendChild(entryDiv);
-                        });
+                        entriesDiv.innerHTML = selected.map(s => `${s.spacedSubentry}`).join("<br>");
 
                         // Connect the dots between the selected entries
                         const selectedVectors = selected.map(s => s.vector);
                         const lineData = {
                             x: selectedVectors.map(v => v[0]),
                             y: selectedVectors.map(v => v[1]),
+                            z: selectedVectors.map(v => v[2]),
                             mode: 'lines+markers',
-                            type: 'scatter',
+                            type: 'scatter3d',
                             marker: { size: 3, color: 'red' },
                             line: { color: 'red', width: 1 },
                             name: 'Selected'
                         };
 
-                        Plotly.addTraces('visualization', [lineData]);
+                        // Create a plane between the selected entries
+                        const planeData = {
+                            type: 'mesh3d',
+                            x: selectedVectors.map(v => v[0]),
+                            y: selectedVectors.map(v => v[1]),
+                            z: selectedVectors.map(v => v[2]),
+                            opacity: 0.5,
+                            color: 'rgba(255,0,0,0.5)',
+                            name: 'Plane'
+                        };
+
+                        Plotly.addTraces('visualization', [lineData, planeData]);
                     }
 
                     // Generate and highlight random subentries on page load

@@ -77,20 +77,90 @@
             width: 100%;
         }
         #generate-button {
-            display: block;
-            margin: 20px auto;
-            cursor: pointer;
-        }
+          appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+        .addMore{
+          appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.addMore:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
+}
     </style>
 </head>
 <body>
+  <button class="addMore" title="Making a dataset of indexes 
+
+  corpus =  (Updating to Remain the Same: Habitual New Media | Wendy Hui Kyong Chun, Code and Clay, Data and Dirt: Five Thousand Years of Urban Media | Shannon Christine Mattern, and The Moment of Complexity: Emerging Network Culture | Mark C. Taylor) selected by the artist from the Cybernetics Library’s ‘Uncomputable’ collection, the generator produces speculative indexes, using Natural Language Processing techniques to map textual data spatially. 
+  
+  This ongoing project explores the index as a creative infrastructure for mapping knowledge and associative relationships within information.  The system generates unique spatial layouts of text on the page, where each index entry's horizontal position is determined by its semantic proximity to others in the dataset (as determined by an approximate nearest neighbors algorithm), forming a multiply-determined visual topology of relationships.  
+  
+  The webpage provides a visual and textual interface to explore a dataset of index entries and their associated metadata. An interactive 3D t-SNE visualization displays the vector space, each point representing an index entry. Users can generate a new speculative index by clicking a button, which highlights the corresponding selected entries in the visualization, constructing a unique shape each time it is regenerated. 
+  
+  Methodology:
+  * pre-processing corpus
+      * make each index structure uniform
+      * parse, reassemble
+  * processing corpus
+      * create vectors for each sequence of text (subentry) in the corpus
+      * reduce dimensionality of each vector with t-SNE 
+      * save the x-values of t-SNE visualization of vectors in 2-d space as an array, map it to a better range
+      * create dictionary of each subentry and its corresponding vector
+  * generating
+      * randomly chosing from dataset of vector-spaced subentries
+      * the position of each subentry on the page is determined by the x-position of the vectors in 2-d space as determined by t-SNE">Info</button>
     <div id="visualization"></div>
     <div id="entries-container">
         <div id="entries"></div>
         <div id="citations"></div>
     </div>
+    <br>
     <center>
-    <div id="generate-button">Click to generate ⟳</div>
+    <div id="generate-button">Generate</div>
 </center>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

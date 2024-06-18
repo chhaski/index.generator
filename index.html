@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +10,53 @@
         #visualization {
             width: 800px;
             height: 600px;
-            margin: 0 auto; /* Center the visualization div */
+            margin: 0 auto;
+            /* Center the visualization div */
         }
+
         #entries-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             position: relative;
         }
+
         #entries {
             width: 600px;
-            text-align: left; /* Ensure entries align to the left */
-            margin: 0 auto; /* Center the entries container */
+            text-align: left;
+            /* Ensure entries align to the left */
+            margin: 0 auto;
+            /* Center the entries container */
         }
+
         #citations {
             width: 400px;
-            text-align: left; /* Ensure citations align to the left */
+            text-align: left;
+            /* Ensure citations align to the left */
             position: absolute;
-            right: 0px; /* Position citations container to the right of entries container */
+            right: 0px;
+            /* Position citations container to the right of entries container */
             top: 0;
         }
+
         .entry {
             position: relative;
             margin-bottom: 10px;
         }
+
         .entry .dot {
             position: absolute;
             right: 20px;
             top: 0;
         }
+
         .entry .info-icon {
             position: absolute;
             right: 0;
             top: 0;
             cursor: pointer;
         }
+
         .info-tooltip {
             visibility: hidden;
             width: 200px;
@@ -59,100 +72,92 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
+
         .info-icon:hover .info-tooltip {
             visibility: visible;
             opacity: 1;
         }
+
         .citation {
             font-size: smaller;
             margin-bottom: 10px;
         }
+
         .title {
             text-align: left;
             width: 100%;
         }
+
         .cross-ref {
             text-align: left;
             font-style: italic;
             width: 100%;
         }
+
         #generate-button {
-          appearance: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  padding: 6px 16px;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
-}
-        .addMore{
-          appearance: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  padding: 6px 16px;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
-}
-.addMore:hover{
-  border: 1px solid #888;
-  background-color: #ddd;
-}
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore {
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore:hover {
+            border: 1px solid #888;
+            background-color: #ddd;
+        }
     </style>
 </head>
-<body>
-  <button class="addMore" title="Making a dataset of indexes 
 
-  corpus =  (Updating to Remain the Same: Habitual New Media | Wendy Hui Kyong Chun, Code and Clay, Data and Dirt: Five Thousand Years of Urban Media | Shannon Christine Mattern, and The Moment of Complexity: Emerging Network Culture | Mark C. Taylor) selected by the artist from the Cybernetics Library’s ‘Uncomputable’ collection, the generator produces speculative indexes, using Natural Language Processing techniques to map textual data spatially. 
-  
-  This ongoing project explores the index as a creative infrastructure for mapping knowledge and associative relationships within information.  The system generates unique spatial layouts of text on the page, where each index entry's horizontal position is determined by its semantic proximity to others in the dataset (as determined by an approximate nearest neighbors algorithm), forming a multiply-determined visual topology of relationships.  
-  
-  The webpage provides a visual and textual interface to explore a dataset of index entries and their associated metadata. An interactive 3D t-SNE visualization displays the vector space, each point representing an index entry. Users can generate a new speculative index by clicking a button, which highlights the corresponding selected entries in the visualization, constructing a unique shape each time it is regenerated. 
-  
-  Methodology:
-  * pre-processing corpus
-      * make each index structure uniform
-      * parse, reassemble
-  * processing corpus
-      * create vectors for each sequence of text (subentry) in the corpus
-      * reduce dimensionality of each vector with t-SNE 
-      * save the x-values of t-SNE visualization of vectors in 2-d space as an array, map it to a better range
-      * create dictionary of each subentry and its corresponding vector
-  * generating
-      * randomly chosing from dataset of vector-spaced subentries
-      * the position of each subentry on the page is determined by the x-position of the vectors in 2-d space as determined by t-SNE">Info</button>
+<body>
+
+    <a href="method.html">
+        <button class="addMore">Info</button>
+    </a>
     <div id="visualization"></div>
     <div id="entries-container">
         <div id="entries"></div>
@@ -160,10 +165,10 @@
     </div>
     <br>
     <center>
-    <div id="generate-button">Generate</div>
-</center>
+        <div id="generate-button">Generate</div>
+    </center>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             let data, titles, xRefs, traceCount;
 
             function fetchData() {
@@ -172,22 +177,22 @@
                     fetch('titles.txt').then(response => response.text()),
                     fetch('x-ref.txt').then(response => response.text())
                 ])
-                .then(([dataResponse, titlesText, xrefText]) => {
-                    data = dataResponse;
-                    titles = titlesText.slice(1, -1).split(', ').map(t => t.replace(/['"]+/g, ''));
-                    xRefs = xrefText.slice(1, -1).split(', ').map(x => x.replace(/['"]+/g, ''));
+                    .then(([dataResponse, titlesText, xrefText]) => {
+                        data = dataResponse;
+                        titles = titlesText.slice(1, -1).split(', ').map(t => t.replace(/['"]+/g, ''));
+                        xRefs = xrefText.slice(1, -1).split(', ').map(x => x.replace(/['"]+/g, ''));
 
-                    const processedData = data.map((d, i) => ({
-                        id: i + 1,
-                        entry: d.entry,
-                        vector: d.embedding,
-                        spacedSubentry: d["spaced-subentry"][0],
-                        title: d.citation.title,
-                        author: d.citation.author
-                    }));
+                        const processedData = data.map((d, i) => ({
+                            id: i + 1,
+                            entry: d.entry,
+                            vector: d.embedding,
+                            spacedSubentry: d["spaced-subentry"][0],
+                            title: d.citation.title,
+                            author: d.citation.author
+                        }));
 
-                    return processedData.filter(d => d.vector.length === 3);
-                });
+                        return processedData.filter(d => d.vector.length === 3);
+                    });
             }
 
             function generateRandomSubentries(data) {
@@ -283,9 +288,17 @@
                         yaxis: { title: '', showticklabels: false },
                         zaxis: { title: '', showticklabels: false }
                     }
+
                 };
 
-                Plotly.newPlot('visualization', [plotData], layout);
+                const config = {
+                    displayModeBar: true,
+                    modeBarButtonsToRemove: ['toImage', 'zoom3d', 'toggleSpikelines', 'pan3d', 'orbitRotation', 'tableRotation', 'resetCameraLastSave3d', 'hoverClosest3d'],
+                    displaylogo: false
+                };
+
+                Plotly.newPlot('visualization', [plotData], layout, config);
+
                 updateSubentries();
             });
 
@@ -293,4 +306,5 @@
         });
     </script>
 </body>
+
 </html>

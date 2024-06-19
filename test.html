@@ -202,11 +202,15 @@
             }
 
             function highlightSubentries(selected) {
+                console.log("Selected Entries: ", selected); // Debug information
+
                 const colors = ['gold', 'royalblue', 'tomato', 'yellowgreen'];
                 const selectedIndices = selected.map(s => s.id - 1);
                 const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'black');
                 const markerSizes = data.map((d, i) => selectedIndices.includes(i) ? 8 : 2);
-                const textArray = data.map((d, i) => selectedIndices.includes(i) ? d.entry : '');
+                const
+
+ textArray = data.map((d, i) => selectedIndices.includes(i) ? d.entry : '');
                 const textPositionArray = data.map((d, i) => selectedIndices.includes(i) ? 'right' : '');
 
                 Plotly.restyle('visualization', {
@@ -223,31 +227,21 @@
                 const citationsDiv = document.getElementById("citations");
                 citationsDiv.innerHTML = ''; // Clear previous citations
 
-                // Randomly choose a title from titles
-                const randomTitle = titles[Math.floor(Math.random() * titles.length)];
-                const titleDiv = document.createElement("div");
-                titleDiv.className = 'title';
-                titleDiv.innerText = randomTitle;
-                entriesDiv.appendChild(titleDiv);
-                citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
-
                 // Add the entries below the graph
                 selected.forEach((s, index) => {
                     const entryDiv = document.createElement("div");
                     entryDiv.className = 'entry';
                     entryDiv.innerHTML = `${s.spacedSubentry} <span class="dot" style="color:${colors[index]}">●</span> <span class="info-icon">ⓘ<span class="info-tooltip">${s.title} by ${s.author}</span></span>`;
                     entriesDiv.appendChild(entryDiv);
-
-                    // Add a randomly chosen cross-reference below the fourth entry
-                    if (index === 3) {
-                        const randomCrossRef = xRefs[Math.floor(Math.random() * xRefs.length)];
-                        const crossRefDiv = document.createElement("div");
-                        crossRefDiv.className = 'cross-ref';
-                        crossRefDiv.innerText = randomCrossRef;
-                        entriesDiv.appendChild(crossRefDiv);
-                        citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
-                    }
                 });
+
+                // Add a randomly chosen cross-reference below the last entry
+                const randomCrossRef = xRefs[Math.floor(Math.random() * xRefs.length)];
+                const crossRefDiv = document.createElement("div");
+                crossRefDiv.className = 'cross-ref';
+                crossRefDiv.innerText = randomCrossRef;
+                entriesDiv.appendChild(crossRefDiv);
+                citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
 
                 // Create a plane between the selected entries
                 const selectedVectors = selected.map(s => s.vector);
@@ -283,8 +277,7 @@
                     z: data.map(d => d.vector[2]),
                     mode: 'markers',
                     type: 'scatter3d',
-                    text: [],
-                    textposition: [],
+                    text: data.map(d => d.entry),
                     marker: { size: 5 },
                     hoverinfo: 'text',
                     font: "Arial"
@@ -297,7 +290,6 @@
                         yaxis: { title: '', showticklabels: false, zeroline: false },
                         zaxis: { title: '', showticklabels: false, zeroline: false }
                     }
-
                 };
 
                 const config = {

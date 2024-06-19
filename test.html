@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +10,54 @@
         #visualization {
             width: 800px;
             height: 600px;
-            margin: 0 auto; /* Center the visualization div */
+            margin: 0 auto;
+            /* Center the visualization div */
         }
+
         #entries-container {
             display: flex;
             justify-content: center;
             margin-top: 20px;
             position: relative;
         }
+
         #entries {
             width: 600px;
-            text-align: left; /* Ensure entries align to the left */
-            margin: 0 auto; /* Center the entries container */
+            text-align: left;
+            /* Ensure entries align to the left */
+            margin: 0 auto;
+            /* Center the entries container */
+            font-family: Arial;
         }
+
         #citations {
             width: 400px;
-            text-align: left; /* Ensure citations align to the left */
+            text-align: left;
+            /* Ensure citations align to the left */
             position: absolute;
-            right: 0px; /* Position citations container to the right of entries container */
+            right: 0px;
+            /* Position citations container to the right of entries container */
             top: 0;
         }
+
         .entry {
             position: relative;
             margin-bottom: 10px;
         }
+
         .entry .dot {
             position: absolute;
             right: 20px;
             top: 0;
         }
+
         .entry .info-icon {
             position: absolute;
             right: 0;
             top: 0;
             cursor: pointer;
         }
+
         .info-tooltip {
             visibility: hidden;
             width: 200px;
@@ -59,41 +73,103 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
+
         .info-icon:hover .info-tooltip {
             visibility: visible;
             opacity: 1;
         }
+
         .citation {
             font-size: smaller;
             margin-bottom: 10px;
         }
+
         .title {
             text-align: left;
             width: 100%;
         }
+
         .cross-ref {
             text-align: left;
             font-style: italic;
             width: 100%;
         }
+
         #generate-button {
-            display: block;
-            margin: 20px auto;
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
             cursor: pointer;
+            display: inline-block;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore {
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore:hover {
+            border: 1px solid #888;
+            background-color: #ddd;
         }
     </style>
 </head>
+
 <body>
+
+    <a href="method.html">
+        <button class="addMore">Info</button>
+    </a>
     <div id="visualization"></div>
     <div id="entries-container">
         <div id="entries"></div>
         <div id="citations"></div>
     </div>
+    <br>
     <center>
-    <div id="generate-button">Click to generate ⟳</div>
-</center>
+        <div id="generate-button">Generate</div>
+    </center>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             let data, titles, xRefs, traceCount;
 
             function fetchData() {
@@ -102,22 +178,22 @@
                     fetch('titles.txt').then(response => response.text()),
                     fetch('x-ref.txt').then(response => response.text())
                 ])
-                .then(([dataResponse, titlesText, xrefText]) => {
-                    data = dataResponse;
-                    titles = titlesText.slice(1, -1).split(', ').map(t => t.replace(/['"]+/g, ''));
-                    xRefs = xrefText.slice(1, -1).split(', ').map(x => x.replace(/['"]+/g, ''));
+                    .then(([dataResponse, titlesText, xrefText]) => {
+                        data = dataResponse;
+                        titles = titlesText.slice(1, -1).split(', ').map(t => t.replace(/['"]+/g, ''));
+                        xRefs = xrefText.slice(1, -1).split(', ').map(x => x.replace(/['"]+/g, ''));
 
-                    const processedData = data.map((d, i) => ({
-                        id: i + 1,
-                        entry: d.entry,
-                        vector: d.embedding,
-                        spacedSubentry: d["spaced-subentry"][0],
-                        title: d.citation.title,
-                        author: d.citation.author
-                    }));
+                        const processedData = data.map((d, i) => ({
+                            id: i + 1,
+                            entry: d.entry,
+                            vector: d.embedding,
+                            spacedSubentry: d["spaced-subentry"][0],
+                            title: d.citation.title,
+                            author: d.citation.author
+                        }));
 
-                    return processedData.filter(d => d.vector.length === 3);
-                });
+                        return processedData.filter(d => d.vector.length === 3);
+                    });
             }
 
             function generateRandomSubentries(data) {
@@ -128,12 +204,17 @@
             function highlightSubentries(selected) {
                 const colors = ['gold', 'royalblue', 'tomato', 'yellowgreen'];
                 const selectedIndices = selected.map(s => s.id - 1);
-                const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'blue');
+                const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'black');
                 const markerSizes = data.map((d, i) => selectedIndices.includes(i) ? 8 : 2);
+                const textArray = data.map((d, i) => selectedIndices.includes(i) ? d.entry : '');
+                const textPositionArray = data.map((d, i) => selectedIndices.includes(i) ? 'right' : '');
 
                 Plotly.restyle('visualization', {
                     'marker.color': [markerColors],
-                    'marker.size': [markerSizes]
+                    'marker.size': [markerSizes],
+                    'text': [textArray],
+                    'textposition': [textPositionArray],
+                    'mode': 'markers+text'
                 });
 
                 const entriesDiv = document.getElementById("entries");
@@ -176,7 +257,7 @@
                     y: selectedVectors.map(v => v[1]),
                     z: selectedVectors.map(v => v[2]),
                     opacity: 0.5,
-                    color: 'rgba(0,0,255,0.5)',
+                    color: 'rgba(0,0,0,0.5)',
                     name: 'Plane'
                 };
 
@@ -202,20 +283,31 @@
                     z: data.map(d => d.vector[2]),
                     mode: 'markers',
                     type: 'scatter3d',
-                    text: data.map(d => d.entry),
-                    marker: { size: 5 }
+                    text: [],
+                    textposition: [],
+                    marker: { size: 5 },
+                    hoverinfo: 'text',
+                    font: "Arial"
                 };
 
                 const layout = {
                     title: '',
                     scene: {
-                        xaxis: { title: '', showticklabels: false },
-                        yaxis: { title: '', showticklabels: false },
-                        zaxis: { title: '', showticklabels: false }
+                        xaxis: { title: '', showticklabels: false, zeroline: true },
+                        yaxis: { title: '', showticklabels: false, zeroline: false },
+                        zaxis: { title: '', showticklabels: false, zeroline: false }
                     }
+
                 };
 
-                Plotly.newPlot('visualization', [plotData], layout);
+                const config = {
+                    displayModeBar: true,
+                    modeBarButtonsToRemove: ['toImage', 'zoom3d', 'toggleSpikelines', 'pan3d', 'orbitRotation', 'tableRotation', 'resetCameraLastSave3d', 'hoverClosest3d'],
+                    displaylogo: false
+                };
+
+                Plotly.newPlot('visualization', [plotData], layout, config);
+
                 updateSubentries();
             });
 
@@ -223,4 +315,5 @@
         });
     </script>
 </body>
+
 </html>

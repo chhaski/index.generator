@@ -27,6 +27,7 @@
             /* Ensure entries align to the left */
             margin: 0 auto;
             /* Center the entries container */
+            font-family: Arial;
         }
 
         #citations {
@@ -104,7 +105,7 @@
             color: #24292E;
             cursor: pointer;
             display: inline-block;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-family: Arial;
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
@@ -130,7 +131,7 @@
             color: #24292E;
             cursor: pointer;
             display: inline-block;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-family: Arial;            
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
@@ -203,7 +204,7 @@
             function highlightSubentries(selected) {
                 const colors = ['gold', 'royalblue', 'tomato', 'yellowgreen'];
                 const selectedIndices = selected.map(s => s.id - 1);
-                const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'blue');
+                const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'black');
                 const markerSizes = data.map((d, i) => selectedIndices.includes(i) ? 8 : 2);
 
                 Plotly.restyle('visualization', {
@@ -278,15 +279,17 @@
                     mode: 'markers',
                     type: 'scatter3d',
                     text: data.map(d => d.entry),
-                    marker: { size: 5 }
+                    marker: { size: 5 },
+                    hoverinfo: 'text',
+                    font: "Arial"
                 };
 
                 const layout = {
                     title: '',
                     scene: {
-                        xaxis: { title: '', showticklabels: false },
-                        yaxis: { title: '', showticklabels: false },
-                        zaxis: { title: '', showticklabels: false }
+                        xaxis: { title: '', showticklabels: false, zeroline: true},
+                        yaxis: { title: '', showticklabels: false, zeroline: false},
+                        zaxis: { title: '', showticklabels: false, zeroline: false }
                     }
 
                 };

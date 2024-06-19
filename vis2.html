@@ -1,128 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Index Generator Visualization</title>
+    <title>Index Generator</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         #visualization {
             width: 800px;
             height: 600px;
+            margin: 0 auto;
+            /* Center the visualization div */
         }
-        #entries {
+
+        #entries-container {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
-            width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             position: relative;
+        }
+
+        #entries {
+            width: 600px;
+            text-align: left;
+            /* Ensure entries align to the left */
+            margin: 0 auto;
+            /* Center the entries container */
+            font-family: Arial;
+        }
+
+        #citations {
+            width: 400px;
+            text-align: left;
+            /* Ensure citations align to the left */
+            position: absolute;
+            right: 0px;
+            /* Position citations container to the right of entries container */
+            top: 0;
+        }
+
+        .entry {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .entry .dot {
+            position: absolute;
+            right: 20px;
+            top: 0;
+        }
+
+        .entry .info-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+
+        .info-tooltip {
+            visibility: hidden;
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 20px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .info-icon:hover .info-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .citation {
+            font-size: smaller;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            text-align: left;
+            width: 100%;
+        }
+
+        .cross-ref {
+            text-align: left;
+            font-style: italic;
+            width: 100%;
+        }
+
+        #generate-button {
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore {
+            appearance: none;
+            background-color: #FAFBFC;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+            box-sizing: border-box;
+            color: #24292E;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Arial;            
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            padding: 6px 16px;
+            position: relative;
+            transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+            word-wrap: break-word;
+        }
+
+        .addMore:hover {
+            border: 1px solid #888;
+            background-color: #ddd;
         }
     </style>
 </head>
+
 <body>
+
+    <a href="method.html">
+        <button class="addMore">Info</button>
+    </a>
+    <div id="visualization"></div>
+    <div id="entries-container">
+        <div id="entries"></div>
+        <div id="citations"></div>
+    </div>
+    <br>
     <center>
-        <div id="visualization"></div>
+        <div id="generate-button">Generate</div>
     </center>
-    <div id="entries"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('mapped_embeddings_3d.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
+        document.addEventListener("DOMContentLoaded", function () {
+            let data, titles, xRefs, traceCount;
+
+            function fetchData() {
+                return Promise.all([
+                    fetch('mapped_embeddings_3d.json').then(response => response.json()),
+                    fetch('titles.txt').then(response => response.text()),
+                    fetch('x-ref.txt').then(response => response.text())
+                ])
+                    .then(([dataResponse, titlesText, xrefText]) => {
+                        data = dataResponse;
+                        titles = titlesText.slice(1, -1).split(', ').map(t => t.replace(/['"]+/g, ''));
+                        xRefs = xrefText.slice(1, -1).split(', ').map(x => x.replace(/['"]+/g, ''));
+
+                        const processedData = data.map((d, i) => ({
+                            id: i + 1,
+                            entry: d.entry,
+                            vector: d.embedding,
+                            spacedSubentry: d["spaced-subentry"][0],
+                            title: d.citation.title,
+                            author: d.citation.author
+                        }));
+
+                        return processedData.filter(d => d.vector.length === 3);
+                    });
+            }
+
+            function generateRandomSubentries(data) {
+                const shuffled = data.sort(() => 0.5 - Math.random());
+                return shuffled.slice(0, 4);
+            }
+
+            function highlightSubentries(selected) {
+                const colors = ['gold', 'royalblue', 'tomato', 'yellowgreen'];
+                const selectedIndices = selected.map(s => s.id - 1);
+                const markerColors = data.map((d, i) => selectedIndices.includes(i) ? colors[selectedIndices.indexOf(i)] : 'blue');
+                const markerSizes = data.map((d, i) => selectedIndices.includes(i) ? 8 : 2);
+
+                Plotly.restyle('visualization', {
+                    'marker.color': [markerColors],
+                    'marker.size': [markerSizes]
+                });
+
+                const entriesDiv = document.getElementById("entries");
+                entriesDiv.innerHTML = ''; // Clear previous entries
+
+                const citationsDiv = document.getElementById("citations");
+                citationsDiv.innerHTML = ''; // Clear previous citations
+
+                // Randomly choose a title from titles
+                const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+                const titleDiv = document.createElement("div");
+                titleDiv.className = 'title';
+                titleDiv.innerText = randomTitle;
+                entriesDiv.appendChild(titleDiv);
+                citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
+
+                // Add the entries below the graph
+                selected.forEach((s, index) => {
+                    const entryDiv = document.createElement("div");
+                    entryDiv.className = 'entry';
+                    entryDiv.innerHTML = `${s.spacedSubentry} <span class="dot" style="color:${colors[index]}">●</span> <span class="info-icon">ⓘ<span class="info-tooltip">${s.title} by ${s.author}</span></span>`;
+                    entriesDiv.appendChild(entryDiv);
+
+                    // Add a randomly chosen cross-reference below the fourth entry
+                    if (index === 3) {
+                        const randomCrossRef = xRefs[Math.floor(Math.random() * xRefs.length)];
+                        const crossRefDiv = document.createElement("div");
+                        crossRefDiv.className = 'cross-ref';
+                        crossRefDiv.innerText = randomCrossRef;
+                        entriesDiv.appendChild(crossRefDiv);
+                        citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
                     }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Raw Data Sample:', data.slice(0, 5));
+                });
 
-                    const processedData = data.map((d, i) => ({
-                        id: i + 1,
-                        entry: d.entry,
-                        vector: d.embedding,
-                        spacedSubentry: d["spaced-subentry"][0]
-                    }));
+                // Create a plane between the selected entries
+                const selectedVectors = selected.map(s => s.vector);
+                const planeData = {
+                    type: 'mesh3d',
+                    x: selectedVectors.map(v => v[0]),
+                    y: selectedVectors.map(v => v[1]),
+                    z: selectedVectors.map(v => v[2]),
+                    opacity: 0.5,
+                    color: 'rgba(0,0,255,0.5)',
+                    name: 'Plane'
+                };
 
-                    console.log('Processed Data:', processedData);
+                // Remove previous plane trace if exists
+                if (traceCount) {
+                    Plotly.deleteTraces('visualization', -1);
+                }
 
-                    const validData = processedData.filter(d => d.vector.length === 3);
-                    console.log('Valid Data:', validData);
+                Plotly.addTraces('visualization', [planeData]);
+                traceCount = 1; // Update trace count to indicate plane is added
+            }
 
-                    const plotData = {
-                        x: validData.map(d => d.vector[0]),
-                        y: validData.map(d => d.vector[1]),
-                        z: validData.map(d => d.vector[2]),
-                        mode: 'markers',
-                        type: 'scatter3d',
-                        text: validData.map(d => d.entry),
-                        marker: { size: 5 }
-                    };
+            function updateSubentries() {
+                const randomSubentries = generateRandomSubentries(data);
+                highlightSubentries(randomSubentries);
+            }
 
-                    const layout = {
-                        title: '',
-                        scene: {
-                            xaxis: { title: '', showticklabels: false },
-                            yaxis: { title: '', showticklabels: false },
-                            zaxis: { title: '', showticklabels: false }
-                        }
-                    };
+            fetchData().then(validData => {
+                data = validData;
+                const plotData = {
+                    x: data.map(d => d.vector[0]),
+                    y: data.map(d => d.vector[1]),
+                    z: data.map(d => d.vector[2]),
+                    mode: 'markers',
+                    type: 'scatter3d',
+                    text: data.map(d => d.entry),
+                    marker: { size: 5 },
+                    hoverinfo: 'text',
+                    font: "Arial"
+                };
 
-                    console.log('Plot Data:', plotData);
-
-                    Plotly.newPlot('visualization', [plotData], layout);
-
-                    function generateRandomSubentries(data) {
-                        const shuffled = data.sort(() => 0.5 - Math.random());
-                        return shuffled.slice(0, 3);
+                const layout = {
+                    title: '',
+                    scene: {
+                        xaxis: { title: '', showticklabels: false, zeroline: true},
+                        yaxis: { title: '', showticklabels: false, zeroline: false},
+                        zaxis: { title: '', showticklabels: false, zeroline: false }
                     }
 
-                    function highlightSubentries(selected) {
-                        const selectedIndices = selected.map(s => s.id - 1);
-                        const update = {
-                            marker: {
-                                color: validData.map((d, i) => selectedIndices.includes(i) ? 'red' : 'blue'),
-                                size: validData.map((d, i) => selectedIndices.includes(i) ? 5 : 2)
-                            }
-                        };
+                };
 
-                        Plotly.restyle('visualization', update);
+                const config = {
+                    displayModeBar: true,
+                    modeBarButtonsToRemove: ['toImage', 'zoom3d', 'toggleSpikelines', 'pan3d', 'orbitRotation', 'tableRotation', 'resetCameraLastSave3d', 'hoverClosest3d'],
+                    displaylogo: false
+                };
 
-                        const entriesDiv = document.getElementById("entries");
-                        entriesDiv.innerHTML = selected.map(s => `${s.spacedSubentry}`).join("<br>");
+                Plotly.newPlot('visualization', [plotData], layout, config);
 
-                        // Connect the dots between the selected entries
-                        const selectedVectors = selected.map(s => s.vector);
-                        const lineData = {
-                            x: selectedVectors.map(v => v[0]),
-                            y: selectedVectors.map(v => v[1]),
-                            z: selectedVectors.map(v => v[2]),
-                            mode: 'lines+markers',
-                            type: 'scatter3d',
-                            marker: { size: 3, color: 'red' },
-                            line: { color: 'red', width: 1 },
-                            name: 'Selected'
-                        };
+                updateSubentries();
+            });
 
-                        // Create a plane between the selected entries
-                        const planeData = {
-                            type: 'mesh3d',
-                            x: selectedVectors.map(v => v[0]),
-                            y: selectedVectors.map(v => v[1]),
-                            z: selectedVectors.map(v => v[2]),
-                            opacity: 0.5,
-                            color: 'rgba(255,0,0,0.5)',
-                            name: 'Plane'
-                        };
-
-                        Plotly.addTraces('visualization', [lineData, planeData]);
-                    }
-
-                    // Generate and highlight random subentries on page load
-                    const randomSubentries = generateRandomSubentries(validData);
-                    highlightSubentries(randomSubentries);
-                })
-                .catch(error => console.error('Error loading the JSON file:', error));
+            document.getElementById('generate-button').addEventListener('click', updateSubentries);
         });
     </script>
 </body>
+
 </html>

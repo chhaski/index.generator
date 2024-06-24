@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Cloud Visualization with ASCII Effect</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            display: none;
+        }
+        .entry {
+            position: absolute;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info"></div>
+    <script type="module">
+        import * as THREE from './three.module.js';
+        import { OrbitControls } from './jsm/OrbitControls.js';
+        import { ConvexGeometry } from './jsm/ConvexGeometry.js';
+        import { AsciiEffect } from './jsm/AsciiEffect.js';
+
+        let camera, controls, scene, renderer, effect;
+        let points, raycaster, mouse, pointData;
+        let selectedPoints = [];
+        let currentMesh;
+        const info = document.createElement('div');
+        info.id = 'info';
+        document.body.appendChild(info);
+        const start = Date.now();
+
+        async function loadEmbeddings() {
+            const response = await fetch('mapped_embeddings_3d.json');
+            const data = await response.json();
+            return data.map(entry => ({
+                entry: entry.entry,
+                x: entry.embedding[0],
+                y: entry.embedding[1],
+                z: entry.embedding[2]
+            }));
+        }
+
+        function createPointCloud(embeddings) {
+            let geometry = new THREE.BufferGeometry();
+            let vertices = [];
+            pointData = embeddings;
+
+            embeddings.forEach(point => {
+                vertices.push(point.x, point.y, point.z);
+            });
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+
+            let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.25 });
+            points = new THREE.Points(geometry, material);
+            scene.add(points);
+
+            selectRandomPoints(embeddings);
+        }
+
+        function selectRandomPoints(embeddings, specificPoint = null) {
+            const selectedIndices = [];
+            if (specificPoint !== null) {
+                const specificIndex = embeddings.findIndex(point => 
+                    point.x === specificPoint.x && 
+                    point.y === specificPoint.y && 
+                    point.z === specificPoint.z);
+                selectedIndices.push(specificIndex);
+            }
+            while (selectedIndices.length < 4) {
+                const randomIndex = Math.floor(Math.random() * embeddings.length);
+                if (!selectedIndices.includes(randomIndex)) {
+                    selectedIndices.push(randomIndex);
+                }
+            }
+
+            selectedPoints = selectedIndices.map(index => embeddings[index]);
+            highlightSelectedPoints(selectedIndices);
+            drawMeshBetweenSelectedPoints();
+        }
+
+        function highlightSelectedPoints(selectedIndices) {
+            const colors = new Float32Array(points.geometry.attributes.position.count * 3);
+            for (let i = 0; i < points.geometry.attributes.position.count; i++) {
+                colors[i * 3] = 1; // R
+                colors[i * 3 + 1] = 1; // G
+                colors[i * 3 + 2] = 1; // B
+            }
+            selectedIndices.forEach(index => {
+                colors[index * 3] = 1; // R
+                colors[index * 3 + 1] = 0; // G
+                colors[index * 3 + 2] = 0; // B
+            });
+            points.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            points.material.vertexColors = true;
+        }
+
+        function drawMeshBetweenSelectedPoints() {
+            if (currentMesh) {
+                scene.remove(currentMesh);
+            }
+            const material = new THREE.MeshBasicMaterial({ color: 0xff00ff, opacity: 0.5, transparent: true });
+            const vertices = selectedPoints.map(point => new THREE.Vector3(point.x, point.y, point.z));
+            const geometry = new ConvexGeometry(vertices);
+            const mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+            currentMesh = mesh;
+        }
+
+        async function init() {
+            const container = document.querySelector('body');
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            // Renderer
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(width, height);
+            document.body.appendChild(renderer.domElement);
+
+            // ASCII Effect
+            effect = new AsciiEffect(renderer, ' .:-+*=%@#', { invert: true });
+            effect.setSize(width, height);
+            document.body.removeChild(renderer.domElement); // Remove original renderer
+            document.body.appendChild(effect.domElement); // Append ASCII effect element
+
+            // Scene and Camera
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
+            camera.position.z = 40;
+
+            // Add lights
+            const light = new THREE.PointLight(0xffffff, 1.5);
+            light.position.set(500, 500, 500);
+            scene.add(light);
+
+            const light2 = new THREE.PointLight(0xffffff, 0.25);
+            light2.position.set(-500, -500, -500);
+            scene.add(light2);
+
+            // Load and create point cloud
+            const embeddings = await loadEmbeddings();
+            createPointCloud(embeddings);
+
+            // Calculate and set camera position
+            const boundingBox = new THREE.Box3().setFromObject(points);
+            const center = boundingBox.getCenter(new THREE.Vector3());
+            const size = boundingBox.getSize(new THREE.Vector3());
+            const maxDim = Math.max(size.x, size.y, size.z);
+            const fov = camera.fov * (Math.PI / 180);
+            let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
+            cameraZ *= 1.5;
+            camera.position.z = cameraZ;
+            camera.lookAt(center);
+
+            // Controls
+            controls = new OrbitControls(camera, effect.domElement);
+            controls.enableZoom = true;
+            controls.update();
+
+            // Raycaster and Mouse
+            raycaster = new THREE.Raycaster();
+            mouse = new THREE.Vector2();
+
+            // Event listeners
+            window.addEventListener('resize', onWindowResize, false);
+            window.addEventListener('mousemove', onMouseMove, false);
+
+            onWindowResize(); // Initial resize
+        }
+
+        function onWindowResize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(width, height);
+            effect.setSize(width, height);
+        }
+
+        function onMouseMove(event) {
+            event.preventDefault();
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            render();
+        }
+
+        function render() {
+            const timer = Date.now() - start;
+
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObject(points);
+
+            if (intersects.length > 0) {
+                const intersect = intersects[0];
+                const index = intersect.index;
+                const point = pointData[index];
+                info.style.display = 'block';
+                info.innerHTML = point.entry;
+                info.style.left = `${(mouse.x + 1) / 2 * window.innerWidth}px`;
+                info.style.top = `${-(mouse.y - 1) / 2 * window.innerHeight}px`;
+            } else {
+                info.style.display = 'none';
+            }
+
+            // Display selected point entries next to the points
+            selectedPoints.forEach(point => {
+                const screenPosition = pointToScreenPosition(new THREE.Vector3(point.x, point.y, point.z), camera);
+                let entryDiv = document.getElementById(`entry-${point.x}-${point.y}-${point.z}`);
+                if (!entryDiv) {
+                    entryDiv = document.createElement('div');
+                    entryDiv.id = `entry-${point.x}-${point.y}-${point.z}`;
+                    entryDiv.className = 'entry';
+                    entryDiv.addEventListener('click', () => selectRandomPoints(pointData, point)); // Add click event listener
+                    document.body.appendChild(entryDiv);
+                }
+                entryDiv.innerHTML = point.entry;
+                entryDiv.style.left = `${screenPosition.x}px`;
+                entryDiv.style.top = `${screenPosition.y}px`;
+            });
+
+            controls.update();
+            effect.render(scene, camera);
+        }
+
+        function pointToScreenPosition(point, camera) {
+            const vector = point.clone().project(camera);
+            vector.x = (vector.x + 1) / 2 * window.innerWidth - 160; // Adjust as needed
+            vector.y = -(vector.y - 1) / 2 * window.innerHeight;
+            return vector;
+        }
+
+        init();
+        animate();
+    </script>
+</body>
+</html>

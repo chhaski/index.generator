@@ -150,9 +150,7 @@
         }
     </style>
 </head>
-
 <body>
-
     <a href="method.html">
         <button class="addMore">Info</button>
     </a>
@@ -211,19 +209,15 @@
                 });
                 const textPositionArray = textArray.map(text => (text ? 'right' : ''));
 
-
                 Plotly.restyle('visualization', {
                     'marker.color': [markerColors],
                     'marker.size': [markerSizes],
                     'text': [textArray],
                     'textposition': [textPositionArray],
                     'mode': 'markers+text',
-                    'textfont.size': [24],  // Ensure text font size is set
-                    'textfont.family': 'Arial'  // Ensure text font family is set
-                    // 'constraintext': 'none',
-                    // 'uniformtext.minsize': 14, // Ensure uniformtext minsize is set
-                    // 'uniformtext.mode': 'hide' // Ensure uniformtext mode is set
-                })
+                    'textfont.size': [48],  // Ensure text font size is set (doubling the size as a workaround)
+                    'textfont.family': 'Arial',  // Ensure text font family is set
+                });
 
                 const entriesDiv = document.getElementById("entries");
                 entriesDiv.innerHTML = ''; // Clear previous entries
@@ -246,8 +240,6 @@
                 crossRefDiv.innerText = randomCrossRef;
                 entriesDiv.appendChild(crossRefDiv);
                 citationsDiv.appendChild(document.createElement("div")); // Add a placeholder div for alignment
-
-
 
                 // Create a plane between the selected entries
                 const selectedVectors = selected.map(s => s.vector);
@@ -287,7 +279,7 @@
                     text: data.map(d => d.entry),
                     marker: { size: 5 },
                     hoverinfo: 'text',
-                    textfont: { family: 'Arial', size: 12 }
+                    textfont: { family: 'Arial', size: 24 }  // Ensure text font size is set here
                 };
 
                 const layout = {
@@ -296,6 +288,10 @@
                         xaxis: { title: '', showticklabels: false, zeroline: false },
                         yaxis: { title: '', showticklabels: false, zeroline: false },
                         zaxis: { title: '', showticklabels: false, zeroline: false }
+                    },
+                    uniformtext: {
+                        minsize: 14,
+                        mode: 'show'
                     }
                 };
 

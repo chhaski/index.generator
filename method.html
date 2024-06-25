@@ -177,37 +177,35 @@
     <i>
       This ongoing project explores the index as a creative infrastructure for mapping knowledge and associative
       relationships within information. The system generates unique spatial layouts of text on the page, where each
-      index entry's horizontal position is determined by its semantic proximity to others in the dataset (as determined
-      by an approximate nearest neighbors algorithm), forming a multiply-determined visual topology of relationships.
+      index entry's position is determined by its semantic proximity to others in the dataset <sub>as determined
+      by an approximate nearest neighbors algorithm,</sub> forming a multiply-determined visual topology of relationships.
     </i>
     <br><br>
     The corpus for this instance of the project is comprised of the indexes of 3 books selected by the artist from the
-    Cybernetics Library’s ‘Uncomputable’ collection:
+    Cybernetics Library’s <a href="url">Uncomputable</a> collection:
     <br>
-    <br>········Updating to Remain the Same: Habitual New Media···Wendy Hui Kyong Chun
-    <br>········Code and Clay, Data and Dirt: Five Thousand Years of Urban Media···Shannon Christine Mattern
-    <br>········ The Moment of Complexity: Emerging Network Culture···Mark C. Taylor
+    <br>▫︎<a href="url">Updating to Remain the Same: Habitual New Media⸻Wendy Hui Kyong Chun</a>
+    <br>▫︎<a href="url">Code and Clay, Data and Dirt: Five Thousand Years of Urban Media⸻Shannon Christine Mattern</a>
+    <br>▫︎<a href="url">The Moment of Complexity: Emerging Network Culture⸻Mark C. Taylor</a>
     <br><br>
     The webpage provides a visual and textual interface to explore a dataset of index entries and their associated
     metadata. An interactive 3D t-SNE visualization displays the vector space, each point representing an index entry.
-    Users can generate a new speculative index by clicking a button, which highlights the corresponding selected entries
-    in the visualization, constructing a unique shape each time it is regenerated.
+    Users can generate a new speculative index by clicking any entry, which highlights a new set of entries corresponding selected entries, constructing a unique shape each time it is regenerated.
     <br><br>
-    Methodology:
+    <a href="https://docs.google.com/presentation/d/1RCbsFGVVPs6FC2GkpLKxKhrRK6lzifQsBALjZhE-F7I/edit?usp=sharing">View the slides to the first rendition of the project</a> 
     <br><br>
     <br>········pre-processing
     <br>················make each index structure uniform
-    <br>················parse, reassemble
+    <br>················parse into entires, reassemble
     <br>········processing
-    <br>················create vectors for each sequence of text (subentry) in the corpus
-    <br>················reduce dimensionality of each vector with t-SNE 
-    <br>················save the x-values of t-SNE visualization of vectors in 2-d space as an array, map it to a better range
-    <br>················create dictionary of each subentry and its corresponding vector
+    <br>················create vectors for each sequence of text (entry) in the corpus
+    <br>················reduce dimensionality of each entry's vector with t-SNE 
+    <br>················save the x, y and x values of t-SNE visualization of vectors to visualize the dataset
     <br>········generating
-    <br>················randomly chosing from dataset of vector-spaced subentries
-    <br>················the position of each subentry on the page is determined by the x-position of the vectors in 2-d space as
-    determined by t-SNE
+    <br>················choose 4 random entries from dataset of entries
+    <br>················the position of each subentry on the page is determined by an approximate nearest neighbors algorithm
   </p>
+  
 </body>
 
 </html>

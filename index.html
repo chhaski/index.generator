@@ -70,11 +70,47 @@
         }
 
         .header {
-            padding: 60px;
-            text-align: center;
-
+            position: absolute;
+            top: 0;
+            width: 100%;
             color: black;
+            text-align: center;
             font-size: 30px;
+            pointer-events: none;
+        }
+
+        .centerheader {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            font-size: 0.9em;
+            pointer-events: none;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header .subheader {
+            font-size: 20px;
+        }
+
+        .header .link {
+            font-size: 15px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-align: left;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: right;
         }
     </style>
 </head>
@@ -216,6 +252,26 @@
             });
         }
 
+        function renderHeader() {
+            const headerContainer = document.createElement('div');
+            headerContainer.className = 'header';
+
+            const topLeftHeader = document.createElement('div');
+            topLeftHeader.className = 'top-left';
+            topLeftHeader.innerHTML = '<div>Indexing the Index</div><div class="subheader">using NLP to map index data spatially</div>';
+            document.body.appendChild(topLeftHeader);
+
+            const centerHeader = document.createElement('div');
+            centerHeader.className = 'centerheader';
+            centerHeader.innerHTML = '<div>Click, drag and scroll to explore</div>';
+            document.body.appendChild(centerHeader);
+
+            const topRightHeader = document.createElement('div');
+            topRightHeader.className = 'top-right';
+            topRightHeader.innerHTML = '<div class="link"><a href="method.html" target="_blank">Read more about the project here</a></div>';
+            document.body.appendChild(topRightHeader);
+        }
+
 
         async function init() {
             const container = document.querySelector('body');
@@ -279,7 +335,8 @@
 
             onWindowResize(); // Initial resize
 
-            renderLegend(); // Render the legend
+            renderLegend();
+            renderHeader();
         }
 
         function onWindowResize() {

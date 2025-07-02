@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Indexing the Index</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>About | Index.Training</title>
+  <link rel="icon" type="image/x-icon" href="SYSED002.ICO">
   <style>
     .body {
       font-family: Arial;
@@ -189,40 +189,25 @@
       <br><br>
   </center>
   <p class="body">
-    <i>
       This ongoing project explores the index as a creative infrastructure for mapping knowledge and associative
       relationships within information. Using NLP to map textual data spatially, the system generates unique layouts of text on the page, where each
       index entry's position is determined by its semantic proximity to others in the dataset as determined
       by an approximate nearest neighbors algorithm, forming a multiply-determined visual topology.
-    </i>
     <br><br>
     The corpus for this instance of the project is comprised of the indexes of 3 books selected by the artist from the
-    Cybernetics Library’s <a href="https://www.librarything.com/catalog/cyberneticslibrary/uncomputable">Uncomputable</a> collection:
+    Cybernetics Library's <a href="https://www.librarything.com/catalog/cyberneticslibrary/uncomputable">Uncomputable</a> collection:
     <br>
-    <br>▫︎<a href="https://www.are.na/share/uNGoqzI">Updating to Remain the Same: Habitual New Media⸻Wendy Hui Kyong Chun</a>
-    <br>▫︎<a href="https://www.are.na/share/uNGoqzI">Code and Clay, Data and Dirt: Five Thousand Years of Urban Media⸻Shannon Christine Mattern</a>
-    <br>▫︎<a href="https://www.are.na/share/uNGoqzI">The Moment of Complexity: Emerging Network Culture⸻Mark C. Taylor</a>
+    <br>···<a href="https://www.are.na/share/uNGoqzI">Updating to Remain the Same: Habitual New Media···Wendy Hui Kyong Chun</a>
+    <br>···<a href="https://www.are.na/share/uNGoqzI">Code and Clay, Data and Dirt: Five Thousand Years of Urban Media···Shannon Christine Mattern</a>
+    <br>···<a href="https://www.are.na/share/uNGoqzI">The Moment of Complexity: Emerging Network Culture···Mark C. Taylor</a>
     <br><br>
-    The webpage provides a visual and textual interface to explore a dataset of index entries and their associated
+    The webpage provides a visual and textual interface to explore the dataset of index entries and their associated
     metadata. An interactive 3D t-SNE visualization displays the vector space, each point representing an index entry. 
     Visitors can generate a new speculative index by clicking any entry, which highlights a new set of entries, constructing a unique shape each time it is regenerated. 
-    The visualization can be navigated by clicking and dragging to move around it, and scrolling up ↑ to zoom in and down ↓ to zoom out.
+    The visualization can be navigated by clicking and dragging to move around it, and scrolling up to zoom in and down to zoom out.
     <br><br>
     <a href="https://docs.google.com/presentation/d/1RCbsFGVVPs6FC2GkpLKxKhrRK6lzifQsBALjZhE-F7I/edit?usp=sharing">View the slides to the first rendition of the project</a> 
     <br><br>
-    <br>Methodology<br>
-    <br>········pre-processing
-    <br>················make each index structure uniform
-    <br>················parse into entries, reassemble
-    <br>
-    <br>········processing
-    <br>················create vectors for each sequence of text (entry) in the corpus
-    <br>················reduce dimensionality of each entry's vector with t-SNE 
-    <br>················save the x, y and z values of t-SNE visualization of vectors to visualize the dataset
-    <br>
-    <br>········generating
-    <br>················choose 4 random entries from dataset of entries
-    <br>················the position of each subentry on the page is determined by an approximate nearest neighbors algorithm
   </p>
 
   <div class="fixed-footer">

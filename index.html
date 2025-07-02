@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indexing the Index</title>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indexing the Index</title>
+  <link rel="icon" type="image/x-icon" href="SYSED002.ICO">
     <style>
         body {
             margin: 0;
@@ -49,9 +50,7 @@
             width: 100%;
             color: black;
             padding: 5px;
-            display: flex;
-            justify-content: space-evenly;
-
+            text-align: center;
         }
 
         .legend-item {
@@ -113,6 +112,45 @@
             top: 10px;
             right: 10px;
             text-align: right;
+        }
+
+        /* Add improved legend styling */
+        #legend {
+            text-align: center;
+            color: #222;
+            font-family: Arial, sans-serif;
+            margin-bottom: 0;
+        }
+        .legend-label {
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        .legend-items {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .legend-item {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .legend-symbol {
+            font-size: 16px;
+            margin-right: 4px;
+        }
+        .top-left > div,
+        .top-right,
+        .subheader {
+            font-size: 16px;
+        }
+        .centerheader,
+        .legend-label,
+        .legend-item,
+        .legend-title {
+            font-size: 13px;
         }
     </style>
 </head>
@@ -233,6 +271,17 @@
         function renderLegend() {
             const legend = document.getElementById('legend');
             legend.innerHTML = '';
+            
+            // Add descriptive subtitle above legend items
+            const labelDiv = document.createElement('div');
+            labelDiv.className = 'legend-label';
+            labelDiv.textContent = 'Words and phrases from the following books’ indexes:';
+            legend.appendChild(labelDiv);
+            
+            // Create container for legend items
+            const itemsContainer = document.createElement('div');
+            itemsContainer.className = 'legend-items';
+            
             const books = Object.keys(symbols);
             books.forEach(book => {
                 const item = document.createElement('div');
@@ -241,7 +290,6 @@
                 const symbolSpan = document.createElement('span');
                 symbolSpan.className = 'legend-symbol';
                 symbolSpan.textContent = symbols[book];
-                symbolSpan.style.color = 'white';
                 item.appendChild(symbolSpan);
 
                 const titleSpan = document.createElement('span');
@@ -249,8 +297,10 @@
                 titleSpan.textContent = book;
                 item.appendChild(titleSpan);
 
-                legend.appendChild(item);
+                itemsContainer.appendChild(item);
             });
+            
+            legend.appendChild(itemsContainer);
         }
 
         function renderHeader() {
@@ -259,7 +309,7 @@
 
             const topLeftHeader = document.createElement('div');
             topLeftHeader.className = 'top-left';
-            topLeftHeader.innerHTML = '<div>Indexing the Index</div><div class="subheader">using NLP to map index data spatially</div>';
+            topLeftHeader.innerHTML = '<div>Index.Training</div><div class="subheader">mapping index data spatially</div>';
             document.body.appendChild(topLeftHeader);
 
             const centerHeader = document.createElement('div');
@@ -269,7 +319,7 @@
 
             const topRightHeader = document.createElement('div');
             topRightHeader.className = 'top-right';
-            topRightHeader.innerHTML = '<div class="link"><a href="method.html">Read more about the project here</a></div>';
+            topRightHeader.innerHTML = '<div class="link"><a href="method.html">About</a></div>';
             document.body.appendChild(topRightHeader);
         }
 
@@ -358,15 +408,18 @@
         }
 
         function onMouseClick(event) {
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObject(points);
+            // Check if raycaster and points are initialized before using them
+            if (raycaster && points) {
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObject(points);
 
-            if (intersects.length > 0) {
-                const intersect = intersects[0];
-                const index = intersect.index;
-                const point = pointData[index];
-                console.log('Clicked point:', point); // Debug log to verify the clicked point
-                selectRandomPoints(pointData, point);
+                if (intersects.length > 0) {
+                    const intersect = intersects[0];
+                    const index = intersect.index;
+                    const point = pointData[index];
+                    // console.log('Clicked point:', point); // Debug log to verify the clicked point
+                    selectRandomPoints(pointData, point);
+                }
             }
         }
 
@@ -378,19 +431,22 @@
         function render() {
             const timer = Date.now() - start;
 
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObject(points);
+            // Check if raycaster is initialized before using it
+            if (raycaster && points) {
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObject(points);
 
-            if (intersects.length > 0) {
-                const intersect = intersects[0];
-                const index = intersect.index;
-                const point = pointData[index];
-                info.style.display = 'block';
-                info.innerHTML = point.entry;
-                info.style.left = `${(mouse.x + 1) / 2 * window.innerWidth}px`;
-                info.style.top = `${-(mouse.y - 1) / 2 * window.innerHeight}px`;
-            } else {
-                info.style.display = 'none';
+                if (intersects.length > 0) {
+                    const intersect = intersects[0];
+                    const index = intersect.index;
+                    const point = pointData[index];
+                    info.style.display = 'block';
+                    info.innerHTML = point.entry;
+                    info.style.left = `${(mouse.x + 1) / 2 * window.innerWidth}px`;
+                    info.style.top = `${-(mouse.y - 1) / 2 * window.innerHeight}px`;
+                } else {
+                    info.style.display = 'none';
+                }
             }
 
             // Display selected point entries next to the points
@@ -426,8 +482,10 @@
             return vector;
         }
 
-        init();
-        animate();
+        // Initialize and start animation only after initialization is complete
+        init().then(() => {
+            animate();
+        });
     </script>
 </body>
 

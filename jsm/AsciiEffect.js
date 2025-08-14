@@ -2,9 +2,8 @@ class AsciiEffect {
 
     constructor(renderer, charSet = ' .:-=+*#%@', options = {}) {
 
-        // ASCII settings
-        const fResolution = options['resolution'] || 0.2; // Higher for more details
-        const bColor = options['color'] || false; // Enables color but slows down rendering
+        const fResolution = options['resolution'] || 0.2;
+const bColor = options['color'] || false;
         const bInvert = options['invert'] || false; // Inverts colors
 
         let width, height;

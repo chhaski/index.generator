@@ -7,11 +7,17 @@
   <title>About | Index.Training</title>
   <link rel="icon" type="image/x-icon" href="SYSED002.ICO">
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      position: relative;
+    }
+    
     .body {
       font-family: Arial;
       width: 600px;
       margin: 0 auto;
-
     }
 
     #visualization {
@@ -179,36 +185,104 @@
       margin: 0;
       font-size: 14px;
     }
+
+    /* Book covers styling */
+    .book-covers {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .book-cover {
+      position: relative;
+      width: 120px;
+      height: 180px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .book-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .book-cover::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+
+    .book-cover:hover::before {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+    }
+
+    .book-cover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 
 <body>
   <center>
-    <p class="body">About
-    <p>
-      <br><br>
+    <p class="body" style="font-weight: bold;">About</p>
   </center>
-  <p class="body">
+  <br>
+  <div class="body">
       This ongoing project explores the index as a creative infrastructure for mapping knowledge and associative
-      relationships within information. Using NLP to map textual data spatially, the system generates unique layouts of text on the page, where each
-      index entry's position is determined by its semantic proximity to others in the dataset as determined
-      by an approximate nearest neighbors algorithm, forming a multiply-determined visual topology.
-    <br><br>
-    The corpus for this instance of the project is comprised of the indexes of 3 books selected by the artist from the
-    Cybernetics Library's <a href="https://www.librarything.com/catalog/cyberneticslibrary/uncomputable">Uncomputable</a> collection:
-    <br>
-    <br>···<a href="https://www.are.na/share/uNGoqzI">Updating to Remain the Same: Habitual New Media···Wendy Hui Kyong Chun</a>
-    <br>···<a href="https://www.are.na/share/uNGoqzI">Code and Clay, Data and Dirt: Five Thousand Years of Urban Media···Shannon Christine Mattern</a>
-    <br>···<a href="https://www.are.na/share/uNGoqzI">The Moment of Complexity: Emerging Network Culture···Mark C. Taylor</a>
-    <br><br>
-    The webpage provides a visual and textual interface to explore the dataset of index entries and their associated
+      relationships within information. 
+
+      <br><br>
+      The webpage provides a visual and textual interface to explore the dataset of index entries and their associated
     metadata. An interactive 3D t-SNE visualization displays the vector space, each point representing an index entry. 
     Visitors can generate a new speculative index by clicking any entry, which highlights a new set of entries, constructing a unique shape each time it is regenerated. 
     The visualization can be navigated by clicking and dragging to move around it, and scrolling up to zoom in and down to zoom out.
+    <br><br>    Using NLP to map textual data spatially, the system generates unique layouts of text on the page, where each
+    index entry's position is determined by its semantic proximity to others in the dataset as determined
+    by an approximate nearest neighbors algorithm, forming a multiply-determined visual topology.
+    <br><br>    The <a href="https://www.are.na/chaski-_/index-training-dataset-selections-from-the-cybernetics-library-s-uncomputable-collection">corpus</a> for this instance of the project is comprised of the indexes of 3 books selected by the artist from the
+    Cybernetics Library's <a href="https://www.librarything.com/catalog/cyberneticslibrary/uncomputable">Uncomputable</a> collection:
+    <br>
+    <br>···Updating to Remain the Same: Habitual New Media···Wendy Hui Kyong Chun
+    <br>···Code and Clay, Data and Dirt: Five Thousand Years of Urban Media···Shannon Christine Mattern
+    <br>···The Moment of Complexity: Emerging Network Culture···Mark C. Taylor
     <br><br>
-    <a href="https://docs.google.com/presentation/d/1RCbsFGVVPs6FC2GkpLKxKhrRK6lzifQsBALjZhE-F7I/edit?usp=sharing">View the slides to the first rendition of the project</a> 
+    
+    <div class="book-covers">
+      <div class="book-cover">
+        <img src="https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIyOTAxMDM0NC9vcmlnaW5hbF82YjZlZjY2ODQwYWZmNWY4NTMyNWY2MGNkMDM5ZmExYi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJmbGF0dGVuIjp7ImJhY2tncm91bmQiOnsiciI6MjAzLCJnIjoyMDMsImIiOjIwM319LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=" alt="Updating to Remain the Same: Habitual New Media">
+      </div>
+      <div class="book-cover">
+        <img src="https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIyOTAxMDM0Ny9vcmlnaW5hbF9lNzE0YzI3NmRkNDMxMDNhMjAyNDA2MjUtMi1nNGw4MDgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2MDAsImhlaWdodCI6NjAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiZmxhdHRlbiI6eyJiYWNrZ3JvdW5kIjp7InIiOjIwMywiZyI6MjAzLCJiIjoyMDN9fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19" alt="Code and Clay, Data and Dirt: Five Thousand Years of Urban Media">
+      </div>
+      <div class="book-cover">
+        <img src="https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIyOTAxMDM1MC9vcmlnaW5hbF85M2NkMjY3OWQxOTQ0ZTUwMjAyNDA2MjUtMi13eW8wY2kucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2MDAsImhlaWdodCI6NjAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjc1fSwiZmxhdHRlbiI6eyJiYWNrZ3JvdW5kIjp7InIiOjIwMywiZyI6MjAzLCJiIjoyMDN9fSwianBlZyI6eyJxdWFsaXR5Ijo3NX0sInJvdGF0ZSI6bnVsbH19" alt="The Moment of Complexity: Emerging Network Culture">
+      </div>
+    </div>
+    
+    <strong>Process versions:</strong>
+    <br>
+    <a href="https://docs.google.com/presentation/d/1RCbsFGVVPs6FC2GkpLKxKhrRK6lzifQsBALjZhE-F7I/edit?usp=sharing">1 Indexing the Index [2022]</a> | 
+    <a href="v1.html">2</a> | 
+    <a href="v2.html">3</a> | 
+    <a href="v3.html">4</a>
     <br><br>
-  </p>
+  </div>
 
   <div class="fixed-footer">
     <h6>Compiled and stewarded by <a href="https://cha.ski/">Chaski</a></h6>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Generator</title>
+    <title>Index Process 1 - Index Generator</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         #visualization {
@@ -155,10 +155,6 @@
 </head>
 
 <body>
-
-    <a href="method.html">
-        <button class="addMore">Info</button>
-    </a>
     <div id="visualization"></div>
     <div id="entries-container">
         <div id="entries"></div>
@@ -174,9 +170,9 @@
 
             function fetchData() {
                 return Promise.all([
-                    fetch('data/mapped_embeddings_3d.json').then(response => response.json()),
-                                    fetch('data/RWET_titles.txt').then(response => response.text()),
-                fetch('x-ref.txt').then(response => response.text())
+                    fetch('../data/mapped_embeddings_3d.json').then(response => response.json()),
+                    fetch('../data/RWET_titles.txt').then(response => response.text()),
+                    fetch('../data/x-ref.txt').then(response => response.text())
                 ])
                     .then(([dataResponse, titlesText, xrefText]) => {
                         data = dataResponse;

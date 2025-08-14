@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Point Cloud Visualization with ASCII Effect</title>
+    <title>Index Process 3</title>
     <style>
         body {
             margin: 0;
@@ -14,11 +15,13 @@
             height: 100vh;
             width: 100vw;
         }
+
         canvas {
             display: block;
             width: 100%;
             height: 100%;
         }
+
         #info {
             position: absolute;
             top: 10px;
@@ -28,6 +31,7 @@
             padding: 5px;
             display: none;
         }
+
         .entry {
             position: absolute;
             color: #fff;
@@ -35,15 +39,47 @@
             padding: 2px;
             cursor: pointer;
         }
+
+        #legend {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            color: black;
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .legend-item {
+            display: inline-block;
+            margin-bottom: 5px;
+
+        }
+
+        .legend-symbol {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-right: 5px;
+            font-style: bold;
+        }
+
+        .legend-title {
+            font-size: 0.8em;
+        }
     </style>
 </head>
+
 <body>
     <div id="info"></div>
+    <footer>
+        <div id="legend"></div>
+    </footer>
     <script type="module">
-        import * as THREE from './three.module.js';
-        import { OrbitControls } from './jsm/OrbitControls.js';
-        import { ConvexGeometry } from './jsm/ConvexGeometry.js';
-        import { AsciiEffect } from './jsm/AsciiEffect.js';
+        import * as THREE from '../three.module.js';
+        import { OrbitControls } from '../jsm/OrbitControls.js';
+        import { ConvexGeometry } from '../jsm/ConvexGeometry.js';
+        import { AsciiEffect } from '../jsm/AsciiEffect.js';
 
         let camera, controls, scene, renderer, effect;
         let points, raycaster, mouse, pointData;
@@ -54,14 +90,21 @@
         document.body.appendChild(info);
         const start = Date.now();
 
+        const symbols = {
+            "Updating to Remain the Same: Habitual New Media": "▲",
+            "Code and Clay, Data and Dirt: Five Thousand Years of Urban Media": "●",
+            "The Moment of Complexity: Emerging Network Culture": "■"
+        };
+
         async function loadEmbeddings() {
-            const response = await fetch('data/mapped_embeddings_3d.json');
+            const response = await fetch('../data/mapped_embeddings_3d.json');
             const data = await response.json();
             return data.map(entry => ({
                 entry: entry.entry,
                 x: entry.embedding[0],
                 y: entry.embedding[1],
-                z: entry.embedding[2]
+                z: entry.embedding[2],
+                citation: entry.citation
             }));
         }
 
@@ -76,7 +119,7 @@
 
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
-            let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.5 }); // Increase point size
+            let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.5 }); 
             points = new THREE.Points(geometry, material);
             scene.add(points);
 
@@ -87,9 +130,9 @@
         function selectRandomPoints(embeddings, specificPoint = null) {
             const selectedIndices = [];
             if (specificPoint !== null) {
-                const specificIndex = embeddings.findIndex(point => 
-                    point.x === specificPoint.x && 
-                    point.y === specificPoint.y && 
+                const specificIndex = embeddings.findIndex(point =>
+                    point.x === specificPoint.x &&
+                    point.y === specificPoint.y &&
                     point.z === specificPoint.z);
                 selectedIndices.push(specificIndex);
             }
@@ -106,33 +149,20 @@
         }
 
         function highlightSelectedPoints(selectedIndices) {
-    const colors = new Float32Array(points.geometry.attributes.position.count * 3);
-    const positions = points.geometry.attributes.position.array;
-    
-    for (let i = 0; i < points.geometry.attributes.position.count; i++) {
-        const x = positions[i * 3];
-        const y = positions[i * 3 + 1];
-        const z = positions[i * 3 + 2];
-        
-        const distance = new THREE.Vector3(x, y, z).distanceTo(camera.position) + 15;
-        const opacity = 1 - (distance / 70); // Adjust the 50 value as needed for your scene
-
-        colors[i * 3] = 1 ; // R
-        colors[i * 3 + 1] = 1 * opacity ; // G
-        colors[i * 3 + 2] = 1 * opacity; // B
-    }
-
-    selectedIndices.forEach(index => {
-        colors[index * 3] = 1; // R
-        colors[index * 3 + 1] = 0; // G
-        colors[index * 3 + 2] = 0; // B
-    });
-
-    points.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-    points.material.vertexColors = true;
-    points.material.transparent = true; // Ensure the material is transparent to respect the opacity
-}
-
+            const colors = new Float32Array(points.geometry.attributes.position.count * 3);
+            for (let i = 0; i < points.geometry.attributes.position.count; i++) {
+                colors[i * 3] = 1; // R
+                colors[i * 3 + 1] = 1; // G
+                colors[i * 3 + 2] = 1; // B
+            }
+            selectedIndices.forEach(index => {
+                colors[index * 3] = 1; // R
+                colors[index * 3 + 1] = 0; // G
+                colors[index * 3 + 2] = 0; // B
+            });
+            points.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            points.material.vertexColors = true;
+        }
 
         function drawMeshBetweenSelectedPoints() {
             if (currentMesh) {
@@ -152,6 +182,30 @@
             entries.forEach(entry => entry.remove());
         }
 
+        function renderLegend() {
+            const legend = document.getElementById('legend');
+            legend.innerHTML = '';
+            const books = Object.keys(symbols);
+            books.forEach(book => {
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+
+                const symbolSpan = document.createElement('span');
+                symbolSpan.className = 'legend-symbol';
+                symbolSpan.textContent = symbols[book];
+                symbolSpan.style.color = 'white'; 
+                item.appendChild(symbolSpan);
+
+                const titleSpan = document.createElement('span');
+                titleSpan.className = 'legend-title';
+                titleSpan.textContent = book;
+                item.appendChild(titleSpan);
+
+                legend.appendChild(item);
+            });
+        }
+
+
         async function init() {
             const container = document.querySelector('body');
             const width = window.innerWidth;
@@ -163,7 +217,7 @@
             document.body.appendChild(renderer.domElement);
 
             // ASCII Effect
-            effect = new AsciiEffect(renderer, ' ▪︎◼︎', { invert: true });
+            effect = new AsciiEffect(renderer, ' ■', { invert: true });
             effect.setSize(width, height);
 
             document.body.removeChild(renderer.domElement); // Remove original renderer
@@ -213,6 +267,8 @@
             window.addEventListener('click', onMouseClick, false); // Add click event listener
 
             onWindowResize(); // Initial resize
+
+            renderLegend(); // Render the legend
         }
 
         function onWindowResize() {
@@ -278,10 +334,14 @@
                     entryDiv.className = 'entry';
                     document.body.appendChild(entryDiv);
                 }
-                entryDiv.innerHTML = point.entry;
+
+                // Find the matching symbol for the citation title
+                const matchingSymbol = Object.keys(symbols).find(bookTitle => point.citation.title.includes(bookTitle));
+                entryDiv.innerHTML = `${point.entry} ${matchingSymbol ? symbols[matchingSymbol] : ''}`;
                 entryDiv.style.left = `${screenPosition.x}px`;
                 entryDiv.style.top = `${screenPosition.y}px`;
             });
+
 
             controls.update();
             effect.render(scene, camera);
@@ -292,7 +352,7 @@
             const halfWidth = window.innerWidth / 2;
             const halfHeight = window.innerHeight / 2;
 
-            vector.x = (vector.x * halfWidth) + halfWidth - 150; // Adjust as needed
+            vector.x = (vector.x * halfWidth) + halfWidth; // Adjust as needed
             vector.y = -(vector.y * halfHeight) + halfHeight;
             return vector;
         }
@@ -301,4 +361,5 @@
         animate();
     </script>
 </body>
+
 </html>

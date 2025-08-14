@@ -303,7 +303,7 @@
 
 
         async function loadEmbeddings() {
-            const response = await fetch('mapped_embeddings_3d.json');
+            const response = await fetch('data/mapped_embeddings_3d.json');
             const data = await response.json();
             return data.map(entry => ({
                 entry: entry.entry,

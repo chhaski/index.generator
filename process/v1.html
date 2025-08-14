@@ -174,9 +174,9 @@
 
             function fetchData() {
                 return Promise.all([
-                    fetch('mapped_embeddings_3d.json').then(response => response.json()),
-                    fetch('titles.txt').then(response => response.text()),
-                    fetch('x-ref.txt').then(response => response.text())
+                    fetch('data/mapped_embeddings_3d.json').then(response => response.json()),
+                                    fetch('data/RWET_titles.txt').then(response => response.text()),
+                fetch('x-ref.txt').then(response => response.text())
                 ])
                     .then(([dataResponse, titlesText, xrefText]) => {
                         data = dataResponse;

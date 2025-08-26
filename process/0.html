@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Index</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #1f2937;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        .textual-artifact {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .textual-artifact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(
+                    45deg, 
+                    transparent, 
+                    transparent 2px, 
+                    rgba(0, 0, 0, 0.02) 2px, 
+                    rgba(0, 0, 0, 0.02) 4px
+                );
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .textual-artifact {
+            padding: 20px;
+                margin: 15px 0;
+            }
+            
+            .spaced-subentry {
+                font-size: 8px;
+                padding: 4px 8px;
+                margin-bottom: 10px;
+            }
+            
+            .title {
+                font-size: 11px;
+                padding: 4px 8px;
+                margin-bottom: 15px;
+            }
+            
+            .cross-reference {
+                font-size: 11px;
+                padding: 4px 8px;
+                margin-top: 15px;
+            }
+            
+            .book-key {
+                padding: 15px;
+            }
+            
+            .book-item {
+                margin: 0 10px 8px 0;
+            }
+            
+            .book-title {
+                font-size: 11px;
+            }
+        }
+        
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: lowercase;
+        }
+        
+        .entry {
+            margin-bottom: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .entry:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .entry.selected {
+            background-color: transparent;
+        }
+        
+        .spaced-subentry {
+            margin-left: 0;
+            margin-bottom: 12px;
+            color: #1f2937;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 6px 10px;
+            cursor: pointer;
+            border-radius: 0;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            line-height: 1.2;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            text-align: left;
+        }
+        
+        .spaced-subentry:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-1px);
+        }
+        
+        .book-key {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        
+        .book-item {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 15px 8px 0;
+        }
+        
+        .book-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            margin-right: 12px;
+        }
+        
+        .book-title {
+            font-size: 12px;
+            color: #444;
+            font-family: Arial, sans-serif;
+            font-weight: 500;
+        }
+        
+        .title {
+            margin-bottom: 20px;
+            color: #1f2937;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 6px 10px;
+            cursor: pointer;
+            border-radius: 0;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            line-height: 1.2;
+            display: inline-block;
+        }
+        
+        .title:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-1px);
+        }
+        
+        .cross-reference {
+            margin-top: 20px;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #1f2937;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 6px 10px;
+            border-radius: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        
+        .refresh-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            color: #444;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 6px 10px;
+            border-radius: 0;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            z-index: 10000;
+        }
+        
+        .refresh-button:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-1px);
+        }
+        
+        .refresh-button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <button class="refresh-button" onclick="refreshPage()">refresh</button>
+    
+    <div class="textual-artifact">
+        <div class="title" id="title"></div>
+        
+        <div id="entries-container"></div>
+        
+        <div class="cross-reference" id="cross-reference"></div>
+    </div>
+    
+    <div class="book-key" id="book-key"></div>
+
+    <script>
+        // Book colors - pale/washed out versions
+        const bookColors = {
+            "The History of Sexuality: Volume One": "#f0e6f0", // pale lavender
+            "Queer Phenomenology: Orientations, Objects, Others": "#e6f0e6", // pale sage
+            "Cruising Utopia: The Then and There of Queer Futurity": "#f0f0e6" // pale cream
+        };
+        
+        async function loadData() {
+            try {
+                const [response, titlesResponse, xrefResponse] = await Promise.all([
+                    fetch('../data/RWET_mapped_embeddings.json'),
+                    fetch('../data/RWET_titles.txt'),
+                    fetch('../data/RWET_xref.txt')
+                ]);
+                
+                const data = await response.json();
+                const titles = eval(await titlesResponse.text());
+                const xrefs = eval(await xrefResponse.text());
+                
+                // Set random title
+                const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+                document.getElementById('title').textContent = randomTitle;
+                
+                // Get exactly 6 random entries
+                const shuffled = data.sort(() => 0.5 - Math.random());
+                const selectedEntries = shuffled.slice(0, 6);
+                
+                const container = document.getElementById('entries-container');
+                container.innerHTML = '';
+                
+                selectedEntries.forEach(entry => {
+                    if (entry['spaced-subentry'] && entry['spaced-subentry'].length > 0) {
+                        entry['spaced-subentry'].forEach(subentry => {
+                            const div = document.createElement('div');
+                            div.className = 'spaced-subentry';
+                            div.textContent = subentry;
+                            
+                            // Add background color based on book
+                            const bookTitle = entry.citation.title;
+                            const color = bookColors[bookTitle] || '#f5f5f5';
+                            div.style.backgroundColor = color;
+                            
+                            container.appendChild(div);
+                        });
+                    }
+                });
+                
+                // Create book key with all books
+                const bookKey = document.getElementById('book-key');
+                bookKey.innerHTML = '';
+                
+                // Define all books with their authors
+                const allBooks = [
+                    {
+                        title: "The History of Sexuality: Volume One",
+                        author: "Michel Foucault"
+                    },
+                    {
+                        title: "Queer Phenomenology: Orientations, Objects, Others", 
+                        author: "Sara Ahmed"
+                    },
+                    {
+                        title: "Cruising Utopia: The Then and There of Queer Futurity",
+                        author: "José Esteban Muñoz"
+                    }
+                ];
+                
+                allBooks.forEach(book => {
+                    const bookItem = document.createElement('div');
+                    bookItem.className = 'book-item';
+                    
+                    const colorBox = document.createElement('div');
+                    colorBox.className = 'book-color';
+                    colorBox.style.backgroundColor = bookColors[book.title];
+                    
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'book-title';
+                    titleDiv.textContent = `${book.title} | ${book.author}`;
+                    
+                    bookItem.appendChild(colorBox);
+                    bookItem.appendChild(titleDiv);
+                    bookKey.appendChild(bookItem);
+                });
+                
+                // Add cross reference
+                const randomXref = xrefs[Math.floor(Math.random() * xrefs.length)];
+                document.getElementById('cross-reference').textContent = randomXref;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('entries-container').innerHTML = 'Error loading data';
+            }
+        }
+
+        function refreshPage() {
+            loadData();
+        }
+
+        // Load data when page loads
+        loadData();
+    </script>
+</body>
+</html>

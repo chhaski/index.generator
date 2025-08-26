@@ -14,38 +14,68 @@
             max-width: 800px;
             margin: 0 auto;
             box-sizing: border-box;
-        }
-        
-        .textual-artifact {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            border-radius: 4px;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
             position: relative;
-            overflow: hidden;
         }
         
-        .textual-artifact::before {
-            content: '';
-            position: absolute;
+        .glassy-overlay {
+            position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.4;
             background-image: 
                 repeating-linear-gradient(
                     45deg, 
                     transparent, 
-                    transparent 2px, 
-                    rgba(0, 0, 0, 0.02) 2px, 
-                    rgba(0, 0, 0, 0.02) 4px
+                    transparent 8px, 
+                    rgba(255,255,255,0.25) 8px, 
+                    rgba(255,255,255,0.25) 16px
+                ),
+                repeating-linear-gradient(
+                    -45deg, 
+                    transparent, 
+                    transparent 8px, 
+                    rgba(255,255,255,0.2) 8px, 
+                    rgba(255,255,255,0.2) 16px
                 );
+            filter: blur(4px);
+            z-index: 9999;
+        }
+
+        .diffused-texture {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
-            z-index: -1;
+            opacity: 0.3;
+            background-image: 
+                repeating-linear-gradient(
+                    0deg, 
+                    transparent, 
+                    transparent 4px, 
+                    rgba(255,255,255,0.15) 4px, 
+                    rgba(255,255,255,0.15) 8px
+                );
+            filter: blur(6px);
+            z-index: 9998;
+        }
+        
+        .textual-artifact {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+            z-index: 10000;
         }
         
         @media (max-width: 768px) {
@@ -117,11 +147,11 @@
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            padding: 6px 10px;
+            padding: 4px 8px;
             cursor: pointer;
             border-radius: 0;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 400;
             font-family: Arial, sans-serif;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -173,11 +203,11 @@
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            padding: 6px 10px;
+            padding: 4px 8px;
             cursor: pointer;
             border-radius: 0;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 400;
             font-family: Arial, sans-serif;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -197,12 +227,12 @@
             font-style: italic;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 400;
             color: #1f2937;
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            padding: 6px 10px;
+            padding: 4px 8px;
             border-radius: 0;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -240,6 +270,9 @@
     </style>
 </head>
 <body>
+    <div class="glassy-overlay"></div>
+    <div class="diffused-texture"></div>
+    
     <button class="refresh-button" onclick="refreshPage()">refresh</button>
     
     <div class="textual-artifact">

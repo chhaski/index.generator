@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Unboxing</title>
+    <link rel="icon" type="image/x-icon" href="SYSED002.ICO">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #c0c0c0;
+            color: #000;
+            line-height: 1.4;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Pixel Art Progress Map */
+        .progress-map {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            width: 200px;
+            z-index: 1000;
+            background: transparent;
+            padding: 20px 10px;
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .progress-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 1px;
+            background: #ccc;
+        }
+
+        .progress-fill {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            background: #000;
+            height: 0%;
+            transition: height 0.5s ease;
+        }
+
+        .stage-marker {
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .stage-marker:hover {
+            opacity: 0.7;
+        }
+
+        .stage-marker.active {
+            opacity: 1;
+        }
+
+        .stage-marker.completed {
+            opacity: 0.5;
+        }
+
+        .stage-label {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #000;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .stage-label:hover {
+            color: #333;
+        }
+
+        /* Stage positions - evenly spaced across full height */
+        .stage-1 { top: 10%; }
+        .stage-2 { top: 36.67%; }
+        .stage-3 { top: 63.33%; }
+        .stage-4 { top: 90%; }
+
+        /* Top-left header */
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-align: left;
+            color: #000;
+            z-index: 10000;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Main content */
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .stage {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 0;
+            opacity: 0.3;
+            transition: opacity 0.5s ease;
+            position: relative;
+        }
+
+        .stage.active {
+            opacity: 1;
+        }
+
+        .stage-title {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            text-align: left;
+            color: #000;
+            border-bottom: 1px solid #000;
+            padding-bottom: 0.5rem;
+        }
+
+        .stage-subtitle {
+            font-size: 0.9rem;
+            text-align: left;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        /* PDF viewer styles */
+        .pdf-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: #c0c0c0;
+            overflow: hidden;
+        }
+
+        .pdf-viewer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .stage-content {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: rgba(192, 192, 192, 0.9);
+            padding: 20px;
+            border: 1px solid #000;
+            z-index: 10;
+        }
+
+        .pdf-label {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            font-size: 0.5rem;
+            font-weight: bold;
+            color: #000;
+            background: rgba(192, 192, 192, 0.95);
+            padding: 1px 3px;
+            border: 1px solid #000;
+            line-height: 1.0;
+            max-width: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            z-index: 10;
+        }
+
+        .pdf-label .author {
+            font-size: 0.7rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .pdf-viewer div[id^="pdf-canvas"] {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        /* iOS-like scrollbar styling */
+        .pdf-viewer::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .pdf-viewer::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .pdf-viewer::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+
+        .pdf-viewer::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .progress-map {
+                width: 150px;
+            }
+            
+            .pdf-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
+            
+            .stage-label {
+                font-size: 9px;
+            }
+            
+            .stage-title {
+                font-size: 1.2rem;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top-left header -->
+    <div class="top-left">
+        <div style="font-weight: normal;">Index.Training</div>
+        <div class="subheader" style="font-size: 11px; color: #333;">mapping index data</div>
+    </div>
+
+    <!-- Pixel Art Progress Map -->
+    <div class="progress-map">
+        <div class="map-container">
+            <div class="progress-line"></div>
+            <div class="progress-fill" id="progress-fill"></div>
+            
+            <div class="stage-marker stage-1 active" data-stage="1">
+                <div class="stage-label">INPUT</div>
+            </div>
+            <div class="stage-marker stage-2" data-stage="2">
+                <div class="stage-label">PRE-PROCESSING</div>
+            </div>
+            <div class="stage-marker stage-3" data-stage="3">
+                <div class="stage-label">PROCESSING</div>
+            </div>
+            <div class="stage-marker stage-4" data-stage="4">
+                <div class="stage-label">OUTPUT</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Stage 1: Input -->
+        <section class="stage active" id="stage-1">
+            <div class="pdf-container">
+                <div class="pdf-viewer">
+                    <div id="pdf-canvas-1">
+                        <div class="pdf-label">Updating to Remain the Same: Habitual New Media<br><span class="author">Wendy Hui Kyong Chun</span></div>
+                    </div>
+                    <div id="pdf-canvas-2">
+                        <div class="pdf-label">Code and Clay, Data and Dirt: Five Thousand Years of Urban Media<br><span class="author">Shannon Christine Mattern</span></div>
+                    </div>
+                    <div id="pdf-canvas-3">
+                        <div class="pdf-label">The Moment of Complexity: Emerging Network Culture<br><span class="author">Mark C. Taylor</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stage-content">
+                <h1 class="stage-title">INPUT</h1>
+                <p class="stage-subtitle">Raw indexes from three books</p>
+            </div>
+        </section>
+
+        <!-- Placeholder sections for other stages -->
+        <section class="stage" id="stage-2">
+            <h1 class="stage-title">PRE-PROCESSING</h1>
+            <p class="stage-subtitle">Annotated scans with strikethroughs</p>
+            <p style="text-align: center; margin-top: 2rem; color: #666;">(Waiting for annotated scans...)</p>
+        </section>
+
+        <section class="stage" id="stage-3">
+            <h1 class="stage-title">PROCESSING</h1>
+            <p class="stage-subtitle">Vector assignment, spacing, and t-SNE reduction</p>
+        </section>
+
+        <section class="stage" id="stage-4">
+            <h1 class="stage-title">OUTPUT</h1>
+            <p class="stage-subtitle">Static poem and interactive visualization</p>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        // Initialize progress map
+        const progressFill = document.getElementById('progress-fill');
+        const stageMarkers = document.querySelectorAll('.stage-marker');
+        
+        // PDF loading
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        
+        const pdfFiles = [
+            'data/Chun_unprocessed.pdf',
+            'data/Mattern_Unprocessed.pdf',
+            'data/Taylor_Unprocessed.pdf'
+        ];
+        
+        async function loadPDF(pdfPath, containerId) {
+            try {
+                console.log('Loading PDF:', pdfPath);
+                const loadingTask = pdfjsLib.getDocument(pdfPath);
+                const pdf = await loadingTask.promise;
+                const container = document.getElementById(containerId);
+                
+                console.log(`PDF loaded: ${pdf.numPages} pages`);
+                
+                // Clear existing content
+                container.innerHTML = '';
+                
+                // Load first 8 pages only
+                const maxPages = Math.min(8, pdf.numPages);
+                const maxWidth = 200; // Maximum width for each page
+                const maxHeight = 300; // Maximum height for each page
+                
+                for (let pageNum = 1; pageNum <= maxPages; pageNum++) {
+                    console.log(`Rendering page ${pageNum}`);
+                    const page = await pdf.getPage(pageNum);
+                    
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    
+                    // Calculate scale to fit within bounds
+                    const viewport = page.getViewport({ scale: 1.0 });
+                    const scale = Math.min(maxWidth / viewport.width, maxHeight / viewport.height);
+                    const scaledViewport = page.getViewport({ scale: scale });
+                    
+                    canvas.height = scaledViewport.height;
+                    canvas.width = scaledViewport.width;
+                    canvas.style.border = '1px solid #000';
+                    canvas.style.marginRight = '2px';
+                    canvas.style.marginBottom = '2px';
+                    canvas.style.display = 'inline-block';
+                    canvas.style.verticalAlign = 'top';
+                    
+                    const renderContext = {
+                        canvasContext: context,
+                        viewport: scaledViewport
+                    };
+                    
+                    await page.render(renderContext).promise;
+                    container.appendChild(canvas);
+                    console.log(`Page ${pageNum} rendered successfully`);
+                }
+            } catch (error) {
+                console.error('Error loading PDF:', pdfPath, error);
+                const container = document.getElementById(containerId);
+                container.innerHTML = `<div style="color: red; padding: 20px; border: 1px solid red;">Error loading PDF: ${pdfPath}</div>`;
+            }
+        }
+        
+        // Load all PDFs
+        window.addEventListener('load', () => {
+            loadPDF(pdfFiles[0], 'pdf-canvas-1');
+            loadPDF(pdfFiles[1], 'pdf-canvas-2');
+            loadPDF(pdfFiles[2], 'pdf-canvas-3');
+        });
+        
+        // Simple scroll-based stage activation
+        const stages = document.querySelectorAll('.stage');
+        const stageNames = ['INPUT', 'PRE-PROCESSING', 'PROCESSING', 'OUTPUT'];
+        
+        function updateActiveStage() {
+            const scrollPosition = window.scrollY + window.innerHeight / 2;
+            
+            stages.forEach((stage, index) => {
+                const stageTop = stage.offsetTop;
+                const stageBottom = stageTop + stage.offsetHeight;
+                
+                if (scrollPosition >= stageTop && scrollPosition < stageBottom) {
+                    stage.classList.add('active');
+                    
+                    // Update progress fill
+                    const progress = (index / (stages.length - 1)) * 100;
+                    progressFill.style.height = progress + '%';
+                    
+                    // Update stage markers
+                    stageMarkers.forEach((marker, markerIndex) => {
+                        if (markerIndex < index) {
+                            marker.classList.remove('active');
+                            marker.classList.add('completed');
+                        } else if (markerIndex === index) {
+                            marker.classList.add('active');
+                            marker.classList.remove('completed');
+                        } else {
+                            marker.classList.remove('active', 'completed');
+                        }
+                    });
+                } else if (scrollPosition >= stageBottom) {
+                    stage.classList.remove('active');
+                } else {
+                    stage.classList.remove('active');
+                }
+            });
+        }
+        
+        // Add click handlers for stage markers
+        stageMarkers.forEach((marker, index) => {
+            marker.addEventListener('click', () => {
+                const targetStage = stages[index];
+                targetStage.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        window.addEventListener('scroll', updateActiveStage);
+        window.addEventListener('resize', updateActiveStage);
+        
+        // Initialize
+        updateActiveStage();
+    </script>
+</body>
+</html>

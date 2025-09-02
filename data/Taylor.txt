@@ -1,0 +1,2514 @@
+abstract expressionism, 131
+
+academic freedom, 242, 255, 265
+
+]]Academic Keywords (Nelson and Watt), 250
+
+adaptation: 
+of ant colony, 163
+//in Darwinian evolution, 178, 179, 180, 181
+in swarm behavior, 156 
+See also complex adaptive systems
+
+aleatory aggression, 136, 137
+
+aleatory phenomena: 
+in complex adaptive systems, 169, 291n. 56 
+creative appropriation of, 137 
+in emergent systems, 155 
+//Hegel’s system and, 93
+of postmodern architecture, 37 
+in quantum physics, 116 
+undecidability and, 97 
+See also chance
+
+algorithmic information theory, 138-39, 166-67, 171, 184
+
+allelomimesis, 153
+
+//Allen, Herbert A., 10, 259-60
+
+]]Altarity (Taylor), 12
+
+alterity, 48
+
+ant colonies, 152, 153, 162-65. 
+See also Aunt Hillary; swarms
+
+]]Ant Fugue (Escher), 164
+
+//Apollinaire, Guillaume, 74
+
+]]Arcadia (Stoppard), 285n. 2
+
+]]The Archaeology of Knowledge (Foucault), 55
+
+architecture, 14 
+grids in, 20-23, 25-28, 32-34, 35, 41
+network culture and, 14, 20, 40, 46 
+networks in, 20-23, 41
+religion and, 7 
+See also Gehry, Frank; Le Corbusier; Mies van der Rohe; Venturi, Robert
+
+]]Archive Fever (Derrida), 63-64
+
+Aristotle: 
+Cuvier’s morphology and, 175 
+Darwinian evolution and, 177, 179 
+on education, 292-93N. 17
+
+art: 
+avant-garde, 7-8, 31, 32-34, 245, 254 
+as business, 9, 45, 243-45, 294-95n. 40 
+Derrida’s ambivalence toward, 7
+high vs. low, 243-45
+Kant on, 31, 74, 84, 131, 243, 253, 254 
+modernism in, 31-32, 74 
+religion and, 7, 9, 13, 2453
+self-reflexivity in, 74, 75, 125-126 
+technology appropriated by, 8-9, 294-95n. 40 
+Wilson on, 60
+See also Close, Chuck; Magritte, René Tansey, Mark; Warhol, Andy
+
+artificial life, 145-46, 152-53, 285n. 3
+
+assembly line, 28-29, 30; 
+Lévi-Strauss’s structures and, 52; 
+modern university and, 240-41, 257
+
+]]At Home in the Universe (Kauffman), 24-25, 272n. 5
+
+//Atlan, Henri, 16, 135-37, 139, 167, 169
+
+]]AT&T Building (Johnson), 38, 40
+
+attractors, 147, 185, 186, 191, 283n. 36
+
+Augustine, 200-202, 207, 231
+
+//Aunt Hillary, 163-64, 169, 181, 194, 205, 220, 226
+
+]]Autobiography (Darwin), 178
+
+autocatalytic sets, 88, 186, 187
+
+automobile, 4, 28, 29, 36, 44
+
+]]Autopoiesis and Cognition (Maturana and Varela), 89-90
+
+autopoietic systems, 15, 88, 89-93 
+constructivism and, 277n. 38 
+symmetry-breaking and, 150
+undecidability and, 97
+
+avant-garde, 7-8, 31, 32-34, 245, 254
+
+]]“The Avant-Garde and Kitsch” (Greenberg), 244
+
+//Babbage, Charles, 103-4
+
+//Bach, Johann Sebastian, 157-59, 161
+
+//Bak, Per, 148, 149, 168, 190, 259, 283n. 43
+
+//Barthes, Roland, 131
+
+//Bataille, Henry, 280n. 33
+
+//Bateson, Gregory, 105, 204
+
+//Baudrillard, Jean, 15, 55, 65-72; 
+//Derrida and, 65-66, 94, 101; 
+//Foucault and, 65-66, 75; 
+//Hofstadter’s recursive images and, 78; 
+paralogic and, 101; 
+//Tansey’s study of, 12; 
+//on terrorism of the code, 69, 82; 
+//Warhol and, 8. 
+//See also signs simulacra; simulation
+
+]]Bauhaus, 8, 33-34, 294n. 40
+
+//Belousov-Zhabotinsky reaction, 283n. 38
+
+//Benjamin, Walter, 131
+
+//Bennett, Charles, 118, 280-81n. 44
+
+]]Berlin, University of, 17, 240, 245-46, 255
+
+]]Berlin Wall, 5, 14, 20, 49, 235
+
+]]Beyond the Pleasure Principle (Freud), 63
+
+bifurcation point, 150; at instant of decision, 62; 
+morphological types, 193
+
+//Big Self-Portrait (Close), 127, 128, 129, 131
+
+]]Bildung, 246, 247, 292n. 14
+
+binary oppositions: 
+of assembly line, 29; 
+of Baudrillard’s arguments, 71-72; 
+of capitalism, 30;
+Close’s paintings and, 129; 
+of Cold War, 23, 49-50, 52; 
+of form vs. matter, 105—6, 223-24, 230; 
+in higher education, 242-43, 269; 
+of information and noise, 100-101; 
+of Le Corbusier's argument, 26-27, 29, 273n. 10; 
+in Lévi-Strauss’s structures, 52; 
+of madness and reason, 62; 
+of mind/body dualism, 29, 106, 223-24, 226; 
+of screening, 200; 
+transformed by network culture, 72, 230 
+undecidability and, 94, 96-97; 
+in Venturi’s critique of modernism 36, 273n. 21; 
+of Western metaphysics, 104-55
+Zeno of Elea and, 160. 
+See also dialectical logic
+
+biology. See life
+
+bits, 109, 129
+
+//Boltzmann, Ludwig, 114-15
+
+]]Bonaventura, 200
+
+//Boole, Charles, 185
+
+]]Boolean networks, 147-48, 185-86, 190-91
+
+//Born, Max, 116
+
+//Bourdieu, Pierre, 244-45
+
+brain: 
+coadaptation with culture, 218, 226, 227-30
+complex dynamics of, 204-5, 226-27; 
+new cells in adult, 228; 
+in vat, 222, 226. 
+See also mind
+
+//Bricomont, Jean, 59
+
+//Brown, Denise Scott, 34
+
+//Burroughs, William, 288—89n. 26
+
+business: 
+art and, 9, 45, 243-45, 294-95n. 40; 
+complexity theory and, 272n. 5; 
+education and, 17, 234-39, 260-61, 291--92n. 3; 
+Kant’s vision of university and, 242, 247, 258. 
+See also capitalism; economy
+
+//Byron, Lord, 104
+
+calculation, mechanical: 
+Hegel on, 81-82; 
+Heidegger on, 82-83, 84. 
+See also computers
+
+//Calvino, Italo, 99, 111, 114, 151, 214
+
+//Camus, Albert, 51
+
+canon: 
+musical, 158-59; 
+Western, 48
+
+capitalism:
+architecture and, 34; 
+art and, 8-9; 
+Baudrillard on, 68; 
+Cold War and, 5, 23, 49-50;
+Darwinism and, 16, 179-80; 
+in Moravec’s utopia, 223; 
+new forms of, 4, 20; 
+rationality and, 31; 
+social criticism of 1960s and, 50-51; 
+as total way of life, 29-30. 
+See also business; economy; industrial revolution; industrial society
+
+//Carnap, Rudolf, 95
+
+//Cartesian dualism, 223. See also dualism
+
+]]Cartesian rationalism: 
+]]Derrida on, 62; 
+]]grids and,30
+
+//Castells, Manuel, 272n. 2
+
+//Casti, John, 16, 24, 139, 149
+
+catastrophe theory, 13-14, 40, 53
+
+catastrophists, 174
+
+]]Catia software, 14, 41
+
+causality: 
+in assembly line, 29; 
+in autopoietic systems, 93; 
+chance and, 149; 
+in chaotic systems, 13, 24; 
+in complex systems, 143, 218; 
+in Darwinism, 182; 
+in hive, 284n. 60; 
+in Lévi-Strauss’s system, 52; 
+in Newtonian physics, 79, 115; 
+in nonlinear systems, 165; 
+in organism vs. mechanism, 85; 
+self-organized criticality and, 148-49; 
+in teleonomic processes, 169. 
+See also determinism
+
+cellular automata, 136, 143-46, 147; 
+]]Close’s paintings and, 16; 
+]]swarms modeled by, 152, 153-54
+
+]]Center for Technology in the Arts and Humanities, 258
+
+central dogma of molecular biology, 228-29
+
+certainty, dream of, 115
+
+//Chaitin, Gregory, 138-39
+
+chance:
+in Darwinian evolution, 177, 182, 193-94;
+in Hegel’s systern, 93; self-organization and, 137, 149; undecidability and, 97. 
+See also aleatory phenomena; probability
+
+]]Changeux, Jean-Pierre, 227-28
+
+chaos, 13-14, 24; 
+attractors in, 147, 191, 283n. 36;
+bifurcation point and, 150; 
+in cellular automata, 146; 
+in coevolving systems, 191; 
+in cultural systems, 57; 
+in dissipative structures, 121; 
+in genomic systems, 25; 
+humanities and, 14, 272n. 3; 
+Lévi-Strauss’s rejection of, 51; 
+in networks, 147, 148, 154; 
+Newtonian physics and, 79; 
+origin of life and, 187; 
+probability and, 11, 120; 
+sensitivity to initial conditions, 13, 165; 
+von Bertalanffy on, 140-41. 
+See also edge of chaos
+
+//Chaplin, Charlie, 28
+
+//Chashnik, Ilia, 294n. 40
+
+//Chomsky, Noam, 200, 215
+
+//Christensen, Clay, 238
+
+]]Cicero, 105
+
+]]The City of the To-morrow (Le Corbusier), 25-26, 272n. 6
+
+//Clausius, Rudolph, 113
+
+]]Close, Chuck, 16, 125-34, 231; 
+cellular automata and, 16, 143, 145, 152; 
+emergence and, 16, 134, 143, 147, 194, 231; 
+fugues and, 158; 
+Gehry’s architecture and, 41; 
+grids used by, 16, 127, 129-34; 
+realism of, 127-29; 
+self-reflexivity of, 125-27
+
+closed systems, 79; 
+autopoietic, 91, 92, 93; 
+entropy of, 113, 114, 119; 
+heat flow in, 112; 
+undecidability and, 97
+
+coadaptive complex systems, 169-71; 
+of brain and environment, 227-28; 
+of brain and mind, 22
+evolution in (see coevolution); 
+of nature and culture, 225-26; 
+in new educational environment, 268
+
+codes: 
+]]Baudrillard on, 69-70, 71, 82; 
+]]Derrida on, 64; 
+]]Lévi-Strauss on, 53-54
+
+coevolution, 156, 171, 188-91, 192-93, 287N. 50; 
+of brain and culture, 218; 
+of brain and mind, 229-30; 
+of genes and culture, 216-17, 225, 22, 289—90n. 30
+
+]]“Cogito and the History of Madness” (Derrida), 61
+
+]]Cold War: 
+]]polarities of, 5, 15, 23, 49-50, 525 
+]]university funding and, 250; 
+]]World Wide Web and, 4
+
+//Collis, David, 238-39, 291-92n. 3
+
+combinatorial optimization, 147-48
+
+communication: 
+in ant colony, 163; 
+in autopoietic social systems, 90-91; 
+in swarm networks, 154-55. 
+See also language
+
+communication technology: 
+complexity and, 138; 
+Derrida on, 65, 251-52, 253; 
+memes spread by, 219; 
+network culture and, 14, 20; 
+]]Venturi’s postmodernism and, 14, 36, 38. 
+See also technology
+
+communication theory. See information theory
+
+complex adaptive systems, 16, 143, 156, 164-71;
+brain as, 226; 
+coadaptive (see coadaptive complex systems); 
+cognitive, 204-5, 206-7; 
+culture as, 216, 289—90n. 30; 
+in educational transformation, 17, 265, 267, 268; 
+evolution of, 143, 156, 167, 171—72, 184, 206; 
+//Gell-Mann’s analysis of, 166-68, 169, 171, 189-90, 205—7, 282n. 17;
+genome as, 188; 
+]]Global Education Network as, 267-68; 
+//vs. Hegelian system, 291n. 56; 
+memeplexes as, 218, 219; 
+of myths, 212; 
+self-conscious, 208—10; 
+theories as, 206, 211, 288n. 18. 
+See also emergent phenomena; far-from-equilibrium systems; self-organizing systems
+
+complexity, 12-14, 24-25, 141-43; 
+algorithmic, 138-39, 166-67, 184; 
+in cellular automata, 146;
+//in Close’s art, 126; 
+defined, 137, 138-39; 
+drive toward increase in, 137, 193, 287n. 56; 
+as emergent phenomenon, 23-24; 
+etymology of, 138, 282n. 17; 
+fractal geometry and, 41; 
+//Hegel’s system and, 49; 
+information and, 100; 
+//Kant on, 85; 
+noise in creation of, 15, 103, 121-23, 134, 135-37, 163, 167; 
+nontotalizing systems and, 65; 
+in postmodern architecture, 35, 37, 38, 40, 41, 42, 44; 
+reductionism and, 60; 
+self-organized criticality and, 148; 
+simplicity and, 54, 137-38, 142, 199, 221; 
+structuralism and, 54; 
+in swarm behavior, 153-54 
+thermodynamics and, 112; of thinking, 197-98; 
+//Wilson on, 285n. 3.
+See also moment of complexity
+
+]]Complexity and Contradiction (Venturi), 14, 35, 273n. 21
+
+computers: 
+cellular automata and, 143, 145; 
+complexity disclosed by, 138; 
+as disembodied minds, 221; 
+origins of, 103-4, 1073 
+thermodynamics of, 117-18. 
+See also calculation, mechanical
+
+//Condé Nast building (Gehry), 44-46, 257
+
+]]Confessions (Augustine), 200-202
+
+]]The Conflict of the Faculties (Kant), 17, 240-43, 251, 256, 292n. 8
+
+connectionist networks, 154-55
+
+consciousness: 
+complex adaptive systems and, 168, 208-210; 
+information processing and, 203,
+207, 208-210, 212, 230; 
+self-reflexivity and, 8, 210. 
+See also self-consciousness; unconscious
+
+]]Consilience (Wilson), 59—60
+
+constructivism, 15, 54-55, 56—57, 58; 
+//Derridean deconstruction and, 64; 
+emerging network culture and, 72; 
+frog perception and, 277n. 38; 
+//Heidegger's critique of technology and, 83; 
+//of Le Corbusier about geometry, 272n. 6; 
+scientists vs. humanists and, 59, 60, 225
+
+]]Constructivism, Russian, 8, 294n. 40
+
+//Conway, John, 144
+
+cooperative behavior. See ant colonies; swarms
+
+cosmopedia, 220, 221
+
+//Cottingham, Robert, 127-28
+
+]]Coup de dés (Mallarmé), 149
+
+crab canon, 159
+
+creationists, 174, 175
+
+//Crick, Francis, 53, 228-29
+
+critical theory: 
+conflicts of 1968 and, 50, 66; 
+Derrida on, 254-55; 
+emergency of, 48, 155; 
+information theory and, 15; 
+scientists’ attack on, 58-59; 
+technological change and, 66
+
+]]Critique of Judgment (Kant), 31, 84, 2.43
+
+]]Critique of Practical Reason (Kant), 84
+
+]]Critique of Pure Reason (Kant), 84
+
+//Crumey, Andrew, 125, 126-27, 151, 152, 153, 195
+
+]]Cube with Magic Ribbons (Escher), 161
+
+cubism, 31, 36
+
+cultural evolution, 216-19, 220, 224-25, 228, 229,
+289—9on. 30
+
+culture wars, 48, 60
+
+culturgens, 216. See also memes
+
+//Cuvier, Georges, 174-75
+
+cybernetics, 15, 107 
+autopoietic systems and, 88;
+feedback in, 107, 143; 
+posthuman condition and, 106; 
+//Prigogine's theories and, 15, 79; 
+self-reflexivity and, 88, 277n. 36; 
+systems theory and, 141
+
+cyberpunk writers, 216, 221
+
+//Darwin, Charles, 16, 172, 173, 174, 176
+
+individualism of, 177, 181-82, 188
+
+//Davis, Erik, 105
+
+//Dawkins, Richard, 16, 180-81, 185; 
+//on French philosophers, 59; 
+//on memes, 217-19, 228-29; 
+//Platonic forms and, 200, 286n. 30
+
+//Deacon, Terrence, 211, 214-16, 217, 226-27, 229-30
+
+]]Décalomanie (Magritte), 88
+
+decision, instant of: 
+complex systems and, 149, 150, 151; 
+//Derrida and, 61, 62, 63, 64. 
+See also undecidability
+
+decoding of the real, 69-70
+
+deconstruction, 15; 
+emerging network culture and, 72, 155; 
+//Foucaultian constructivism and, 64;
+//Hegelianism rejected by, 48; 
+religion and, 7;
+scientists’ attack on, 59; 
+speech/writing distinction and, 104-5; 
+structuralism and, 55;
+technology and, 64-65, 253; 
+in university, 254.
+See also Derrida, Jacques
+
+//Deleuze, Gilles, 80
+
+//de Man, Paul, 12
+
+democracy: 
+evolution toward, 287n. 60; 
+the grid and, 30
+
+//Deneubourg, Jean-Louis, 153
+
+//Dennett, Daniel, 16, 207, 228
+
+//Depew, David, 142, 175, 179, 180
+
+//Derrida, Jacques, 15, 61-66; on Bataille, 280n. 33;
+//Baudrillard and, 65-66, 94, 101; 
+on criticism, 254-55; 
+emerging network culture and, 72; 
+on Foucault, 61-63, 64; 
+//Gédel invoked by, 94, 95, 96-97; 
+//on Hegel, 61, 62, 94-95, 97, 278nn. 50,
+51, 280n. 33; 
+//on Mallarmé, 94-95; 
+on mourning, 275-76n. 47; 
+scientists’ attacks on, 58, 60;
+on speech vs. writing, 104-5; 
+structuralism and, 55, 61; 
+//Tansey’s study of, 12; 
+on technology, 63, 64-65, 231, 251-53; 
+theological significance of, 6-7; 
+on the university, 251, 253-55,
+294n. 36. 
+See also deconstruction
+
+//Dery, Mark, 105
+
+//Descartes, René: 
+//Heidegger on, 83; 
+//on innate ideas, 200; 
+//logical system of, 134; 
+//search for certainty, 115. 
+//See also Cartesian dualism; Cartesian rationalism
+
+]]de Stijl, 8, 31, 294n. 40
+
+determinism: 
+in autopoietic and dialectical systems, 93; 
+in chaos theory, 13; 
+in classical physics, 79, 115; 
+decisions and, 150; 
+genetic, 225, 289—90n. 30; 
+probabilities and, 16. 
+See also causality
+
+dialectical logic: 
+//Derrida’s critique of, 63; 
+//of Hegel 194; 
+of identity and difference, 91-92; 
+//of Lamarck, 86; 
+of part and whole, 90; 
+]]of the Strip, 37; 
+undecidability and, 94, 97; 
+vs. webs and networks, 1-12. 
+See also binary oppositions
+
+différance, 97, 279n. 14
+
+difference: 
+autopoietic systems and, 91-92; 
+complexity and, 137; 
+//Derrida on, 97, 105, 279n. 14
+]]Enlightenment principles and, 31; 
+//Hegelian understanding of, 48-49, 93; 
+information and 100, 110, 114, 119, 139-40; 
+in network culture, 72; 
+noise and, 15, 100, 101, 123, 137; 
+postmodernism and, 1; 
+repressed by totalizing system 47—48, 155 
+screens and, 200; 
+structuralism and, 62; 
+in teleological structures, 87; 
+in thermodynamics, 113, 114; 
+undecidability and, 97, 98
+
+]]Diophantus, 284n. 2
+
+discursive practices, 57-58
+
+]]Disfiguring (Taylor), 9
+
+]]Dissemination (Derrida), 94, 278n. 51
+
+dissipative structures, 15-16, 120, 121, 136, 184
+
+distance education, 256, 265. See also e-Ed
+
+distributed networks. See neural networks; parallel computing
+
+]]DNA, 53; 69, 180-81, 215, 216
+
+]]Doubting Thomas (Tansey), 12
+
+dualism, 29, 105-6, 223-24, 226, 230
+
+//Duchamp, Marcel, 8
+
+dynamical systems, 13
+
+ecological niches, 179, 190
+
+economy: 
+as adaptive process, 165; 
+of production vs. reproduction, 66, 68, 71, 100. 
+See also business; capitalism
+
+//Eddington, Arthur, 114
+
+edge of chaos: 
+attractor at, 191; in coevolving systems, 191; Cold War at, 49; complexity and, 14, 16, 23, 134, 146, 165; emergence at, 143; Gehry’s architecture and, 46; information and 100, 110; 
+life existing at, 25, 123, 185; 
+in network culture, 202, 214, 231, 265; 
+thinking at, 198; undecidability and, 97; 
+//Venturi’s postmodernism at, 37. 
+See also chaos
+
+education. See e-Ed; higher education; university
+
+e-Ed, 234-35, 236-38; 
+author's experiments with, 9-10, 257-58; 
+faculty resistance to, 17, 238-39, 256, 258-59, 265-66; 
+]]Global Education Network, 10, 17, 260-65, 266-68, 295n. 43; 
+intellectual property rights in, 263-64, 295n. 45
+
+//Einstein, Albert, 116
+
+//Eliot, Charles William, 249
+
+]]Emergence (Holland), 16, 147
+
+emergent phenomena: 
+//Adlan on, 136-37; 
+in auto-catalytic sets, 187; 
+in Boolean networks, 147-48, 185-86; 
+in cellular automata, 143-46;
+//in Close's paintings, 16, 134, 143, 147, 194, 2315
+complexity as, 137; 
+in complex systems, 23-24, 142, 143, 164, 184; 
+critical emergency and, 155;
+//in Crumey’s fiction, 151-52; 
+in evolution, 193;
+//Foucault on, 17; 
+//in Gehry’s architecture, 44; 
+//in Goodwin's morphology, 183, 184, 192; 
+//Kauffman’s work on, 146-48; 
+at moment of decision, 151; 
+in open systems, 93; 
+schemata as, 167; 
+in self-organizing systems, 2053 
+in swarms, 153-54, 284n. 60. 
+See also network culture; self-organizing systems
+
+energy, thermodynamic, 112, 13
+
+enframing, 83
+
+//Engels, Friedrich, 100, 179
+
+]]Enlightenment: Newtonian physics and, 79,
+84; postmodernism and, 59; rationalism of,
+30-31
+
+enlightenment, at moment of complexity, 73, 98
+
+entelechy, 177
+
+]]Entre le cristal et la fumée (Atlan), 136, 137, 169
+
+entropy: 
+arrow of time and, 114, 16, 117, 118-203
+]]Bataille’s analysis of consumption and, 28on. 33; 
+]]Calvino’s invocation of, 111, 114; 
+complexity and, 100; 
+]]Hegel’s dialectic and, 93; 
+information and, 111-12, 114, 118, 120-21, 280-81n. 44, 281n. 50; 
+]]Maxwell’s demon and, 117, 118, 280-81n. 44; 
+molecular basis of, 115; 
+probability and, 112, 119, 120. 
+See also negentropy; second law of thermodynamics
+
+]]Epimenides, 96, 276n. 2
+
+equilibrium: 
+after bifurcation point, 150; 
+of autopoietic systems, 93; 
+]]of Cold War system, 49;
+entropy and, 93; 
+feedback and, 143; 
+]]Gehry’s architecture and, 44; 
+network culture and, 202;
+]]in Newtonian systems, 80; 
+punctuated, 193; 
+of satisfaction with text, 198; 
+thermodynamic, 112, 113, 114, 115, 135; 
+undecidability and, 97; 
+]]Venturi on, 37. 
+See also far-from-equilibrium systems
+
+]]Escape Velocity (Dery), 105
+
+]]Escher, M. C., 159, 161
+
+essentialism: 
+constructivists’ critique of, 58, 60;
+]]Darwin’s suspicion of, 176, 177, 1793 
+genetic, 225
+
+]]Estes, Richard, 127
+
+]]Euclidean geometry, 14, 26, 40, 41
+
+evolution: 
+of ant colony, 163; 
+of complex adaptive systems, 143, 156, 167, 171-72, 184, 206; 
+toward complexity, 137, 175-76, 177; 179, 193, 287n. 56; 
+constraints acting in, 224-25; 
+cultural, 216-19, 220, 224-25, 228, 229, 289—90n. 30;
+far-from-equilibrium systems, 150; 
+]]Kurzweil’s technological fantasy of, 221, 222; 
+]]Lamarck’s theories, 86, 175-76, 177, 179, 193, 229; 
+of languages, 215; 
+morphology and, 176, 182-84, 192, 193; 
+self-organization in, 172, 184, 186, 190-91, 192-93; 
+social and political, 194, 287n. 60;
+structuralism and, 54, 183-84; 
+as teleonomic process, 169, 193, 194; 
+as theological issue, 172-74, 175, 176, 177, 180, 194. 
+See also coevolution; Darwin, Charles; natural selection
+
+evolutionary psychology, 289n. 30
+
+exformation, 203
+
+]]Fable of the Bees (Mandeville), 179
+
+]]The Fair Captive (Magritte), 76
+
+far-from-equilibrium systems, 14, 16, 143, 171; 
+between academic disciplines, 265; 
+cultural, 57, 214; 
+dissipative structures in, 120, 121, 184;
+]]Gehry’s architecture and, 46; 
+vs. Newtonian systems, 80; 
+symmetry-breaking in, 150; 
+thinking as, 198
+
+fashion, 70-71
+
+feedback and feed-forward loops: 
+in autopoietic systems, 93; 
+in complex adaptive systems, 165, 168, 206, 207; 
+in connectionist networks, 154-55; 
+cybernetics and, 15, 107; 
+in far-from-equilibrium systems, 143; 
+in gene regulation, 185; 
+information revolution and, 106; 
+in mechanical systems, 107; 
+of nature and culture, 225
+
+]]Fermat’s Last Theorem, 160—61, 284-85n. 2
+
+//Fichte, Johann Gottlieb, 240
+
+fitness, 179, 190-91, 197, 207
+
+//Flaubert, Gustave, 2.45
+
+]]Force of Habit (Magritte), 74
+
+]]“Force of Law” (Derrida), 274n. 21
+
+]]Ford, Henry, 2829730
+
+“form is function,” 294n. 40
+
+form vs. matter, 105-6, 223-24, 230. See also Platonic forms
+
+//Foucault, Michel, 15, 55-58, 72; 
+//Baudrillard and, 65-66, 75; 
+//on “death of the author,” 131; 
+//Derrida’s critique of, 61-63, 64; 
+Jacob's influence on, 27711. 30; 
+//on Magritte, 73, 74-75; 
+//scientists’ attacks on, 58-59, 60; 
+//Tansey’s study of, 12
+
+//Fourier, Jean-Joseph, 112, 113
+
+fractal geometry, 40-41; 
+autopoietic systems and, 92; 
+myths and, 212; 
+of recursive images, 77
+
+]]The Fractal Geometry of Nature (Mandelbrot), 40-41
+
+//Freud, Sigmund, 63-64
+
+]]“Freud and the Scene of Writing” (Derrida), 63
+
+//Friedman, Thomas L., 23
+
+fugue, 158, 159, 161, 194
+
+]]“Fumées” (Apollinaire), 74
+
+]]Game of Life, 144-45, 147, 152
+
+game theory, 141
+
+//Gardner, James, 229
+
+//Gehry, Frank, 14, 20, 22, 4045, 47, 269; 
+//biological morphology and, 193;
+//Close compared to,  132; 
+//Condé Nast building, 44-46, 257; 
+//emergence and, 147
+
+//Gell-Mann, Murray: 
+//on complex adaptive systems, 166-68, 169, 171, 189-90, 205-7, 282n. 17; 
+//on cultural evolution, 216; 
+//on ecological communities, 190; 
+//on environment of genotype, 189-90; 
+//Kauffman and, 184, 287n. 56; 
+//on theories, 206, 211, 288n. 18
+
+]]GEN. See Global Education Network
+
+gender: 
+capitalism and, 30; 
+Le Corbusier's modernism and, 273n. 10
+
+]]General System Theory (von Bertalanffy), 140
+
+genes: 
+as complex adaptive system, 188; 
+cultural evolution and, 216—17, 225, 228, 289—9on. 30;
+environment and, 189-90; 
+evolution and, 180-81, 182; 
+holism and, 187; 
+memes and, 217, 218, 228-29; 
+networks of, 25, 185, 188
+
+]]Genes, Mind, and Culture (Lumsden and Wilson), 216
+
+genetic algorithms, 146
+
+genetic code: 
+//Baudrillard on, 69; 
+//Derrida on, 64:
+//Lévi-Strauss on, 53-54
+
+genetic determinism, 225, 289n. 30
+
+//Geoffroy Saint-Hilaire, Etienne, 175, 176
+
+geometry. See Euclidean geometry; fractal geometry; grids
+
+//Gibbs, Josiah Willard, 19
+
+//Glass, Philip, 127
+
+]]Global Education Network (GEN), 10, 17, 260-65, 266—68; 
+]]advisory board, 261-62, 295n. 43; 
+]]as complex adaptive system, 267-68
+
+globalization, 23, 194, 202, 214; 
+education and, 234, 236; 
+of the self, 232
+
+//Gnostics, contemporary, 223
+
+]]God: 
+]]Augustine’s search for, 200, 201, 202; 
+]]as clockmaker, 85; 
+]]creationism and, 175, 176;
+]]proofs of existence, 172-73; 
+]]simplicity of monotheism, 138. 
+]]See also religion
+
+]]Gédel, Escher, Bach (Hofstadter), 75-77, 157-64
+
+//Gédel, Kurt, 95
+
+]]Gédel’s theorem: Derrida on, 94, 95, 96-97; Hofstadter on, 15, 76, 159; Turing and, 107
+
+//Goodwin, Brian, 16, 88, 182-84, 191-92
+
+//Gould, Elizabeth, 228
+
+//Gould, Stephen Jay, 16, 177, 181, 193, 289n. 30
+
+//Greenberg, Clement, 74, 244
+
+grids: 
+of cellular automata, 143; 
+//in Close’s paintings, 16, 127, 129-34; 
+]]Enlightenment principles and, 30; 
+//Foucault’s constructivism and, 56; 
+//Gehry’s use of, 41; 
+//in Hegel’s analysis of mechanism, 82; 
+higher education and, 257, 266; 
+of industrial capitalism, 30; 
+in modernism, 25-26, 27-28, 31-32, 353 
+vs. networks, 11-12, 20-233 in structuralism, 52, 62, 274n. 3; 
+//Venturi’s rejection of, 35, 37, 38
+
+//Gross, Charles, 228
+
+//Gross, Paul, 58-59
+
+//Grove, Andy, 259, 295n. 42
+
+//Guattari, Felix, 80
+
+]]Guggenheim Museum Bilbao (Gehry), 22, 40-44, 46
+
+//Hamilton, William, 289n. 30
+
+//Hart, Kevin, 2
+
+//Hayles, N. Katherine, 105-106, 277nn. 36, 38, 281n. 50
+
+heat. See thermodynamics
+
+//Hegel, G. W. EF: 
+//complex adaptive systems and, 291n. 56; 
+//Derrida on, 61, 62, 94-95, 97, 278nn. 50, 51, 280n. 33; 
+//Kierkegaard and, 6, 278n. 50; 
+//Lamarck compared to, 86; 
+//on living systems, 15, 87; 
+//on mechanistic systems, 15, 81-82, 84, 85, 87, 88; 
+//network culture and, 6, 48-49, 194; 
+//on “objective spirit,” 230; 
+//part/whole relationship and, 90; 
+//on qualitative change, 283n. 40; 
+//reality of systems and, 141;
+//on scientific inquiry, 288n. 18; 
+//self-reflexivity of dialectic, 92; 
+//on teleology, 87; 
+//at University of Berlin, 240; 
+//on utility, 83-84
+
+hegemonic structures, 48
+
+//Heidegger, Martin, 82-84, 251, 252, 253, 254, 293n. 28
+
+//Heisenberg’s uncertainty principle, 13, 15-16
+
+//Henderson, Hazel, 216 ;
+
+]]Hidden Order (Holland), 164-65
+
+]]Hiding (Taylor), u—12
+
+higher education: 
+]]in Berlin, 17, 240, 245-46, 255;
+economic support of, 256; 
+]]in England, 246—48; 
+as for-profit business, 234-39, 260, 261, 291-92n. 3; 
+inflection point in, 259-60; 
+in network culture, 233-34, 257; 
+]]in United States, 248-51. 
+See also e-Ed; university
+
+]]Higher Superstition (Gross and Levitt), 58-59
+
+//Hilbert, David, 95, 278n. 52
+
+//Hitchcock, Henry-Russell, 34
+
+//Hobart, Michael, 104, 105
+
+//Hobbes, Thomas, 178, 180
+
+//Hofstadter, Douglas, 15, 73, 157-64; 
+//on ant colony, 162-64, 165; 
+//on Gédel’s theorem, I5, 96, 1595
+//Kauffman and, 186, 187; 
+//on Magritte, 15, 75-77; 88
+
+holism, 12, 150, 162-63, 186-87. 
+See also part/whole relationship; reductionism
+
+//Holland, John: 
+//on complex adaptive systems, 164-65, 167, 169, 171; 
+//on emergence, 16, 146-47, 155, 165
+
+homeostasis: 
+of autopoictic systems, 93; 
+impossibility of, 97. 
+See also equilibrium
+
+]]L’Homme machine (La Mettrie), 80
+
+//Hopkins, Johns, 249
+
+]]Horace, 105
+
+]]How the Leopard Changed Its Spots (Goodwin), 182
+
+]]How We Became Posthuman (Hayles), 305, 2770. 36 
+
+hypercapitalism, 68, 70, 71
+hyperreality, 67-68, 127, 129 331, 332
+
+hypertext: 
+author's experiments with, 10, 11; 
+future curriculum and, 234, 260, 262; 
+techno-fantasies and, 219, 220
+
+]]The Idea of the University (Newman), 247
+
+identity: 
+of autopoietic system, 92; 
+parasitic nature of, 196.
+See also self
+
+]]If on a winter's night a traveler (Calvino), 111, 151
+
+images: 
+//Baudrillard on, 68-69, 71; 
+economic value of, 9; 
+as memes, 218; 
+screening of, 200; 
+self-reflexive, 77—78, 88, 126; 
+viral nature of, 288—89n. 26; 
+]]and words in Surrealist art, 73, 74, 75. 
+See also signs
+
+]]Imagologies: Media Culture (Taylor), 10
+
+industrial revolution: artists and, 7, 84, 243-44;
+calculating machines and, 104; 
+]]Newtonian mechanics and, 79; 
+nineteenth century reaction against, 84; 
+thermodynamics and, 135
+
+industrial society: 
+alienation in, 80-81; 
+]]Bauhaus and, 33-34; 
+//Gehry’s architecture and, 41; 
+//Le Corbusier’s argument and, 27, 28, 29; 
+//Lévi-Strauss’s structures and, 52; 
+//Mies’ architecture and, 32, 34; 
+scientific management, 28-29; 
+transition to network culture, 4, 14, 20, 71-72, 100; 
+//Venturi’s critique of modernism and, 36, 40. 
+See also capitalism
+
+information: 
+algorithmic complexity and, 138-39, 166-67, 184; 
+in ant colony, 163; 
+//Bateson’s definition of, 105; 
+//Baudrillard’s signs and, 69; 
+bifurcation point and, 150; 
+in complex adaptive
+systems, 166-67, 168; 
+//Derrida on technology of, 253; 
+economic value of, 9; 
+entropy and,
+111—12, 114, 118, 120-21, 280-81n. 44, 281n. 50;
+etymology of, 105; 
+excess of, 100, 203; 
+expanded notion of, 4-5; 
+in genome, 229; 
+identity of the self and, 196; 
+language and, 215-16;
+life and, 135, 145; 
+material conditions of, 105-6; 
+memes and, 217-19, 228-29; 
+in network culture, 100, 230-31; 
+noise in interplay with, 121-23, 134, 135-37, 163, 203; 
+preserved by isomorphism, 159; 
+probability and, 109-10, 118-19; 
+]Santa Fe conference on, 99—100;
+schemata and, 206; 
+screening of, 207-11, 212, 228, 231; 
+selective destruction of, 203—4; 
+in speech vs, writing, 104-5. 
+See also noise
+
+//Information, Randomness, and Incompleteness (Chaitin), 139
+
+information economy, 44, 66
+information revolution, 20, 100, 103-6
+
+//Information technology See communication technology; technology
+
+information theory, 15; 
+algorithmic, 138-39, 166-67, 171, 184; 
+]]Atlan’s use of, 136, 137; 
+paralogic and, 102; 
+self-organizing systems and, 88; 
+//Shannon’s contribution, 107-9, 111-12, 120-21, 136, 281n. 50; 
+systems theory and, 141;
+thermodynamics and, 135
+
+]]Intellectual Impostures (Sokal and Bricomont), 59
+
+intellectual property rights, 263-64, 295n. 45
+
+]]Internet: 
+]]education and, 235, 236-37, 239, 2573
+]]globalization and, 23. 
+]]See also World Wide Web
+
+]]In the Wake of Chaos (Kellert), 13
+
+irreversible processes, 113-14, 116-17; 
+in data processing, 118, 280-81n. 44
+
+isomorphism, 159; 
+of complex adaptive networks, 165; 
+of mind and brain, 206, 226
+
+//Izenour, Steven, 34
+
+//Jacob, Francois, 85-86, 87, 90, 185, 193, 277N. 30
+
+//Jantsch, Erich, 150
+
+//Jefferson, Thomas, 30, 249
+
+]]Jewish tradition, Derrida and, 7
+
+//Johnson, Philip, 34, 38, 40
+
+//Johnston, John, 288—89n. 26
+
+//Kant, Immanuel: 
+//apriori categories of, 89, 200, 204, 278n. 52; 
+//on art, 31, 74, 84, 131, 243, 253, 254; 
+//on organisms, 84-85, 87-88, 90, 173, 182, 186-87
+
+//Kant'’s vision of university, 17, 240-43, 2.45, 292n. 8; 
+//Derrida and, 251, 254, 255; 
+//vs. Newman’s vision, 247—48; 
+//resistance to e-Ed and, 258; 
+//University of Berlin and, 240, 246, 255
+
+//Kauffman, Stuart, 16, 24-25, 184-88, 190-92, 2720. 5; 
+//on autopoietic systems, 88; 
+//on Boolean networks, 147-—48, 185-86, 190-91; 
+//on coevolution, 287n. 50; 
+//collaboration with Goodwin, 191-92; 
+//on emergence, 146, 147-48;
+//on evolution, 171-72, 182, 184, 185, 190, 191-92; 
+//on phase transitions, 25, 146, 149, 191;
+//philosophical beliefs, 193-94
+
+//Kellert, Stephen, 13, 283n. 36
+
+//Kelly, Kevin, 284n. 60
+
+//Kelso, J. A. Scott, 151, 204, 205, 226
+
+//Keynes, John Maynard, 179
+
+//Kierkegaard, Seren: 
+//Derrida influenced by, 61, 62, 63, 64, 274-75n. 21, 294n. 36; 
+//on Hegel, 6, 278n. 50; 
+//religious dimension of culture and, 6; 
+//self-organized criticality and, 149, 150; 
+//on thought experiments, 20
+
+//Kim, John, 257
+
+kitsch, 8, 244, 256
+
+knowledge: 
+]]Augustine’s journey and, 202; 
+]]Foucault on, 57; 
+Industrial revolution and, 135; 
+]]in Lévy’s utopia, 220, 221; 
+noise as part of, 121; 
+nominalism vs. realism about, 176; 
+observer's role in, 88, 89, 115-16; 
+//Plato on, 200; 
+screening and, 118, 200, 203, 204, 208, 210; 
+self-consciousness and, 200-202, 208, 209, 210, 212;
+//Wilson on, 59
+
+//Kolmogorov, Andrei N., 138
+
+//Krauss, Rosalind, 31
+
+//Kurzweil, Ray, 203-4, 221-24
+
+//La Fontaine, Jean de, 102
+
+//Lakoff, George, 204-5
+
+//Lamarck, Jean-Baptiste, 86, 175-76, 177, 179, 193, 229
+
+//La Mettrie, Julien Offroy, 80
+
+//Landauer, Rolf, 117-18
+
+//Langton, Chris, 145-46, 147
+
+language, 214-16, 218; 
+of ant colony, 163; 
+//Derrida on exploitation of, 253; 
+evolution of brain and, 229-30; 
+//Foucault on, 57; 
+//Lévi-Strauss on, 52;
+
+//Laplace, Pierre-Simon de, 113, 134
+
+leap of faith, 149. See also decision, instant of
+
+learning: 
+in complex adaptive systems, 168, 204;
+language and, 215; 
+in neural networks, 154; 
+as screening of information, 228
+
+]]Learning from Las Vegas (Venturi), 14, 35, 37-38
+
+]]Le Corbusier, 25-28, 29, 34, 51, 272mn. 6, 7
+
+]]Leibniz, Gottfried Wilhelm, 69, 134
+
+]]Letters on the Aesthetic Education of Man (Schiller), 80
+
+//Levine, Arthur, 235
+
+//Lévi-Strauss, Claude, 5-54; 
+//Baudrillard and, 67, 69; 
+//Derrida’s critique of, 62, 63; 
+//Foucault's critique of, 55, 57, 58; 
+//Goodwin's morphology and, 183; 
+//on language, 52, 53, 215; 
+//patterns of information and, 204; 
+//Platonic forms and, 200 
+//Tansey’s study of, 12. 
+//See also structuralism
+
+//Levitt, Norman, 58-59
+
+//Lévy, Pierre, 220-21, 223, 290n. 38
+
+
+//Lewin, Roger, 185
+
+//Le Wirt, Sol, 127, 131
+
+//Lewontin, Richard, 289n. 30
+
+//Liar’s Paradox, 74, 96, 276n. 2
+
+liberal education, 10, 247, 262, 292-93n. 17
+
+life: 
+artificial, 145-46, 152-53, 285n. 3; 
+chance and, 149; 
+at edge of chaos, 25, 123, 185; 
+//Hegel on, t5, 87; 
+information and, 135, 145; 
+//Kant on organisms, 84-85, 87-88, 90, 173, 182, 186-87;
+//Kauffman's networks and, 147, 148; 
+vs. machine-based intelligence, 222; 
+materiality of, 106, 224; 
+negentropy and, 119, 123, 137, 184-85;
+noise and, 136, 137, 187 
+origin of, 184, 185, 186, 187, 277n. 35; 
+part/whole relationships and, 85, 86, 87-88, 173, 183, 186-87; 
+systems theory and, 140—41; 
+thermodynamics of, 134, 135 
+See also evolution
+
+linear systems: 
+assembly line as, 29; 
+//of Lévi-Strauss, 52; 
+//of Newtonian physics, 24
+
+//Livy, 105
+
+]]The Logic of Life Jacob), 85-86, 277. 30
+
+Logos, 200, 201
+
+//Loos, Adolf, 34
+
+//Lord, Nathan, 248
+
+//Luhmann, Niklas, 15, 90-91, 94, 97
+
+//Lumsden, Charles, 216-17, 289n. 29
+
+//Lyotard, Jean-Frangois, 35
+
+madness: 
+//and Derrida’s criticism of Foucault, 61-63; 
+surrealism and, 73
+
+//Madness and Civilization (Foucault), 61-63
+
+//Magritte, René, 15, 73-76, 88, 96, 98
+
+//Maitland, Christine, 263
+
+//Malevich, Kazimir, 31, 294n. 40
+
+//Mallarmé, Stéphane, 94-95, 96, 149
+
+//Malthus, Thomas, 178-79, 180
+
+//Mandelbrot, Benoit, 40-41
+
+//Mandeville, Bernard, 157, 179
+
+//Marquez, José, 11
+
+//Marx, Karl, 100, 101, 179
+
+mass production, 28-30, 33, 35; 
+higher education and, 240-41, 265. 
+See also production vs. reproduction
+
+]]“The Mathematical Theory of Communication” (Shannon), 107-8 333
+
+//Maturana, Humberto, 15, 88-91, 277n. 38
+
+//Maxwell, James Clerk, 114, 115, 117
+
+//Maxwell’s demon, 117, 118, 280—-81n. 44
+
+//McClelland, Charles, 246
+
+//McCulloch, Warren, 143
+
+meaning: 
+//Baudrillard on, 66-68; 
+context dependence of, 204—5; 
+creation of, 214; 
+//Foucault on, 75; 
+in information theory, 108-9; 
+from randomness, 136; 
+from screened information, 20, 204, 210-11, 212; 
+self-reference and, 75-76. 
+See also reference
+
+media: 
+//Baudrillard on, 68-69, 71; 
+new, 20, 66, 25
+See also multimedia
+
+memes, 217-19, 226, 228-29
+
+M//emoirs of the Blind (Derrida), 7
+
+memory: 
+//Augustine on, 201, 202; 
+in complex adaptive systems, 167, 168, 204; 
+of computer, 103; consciousness and, 207; 
+//Derrida on, 63-64, 275-76n. 47; 
+//of Maxwell’s demon, 118, 280-81n. 44; Plato on, 200-201; 
+writing process and, 197, 198
+
+//Mendel, Gregor, 180
+
+//Menger, Kurt, 95
+
+//Merrill Lynch, 235-36
+
+//Mies van der Rohe, 14, 20, 22, 32-34, 38; 
+//Baudrillard and, 275n. 43; 
+//Gehry compared to, 42, 2573 
+//Lévi-Strauss and, 51; 
+//Venturi’s critique of, 35; 36, 2730. 19
+
+//Milken, Michael, 233, 235
+
+//Miller, Archur, 264
+
+//Miller, J. Hillis, 97-98
+
+//Millonas, Mark M., 152-53, 154, 155
+
+mind: 
+coadaptation with brain, 226; 
+coevolution with brain, 229-30; 
+complex dynamics of, 204-5, 206; 
+cultural evolution of, 217; 
+disembodied, 105-6, 221-24; 
+distributed quality of, 230-31; 
+dualism and, 223-24, 226, 230; 
+emerging from brain, 163; 
+language and, 215; 
+mechanistic philosophy and, 141; 
+memes and, 228;
+self and, 231
+
+modernism: 
+//Gehry’s alternative to, 40, 41; 
+//Greenberg on, 74; 
+grids in, 25-26, 27-28, 31-32, 355
+industrial capitalism and, 31; 
+//Tansey’s study of, 12; 
+technology and, 4, 294n. 40; 
+//Venturi’s critique of, 14, 35-40, 273n. 23. 
+See also Le Corbusier; Mies van der Rohe
+
+//Modern Times (Chaplin), 28
+
+moment of complexity, 3-4, 5; 
+critical emergency at, 47; 
+at edge of chaos, 23-24, 25; 
+enlightenment at, 98; 
+//Gehry’s architecture and, 46;
+global culture and, 194;
+from grids to networks at, 20, 23, 35
+//Higher education in, 233-34, 257, 270;
+the I as, 232;
+information revolution and, 100, 106; 
+//Living organisms and, 137; 
+moment of decision and, 149, 151;
+self-organizing systems and, 24, 78. 
+See also complexity
+
+//Mondrian, Piet, 31
+
+//Monod, Jacques, 177, 185, 194
+
+//Moravec, Hans, 105, 221, 222-24
+
+//Morely, Michael, 128
+
+morphology: 
+of Cuvier, 174-75; 
+emergence of new types, 193; 
+//Goodwin on, 182-84, 192; 
+//Lamarck and, 176; Waddingten and, 191
+
+multimedia, 10-11, 65, 257, 258, 262
+
+music: 
+//Hofstadter on, 157-59, 161; 
+//Lévi-Strauss on, 274n. 8
+
+//Musical Offering (Bach), 158, 159
+
+myth, 210-11, 212-14; 
+as meme, 218; 
+//Wagner's analysis of, 274n. 8
+
+//Nasdaq, 45, 257, 260
+
+natural selection: 
+in brain evolution, 218, 230;
+//Darwin on, 174, 177, 178, 179, 180, 181; 
+//Gould on, 181; 
+for greater complexity, 287n. 56;
+//Kauffman on, 185, 190, 191-92, 193, 194, 287n. 50. 
+See also evolution; selection
+
+]]Natural Theology (Paley), 172-73
+
+negentropy, 101, 119-20, 121, 281n. 50; 
+in living systems, 119, 123, 137, 184-85. 
+See also entropy
+
+//Nelson, Cary, 250, 255, 265-66
+
+//Nelson, Ted, 219
+
+neo-Darwinism, 172, 182, 184, 188
+
+network culture, 5; 
+architecture and, 14, 20, 40, 46; 
+complex systems and, 155; 
+//Derrida’s critique of, 65; 
+emergence of, 14, 20, 25, 49, 72, 100; 
+experiments in new media and, 11; 
+globalization and, 23, 194, 202, 214; 
+grids as obsolete in, 37; 
+//1Hegel’s system and, 48-49; 
+higher education and, 233-34, 256, 257 (see also Global Education Network); 
+hope for creative change in, 270; 
+information in, 100, 230-31; 
+recursive images and, 78; 
+religion and, 6, 9; 
+screens in, 200, 214; 
+structuralism and, 55; 
+subjectivity in, 200, 202, 231; 
+]]Times Square and, 44
+
+networks: 
+autopoietic, 89-90, 91; 
+Boolean, 147—48,
+coadaptive, 169-71, 190-91;
+complex adaptive systems as, 165; 
+//Derrida on, 63, 64-65; 
+in e-Ed, 266, 267-68; 
+in Gehry’s architecture, 40, 41; 
+genomic, 25, 185, 188; 
+vs. grids, 11-12, 20-23; 
+of living organisms, 86; 
+of memes, 218-19, 226; 
+of myths, 2IO-11, 212-14, 218;
+neural (see neural networks); 
+of subjects and objects, 16, 207-10, 231; 
+of symbols, 210-2, 214; 
+vs. totalizing systems, 11-12, 65.
+See also systems
+
+neural networks, 226-27; 
+cellular automata and, 143; 
+//Close’s paintings and, 134; 
+mind emerging from, 163; 
+swarm behavior and, 154—55 
+
+//Newman, John Henry, 247748 .
+
+//Newman, M. H. A., 107
+
+//Newton, Isaac, 78-80, 137-38, 205
+
+]]Newtonian systems, 134-35; 
+]]assembly line production and, 29; 
+]]chaos theory and, 24; 
+//Darwin and, 177, 286n. 23; 
+]]Hegel and, 15; 
+]]part/whole relationships in, 79, 80, 205; 
+]]stability of, 78-80, 112; 
+]]thermodynamics and, 112, 113, 135
+
+//Nietzsche, Friedrich: 
+//Foucault and, 57; 
+//Heidegger: and, 277n. 22
+
+]]1960s: 
+]]concrete poetry of, 74; 
+]]grids in art of, 1315
+]]network culture and, 14, 20, 49; 
+]]“new left” of, 50; 
+]]sociocultural constructivism and, 59
+
+]]1968, 5, 6, 49, 50, 51; 
+]]Baudrillard’s analysis of, 66;
+]]Close begins self-portraits, 127
+
+]]1989, 5, 14, 20, 49
+
+]]Nochlin, Linda, 129
+
+nodular subjectivity, 16, 231, 232
+
+noise: 
+arrow of time and, 114; 
+collective behavior and, 154; 
+in creation of complexity, 15, 103, 121-23, 134, 135-37, 163, 167; 
+différance and, 279n. 14; 
+etymology of, 100, 279n. 3; 
+in evolution, 193; 
+information excess and, 100, 203; 
+life and, 136, 137, 1873 
+mythic networks and, 212-14; 
+in network culture, 202, 203, 232; 
+paralogic and, 98, 102; 
+probability and, 119, 1203
+rectification of, 135;
+schemata and, 206; 
+from screened information, 231; 
+//in Shannon's information theory, 108, 110, 280n. 27. 
+See also information
+
+nominalism, 176, 182, 188
+
+nonlinear systems: 
+brain as, 226; 
+causality in, 165;
+cellular automata and, 146; 
+chaos theory and, 13; 
+of chemical reactions, 283n. 38; 
+complex adaptive, 165-66; 
+far from equilibrium, 143;
+living, 185; 
+mind as, 204; 
+nontotalizing, 155;
+self-organizing, 148, 205; 
+swarms as, 153, 284n. 60; 
+in writing process, 198
+
+//Norretranders, Tor, 121, 202, 203
+
+obscenity, Baudrillard on, 69, 275n. 43
+
+observer of system, 88, 89, 115-16
+
+]]“On Formally Undecidable Propositions” (Godel), 95
+
+on-line education. See e-Ed
+
+]]On the Origin of Species (Darwin), 178
+
+open systems: 
+autopoietic, 91-92, 93; 
+complex, 140, 143, 169; 
+emergence and, 93; 
+entropy and, 119; 
+undecidability and, 93-94, 97; 
+unpredictability in, 24
+
+opposites. See binary oppositions
+
+]]“order for free,” 148, 185, 186
+
+]]The Order of Things (Foucault), 55
+
+]]Lorganisation biologique (Atlan), 136
+
+organisms. See life
+
+]]Origins of Order (Kauffman), 172
+
+otherness, 47-48, 62, 155. See also difference
+
+//Ovid, 105
+
+//Paley, William, 172-74
+
+parables, 103
+
+parallel computing: 
+by cellular automata, 143; 
+distributed, 138, 185
+
+paralogic, 97-98, 101-3
+
+]]The Parasite (Serres), 101-3
+
+parasite/host relationship: 
+of Anteater/Aunt Hillary, 163; 
+of language and mind, 215-16; 
+of meme and mind, 217; 
+in network culture, 232;
+noise and, 110, 121-23, 134; 
+undecidability and, 98, 101, 215; 
+writing and, 196
+
+//Parmenides, 160, 162
+
+part/whole relationship: 
+in autopoietic systems, 90, 92-93; 
+coadaptation and, 190; 
+in complex systems, 140, 141-42; 
+//in Darwinism, 181-82; 
+in dialectical systems, 92-93; 
+emergence and, 146; 
+in grid vs. network, 21; 
+//Hegel on, 81, 87, 90; 
+//Kant’s Third Critique and, 85, 88; 
+in living systems, 85, 86, 87-88, 173, 183, 186-87; 
+in Newtonian systems, 79, 80, 205. 
+See also holism; reductionism
+
+//Pask, Gordon, 88
+
+//Paulson, William, 282n. 10
+
+//Paxton, James, 173 335, 336
+
+//Pearlstein, Philip, 127
+
+//Peters, Noah, 1
+
+//Perley, Janes, 239
+
+//Petersen, Reeiney J., 295n. 45
+
+//Pfitz (Crumey), 125, 126, 151-52
+
+phase transitions, 146, 149, 151; 
+in coevolving systems, 191; 
+critical emergency and, 155; 
+in genomic systems, 25; 
+swarming behavior and, 152-53
+
+//Phenomenology of Spirit (Hegel), 94
+
+The Picture in Question (Taylor), 12-13
+
+//Pittendrigh, Colin S., 169
+
+//Pitts, Walter, 143
+
+pixels, 41, 45, 129, 231
+
+]]Platonic forms, 200; 
+//Aristotle's entelechy and, 177
+//Augustine and, 200-201; 
+//Cuvier’s embranchements as, 175; 
+//Darwinism and, 177, 286n. 30;
+]]information as, 105; 
+//Newtonian laws and, 79;
+]]nominalism and, 176
+
+polarities. See binary oppositions
+
+polythetic set, 216, 289n. 29
+
+//Pope, Alexander, 78-79
+
+population thinking, 177-79, 286n. 21
+
+postbiological future, 221-22
+
+postindustrial society, 4, 40, 236
+
+postmodernism, 4, 1-12, 20; 
+in architecture (see Gehry, Frank; Venturi, Robert); 
+in art, 294n. 40; 
+scientists’ rejection of, 58-60
+
+post-structuralism: 
+//Hegelianism rejected by, 48;
+nontotalizing structure and, 11; 
+religion and, 6-7; 
+self-reflexivity and, 15; 
+//Tansey’s study of, 12; 
+//Wilson on, 59. 
+See also Derrida, Jacques; structuralism
+
+//Powers, Richard, 2
+
+//Prigogine, Ilya: 
+//on dissipative structures, 15-16, 120, 121, 136, 1843 
+//insect swarms and, 153;
+//on Maxwell-Boltzmann theory, 114; 
+//on Newtonian universe, 79, 113; 
+//on nonequilibrium thermodynamics, 150, 283n. 38; 
+//on thermodynamic irreversibility, 112, 113
+
+]]Principia (Newton), 78, 205
+
+]]Principia Mathematica (Russell and Whitehead), 95, 96
+
+]]Principles of Scientific Management (Taylor), 28
+
+probability: 
+entropy and, 112, 119, 120; 
+information and, 109-10, 118-19; 
+in molecular theory of heat, 114-15; 
+population thinking and, 286n.
+in quantum physics, 116
+See also chance
+
+punctuated equilibrium, 151, 193
+
+]]The Quark and the Jaguar (Ge Mann), 166
+
+]]“The Question Concerning Technology” (Heidegger), 83, 252,-299n. 28
+
+//Quetelet, Adolphe, 14
+
+randomness: 
+defined, 139; 
+time as measure of, 117
+
+rational morpholegy. See nroxnpiehegy
+
+]]The Raw and the Cooked (Lévi-Strauss), 54, 274n. 8
+
+//Readings, Bill, 253-54
+
+]]The-Réal (Taylor and Mésensen), 11, 12
+
+realism: 
+//of Close’s painting, 127-29, 133; 
+//Nochlin on, 129; 
+vs. nominalism, 176
+
+]]“The Realist Criminal and the Abessact Law” (Nochlin), 129
+
+reality: 
+absolute, 89; 
+]]Baudrillard on, 67, 68-70, 71
+constructed character of, 58, 59; 
+grid imposed on, 82; 
+screening of, 78; 
+structuralism and, 54; 
+of systems, 141;
+techno-fantasies and, 221; 
+unity of, 138, 141, 162
+
+reason: 
+capitalism and, 31; 
+//Dessida-on, 64; 
+]]Enlightenment principles and, 30-31; 
+//Foucault on, 57, 73; 
+grids and, 27, 30, 32; 
+as information processing, 210, 212; 
+madness and, 61, 62;
+structuralism and, 51
+
+recursive systems: 
+cellular automata as, 143; 
+emergence in, 147; 
+media culture as, 68; 
+unpredictability in, 24. 
+See also self-reflexivity
+
+reductionism: 
+biological, 225; 
+in complexity theory, 285n. 3; 
+//of Darwin, 182; 
+//Hofstadter on, 162-64; 
+//Kauffman’s rejection of, 184, 188; 
+as repressive, 60; 
+in sociobiology, 216; 
+//Wilson on, 60, 285n. 3. 
+See also holism; part/whole relationship
+
+reference: 
+//Baudrillard on death of, 66-67, 68, 69, 70; 
+//Foucault on, 75; 
+symbolic, 211; 
+undecidability and, 94. 
+See also meaning; self-reference
+
+reflexivity. See self-reflexivity
+
+//Reinhardt, Ad, 129-31
+
+relativism, 59, 60, 89, 277n. 38
+
+religion: 
+art and, 7, 9, 13, 245; 
+belief in simplicity and, 138; 
+//Kauffman’s vision and, 193-94; 
+in network culture, 6, 9; 
+of Newton, 138; 
+//Platonic forms and, 200; 
+post-structuralism and 6, 7; 
+rational defenses of, 172-74; 
+as universal cultural dimension, 6, 7 
+See also evolution, as theological issue; God
+
+reproduction vs. production, 4, 72, 100; 
+//Baudrillas on, 66, 68, 70, 71. 
+See also mass production
+
+reversible systems, 79, 80, 113, 116, 134-35
+
+//Rithter, Gerhard, 31
+
+//River out of Eden (Dawkins), 217-18
+
+//Robot (Moravec), 105 
+
+robotic intelligence, 223
+//Roek; Michael, Il
+//Roosevelt, Theodore, 248
+//Roszak, Theodore, 105
+//Rudolph, Frederick, 248
+//Russell, Bertrand, 95, 96
+
+]]Russian Constructivism, 8, 294n. 40
+
+]]Saarinen, Esa, 9
+
+]]Santa Fe Institute, 13, 99, 146, 152; 
+//Kauffman and 146, 171-72; 
+//Tansey influenced by, 12
+
+//Sartre, Jean-Paul, 51
+
+//Saussure, Ferdinand de, 67
+
+]]The Savage Mind (Lévi-Strauss), 51
+
+schemata: 
+of complex adaptive systems, 166-68, 169, 189-90, 205-7; 
+in cultural change, 214;
+for society, 216; 
+in thinking process, 198
+
+//Schiffman, Zachary, 104, 105
+
+//Schiller, Friedrich, 80
+
+//Schleiermacher, Friedrich, 240
+
+//Schumpeter, Joseph, 28
+
+]]Science of Logic (Hegel), 81, 82, 92, 283n. 40
+
+scientific theories, 206, 211, 225, 288n. 18
+
+screening: 
+in brain development, 227-28; 
+defined, 199-200, 288n. 3; 
+of experience, 207-11;
+//Gehry’s architecture and, 41; 
+in higher education, 260, 267, 269; 
+of information, 207-11, 212, 228, 231; 
+knowledge and, 118, 200, 203, 204, 208, 210; 
+in learning, 228; of reality, 78;
+subjectivity and, 200, 205; 
+undecidability and 98, 200; 
+walls and, 20, 199, 214, 231, 235 
+in writing process, 196, 197
+
+]]Seagram Building (Mies), 22, 32, 34, 35; 38, 40
+
+second law of thermodynamics, 93, 113; 
+//Maxwell’s demon and, 117, 118, 280-81n. 44; 
+organism and, 135. 
+See also entropy
+
+selection: 
+in brain development, 227-28; 
+in evolution of languages, 215; 
+among schemata, 207.
+See also natural selection
+
+self, 196, 202, 231. See also subjectivity
+
+self-assembly, 76
+
+self-consciousness: 
+//of Augustine, 200-202;
+//Descartes on, 115; 
+//Hegel on, 278n. 51; 
+knowledge and, 200-202, 208, 209, 210, 212. 
+See also consciousness
+
+selfish gene theory, 180-81, 229, 286n. 30
+
+self-organized criticality, 148-49, 165, 283n. 43; 
+in coadapting systems, 190; 
+memory and, 168
+
+self-organizing systems, 24, 87-88, 142, 143, 156;
+autopoietic, 88, 90; 
+//Bak’s theory of, 148-49, 165, 168, 190, 283n. 43; 
+]]Boolean networks as, 185—86; 
+brain as, 204, 226; 
+of chemical reactions, 187, 283n. 38; 
+//Close’s paintings as, 131;
+coadaptive, 190-91; 
+conditions for, 205; 
+in evolution, 172, 184, 186, 190-91, 192-93; 
+//Kant on, 85, 87-88; 
+languages as, 215; 
+of network culture, 78; 
+noise and, 136-37; 
+organisms as, 182; 
+origin of life in, 184, 185, 186, 187, 277n. 35; 
+scientific inquiry as, 92; thinking as, 198, 205. 
+See also complex adaptive systems; emergent phenomena
+
+]]Self-Portrait (Close), 125-26, 127
+
+self-reference: 
+in autopoietic systems, 91, 92;
+//Gédel’s theorem and, 95-96; 
+//in Magritte’s art, 74, 75-76; 
+of modernist art, 31. 
+See also reference
+
+self-reflexivity: 
+in art, 74, 75, 125-26; 
+of autopoietic systems, 90, 92; 
+consciousness and, 89, 210; 
+cybernetics and, 88, 277n. 36; 
+of information revolution, 106; 
+in literature, 151; 
+observer of system and, 88, 89, 115-16; 
+of open systems, 93-94; 
+of post-structuralists, 15; 
+of strange loops, 75, 78, 200, 209-10; 
+undecidability and, 97, 98. 
+See also recursive systems
+
+//Sellars, Susan, 11
+
+//Serra, Richard, 12.7
+
+//Serres, Michel, 15, 101-3, 19, 121-22, 135; 
+ant colony and, 163; 
+//Close’s paintings and, 134
+
+//Seurat, Georges, 129
+
+//Shannon, Claude, 15, 107-9, 111-12; 
+//Atlan influenced by, 136; 
+//Wiener and, 120-21, 281n. 50
+
+signs: 
+//Baudrillard on, 66-67, 70, 71, 101; 
+//Close’s self-portrait as, 126; 
+//Derrida on, 105; 
+//Foucault on, 75; 
+in Lévy’s utopia, 220-21; 
+modernist architecture and, 36, 38; 
+self-reflexive, 75, 78. 
+See also images; simulacra; simulation
+
+//Simon, Herbert A., 141
+
+simplicity: 
+complexity and, 54, 137-38, 142, 199, 221; 
+utopian visions of, 221, 223
+
+simulacra: 
+//Baudrillard on, 69, 71, 78; 
+//Derrida on, 94, 96; 
+//Foucault on, 75; 
+network culture and, 12, 72. 
+See also signs; simulation
+
+simulation: 
+defined, 67; 
+in fashion, 70; 
+impasse of 71; 
+theory of, 15, 55, 72. 
+See also //Baudrillard, Jean; signs; simulacra
+
+singularities, in catastrophe theory, 13, 53, 272M. 1:
+
+skepticism, 58, 59
+
+//Smith, Adam, 16, 178, 179, 180, 287n. 50
+
+//Smolin, Lee, $4
+
+//Snow, C. P,, 58
+
+social constructivism. See constructivism
+
+]]Social Systems (Luhmann), 91
+
+social systems, autopoietic, 90-91. See also cultural evolution
+
+sociobiology, 216-17, 289n. 30
+
+//Sokal, Alan, 59
+
+//Solomonoff, Ray, 138
+
+//Specters of Marx (Derrida), 101, 275-76n. 47
+
+//Spinoza, Baruch, 134
+
+stability, longing for, 3
+
+stable systems: 
+autopoiesis and, 92-93; 
+of Cold War, 5, 23, 49; 
+complexity and, 78, 97, 146;
+//Hegel’s dialectic and, 92-93; 
+//of Lévi-Strauss, 52, 53, 54; 
+//Newtonian, 78-80, 112; 
+part/whole relationship in, 81; 
+quantum theory and, 116;,
+swarms, 155-56
+
+state cycles, 185, 186
+
+statistical mechanics, 100, 114-15, 172
+
+//Stoppard, Tom, 19, 40, 285n. 2.
+
+//Storr, Robert, 125, 132
+
+strange loops: 
+of autocatalytic sets, 186, 187; 
+//in Close’s art, 125-26; 
+of complex adaptive systems, 169; 
+//in Gehry’s architecture, 46; 
+//in Gédel’s theorem, 96; 
+//Hofstadter on, 75-77, 186; 
+in network culture, 72, 78; 
+paralogic and, 98, 101, 102; 
+self-consciousness and, 200, 210;
+in writing process, 198
+
+structuralism, 51-55; 
+//Baudrillard and, 55, 67, 68, 70; 71; 
+complexity and, 54; 
+//Derrida’s critique of, 55, 61-63, 97; 
+in developmental biology, 183, 184; 
+//Foucault’s critique of, 55-58; 
+as Hegelianism, 61, 62; 
+organisms and, 86;
+//Tansey’s study of, 12; 
+undecidability and, 97
+See also //Lévi-Strauss, Claude; post-structuralism
+
+]]Structural Stability and Morphereners (Thom), 13, 53
+
+subjectivity, 207-10; 
+in network culture, 200, 202, 231; 
+nodular, 16, 231,-292+-
+screening and, 200, 205; 
+techno-fantasies and, 220. 
+See also self
+
+superfrastructure and infrastructure, 66, 68
+
+]]Suprematism, 294n. 40
+
+]]Surrealism, 73, 74
+
+swarms, 152-154, 155-156, 284n. 52, 60. See also ant colonies
+
+]]“The Symbolic Species (Deacon), 229-30
+
+symbols, 204, 205, 210-12, 214; 
+of language, 215; 
+as memes, 218
+
+symmetry-breaking, 150
+
+systems: 
+organism as, 134-35 
+social, 91 
+See also autopoietic systems; closed systems; complex adaptive systems; far-from-equilibrium systems; open systems; self-organizing systems
+
+systems theory, 140-41
+
+//Szilard, Leo, 280—-81n. 44
+
+//Tanguary, Denise Marie, 239
+
+//Tansey, Mark, 12-13
+
+//Tappan, Henry, 248
+
+//Taylor, Frederick Winslow, 28, 30
+
+]]Techgnasisols, 105%
+
+technological unconscious, 16, 203, 231
+
+technology: 
+art transformed by, 8-9, 294—95n. 40; 
+author's experiments with, 9-12, 257-58 (see also Global Education Network); 
+//Baudrillard on, 66, 68, 69-70; 
+complexity associated with, 138; 
+cultural change and, 4, 5, 19-20, 218-19; 
+//Derrida on, 63, 64-65, 231, 251-53; 
+education and, 233-34 (see also e-Ed); 
+globalization and, 23, 194, 202; 
+//Hegel on logic of machine, 81-82; 
+//Heidegger on, 82-84, 251, 252, 253, 254, 277n. 22; 
+information revolution and, 20, 106-7; 
+utopian fantasies and, 219-24. 
+See also communication technology
+
+technoscience, Derrida on, 64, 251-53
+
+//Teilhard de Chardin, Pierre, 290n. 38
+
+teleology: 
+complex adaptive systems and, 168-69, 193; 
+existence of God and, 172, 173; 
+//Hegel on, 87; 
+//Kant on, 85, 87, 173, 186-87, 243, 246, 251
+
+teleonomic processes, 169, 193, 194
+
+//Temporal Organization in Ceils (Goodwin), 191
+
+tenure, 250, 255, 245, 295n. 48
+
+theories, 206, 210-11, 212, 288n. 18; 
+constructivism about, 225; 
+schemata as, 166
+
+theory: See critical theory
+
+//“The Theory of Open Systems” (von Bertalangffy), 140
+
+thermodynamics, 112, 135; 
+of computation, 117-18, 280—81n. 44; 
+molecular theory and, 114-15;
+non-equilibrium, 150, 283n. 38; 
+of organism, 134, 1353 
+second law, 93, 113, 117, 118, 135, 280-81n. 44. 
+See also entropy
+
+thing-in-itself, 89
+
+]]This is Not a Pipe (Magritte), 73, 74, 75
+
+//Thom, René, 13, 40, 53
+
+//Thompson, D’Arcy W., 183
+
+//Thompson, William, 113
+
+time: 
+arrow of, 114, 16-17, 118-20; 
+assembly line and, 29; 
+complex systems and, 142, 168; 
+development of organisms and, 86; 
+//Einstein on, 116 
+//Foucault on, 56; 
+in Hegel's system, 93; 
+myth and, 211; 
+in Newtonian physics, 79; 
+self-consciousness and, 208-9; 
+self-reflexivity and, 78;
+undecidability and, 97; 
+writing process and, 19
+
+]]Times Square, 44-46
+
+tipping point: 
+]]at Berlin Wall collapse, 14; 
+//of Close’s paintings, 145; 
+of cultural change, 214;
+at emergence of life, 187; 
+in higher education, 233, 259-60; 
+at moment of complexity, 5; 
+in network culture, 231; 
+of punctuated equilibrium, 151; 
+self-organized criticality and, 148, 149, 165; 
+of thought, 198
+
+totalizing systems, 47—48; 
+vs. autopoietic systems, 91; 
+//Derrida on, 62, 63, 65; 
+//Hegelianism and, 48; 
+vs. networks, 11-12, 65; 
+vs. self-organizing systems, 155
+
+]]The Treachery of Images (Magritte), 74
+
+turbulence: 
+vs. complex adaptive systems, 165-66, 206; 
+of dissatisfaction with text, 198; 
+of network culture, 202, 203
+
+]]Turing Machine, 107
+
+]]“as LINES OF WORDS ON ART” (Reinhardt),
+129-31
+
+“two cultures,” 58, 225
+
+]]The Two Mysteries (Magritte), 74, 75
+
+//Ulam, Stanislaw, 143
+
+uncertainty, 115-16
+the unconscious: 
+//Augustine on, 201-2; 
+//Derrida on, 63; 
+technological, 16, 203, 231
+
+undecidability: 
+complex systems and, 142; 
+//Derrida on, 94-95, 96-97; 
+//Gédel’s theorem and, 94, 95-973 
+at instant of decision, 62; 
+open systems and, 93-94; 
+in parasite/host relationship, 98, 101, 215; 
+screening and, 98, 200; 
+strange loops and, 75. 
+See also decision, instant of
+
+uniformitarianism, 174, 176
+
+university, 17; 
+//Derrida on, 251, 253-55, 294n. 36;
+//Kant on (see Kant’s vision of university) 
+See also e-Ed; higher education
+
+unpredictability, 149-50
+
+]]The User Illusion (Norretranders), 202
+
+utopian visions: 
+of avant-garde artists, 7—8; 
+of Mies van der Rohe, 32; 
+techno-fantasies, 219-24
+
+]]Valera, Francisco, 15, 88, 89-91
+
+value: 
+//Baudrillard on, 66, 67, 68, 69, 70; 
+//Kant on, 243, 254
+
+]]Vanna Venturi House (Venturi), 38
+
+//Varnedoe, Kirk, 127, 134
+
+Venturi, Robert, 14, 20, 34-40, 44
+
+//Vienna Circle, 95, 96
+
+]]Vietnam, war in, §, 49, §0, 51, 250
+
+//Virta, Marjaana, 10
+
+virtual reality, 220, 222, 294n. 40; 
+posthuman condition and, 106
+
+viruses: 
+language as, 215, 216, 288-89n. 26; 
+memes as, 217
+
+vitalism, 184
+
+//von Bertalanffy, Ludwig, 140
+
+//von Foerster, Heinz, 88, 136
+
+//von Humboldt, Wilhelm, 240, 246, 247
+
+//von Neumann, John: 
+//birth of computer and, 107;
+//cellular automata and, 136, 143, 144, 146; 
+//information theory and, 111
+
+//Waddington, C. H., 183, 191
+
+//Wagner, Richard, 274n. 8
+
+walls: 
+//Berlin Wall, 5, 14, 20, 49, 235; 
+in Gehry’s architecture, 43; 
+in higher education, 260, 265, 267, 269; 
+vs. screens, 20, 199, 214, 231, 235
+
+//Warhol, Andy, 8-9, 45, 80, 131, 233, 294n. 40
+
+]]Waterfall (Escher), 187
+
+//Watson, James D., 53
+
+]]Wart, Stephen, 250, 255, 265-66m 339, 340
+
+]]The Wealth of Nations (Smith), 287n. 50
+
+//Weaver, Warren, 107-9, 112.
+
+//Weber, Bruce, 142, £75, 179, 80
+
+webs, See networks; World Wide Web
+
+//Weld, William E, 235
+
+//Wells, H. G., 20
+
+]]Well-Tempered Clavier (Bach), 161
+
+]]Western canon, 48
+
+]]“What the Frog's Eye Tells the Frog’s Brain” (Maiurana), 89
+
+//Whitehead, Alfred North, 95, 96
+
+//Wiener, Norbert, 15, 107, 119, 120-21, 281n. 50
+
+//Wiles, Andrew, 285n. 2
+
+will to mastery, 83-84, 277n. 22
+
+//Wilson, Edward O.: 
+//on ant colonies, 153; 
+//on co-evolution, 171, 216-217, 227, 289n. 29; 
+//on complexity theory 284n. 3; 
+//of postmodernism, 59-60; 
+//on sociobiology, 21, 289A. 90;
+//on superorganism, 214, 216, 229.
+
+]]Wissenschaft, 246, 247
+
+//Wittgenstein, Ladwig, 95, 351
+
+]]World Brain (Wells), 219
+
+]]World Wide Web, 4, 23, 257
+]]See also Internet
+
+writing: 
+invention of, 104; 
+new technologies and, 9-11, 257, 258; 
+process of, 195-98, 232
+
+]]Writing and Difference (Desvida}, 61, 63 -
+
+]]Zen Buddhism, 161-62
+
+]]Zeno of Elea, 159-60, 162,
+//Zola, Emile, 245
+
+//Zurek, Wojciech, 99-100, 102
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

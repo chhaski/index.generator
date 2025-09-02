@@ -1,0 +1,7250 @@
+{
+  "entry": [
+    {
+      "id": "72c0aa6e-c402-496a-8e3c-8780f6b7642e",
+      "type": "groupingentry",
+      "text": "Actions",
+      "locators": [
+        "3",
+        "6-10",
+        "17-19",
+        "28",
+        "44",
+        "53",
+        "56-58",
+        "65-68",
+        "69-70",
+        "81-82",
+        "84-89",
+        "96-97",
+        "113",
+        "115",
+        "119",
+        "124-127",
+        "142",
+        "158",
+        "160",
+        "164",
+        "173"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72c0aa6e-c402-496a-8e3c-8780f6b7642e"
+    },
+    {
+      "id": "745acc64-6528-429e-b653-fe399055bd5a",
+      "type": "subentry",
+      "text": "as captured",
+      "locators": [
+        "22-23",
+        "39-42",
+        "75",
+        "79",
+        "120",
+        "123"
+      ],
+      "see": [],
+      "see_also": [
+        "Capture"
+      ],
+      "parent_text": "Actions",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72c0aa6e-c402-496a-8e3c-8780f6b7642e"
+    },
+    {
+      "id": "34c8c73c-8bc7-4849-bff5-6417581dbb75",
+      "type": "subentry",
+      "text": "and grammar of action",
+      "locators": [
+        "59-62"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Actions",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72c0aa6e-c402-496a-8e3c-8780f6b7642e"
+    },
+    {
+      "id": "d573b429-301d-4285-baf4-a7d8e84726c9",
+      "type": "subentry",
+      "text": "as habitual",
+      "locators": [
+        "1",
+        "19",
+        "52",
+        "57",
+        "61",
+        "80",
+        "104"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits"
+      ],
+      "parent_text": "Actions",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72c0aa6e-c402-496a-8e3c-8780f6b7642e"
+    },
+    {
+      "id": "7537d6bb-c6d6-424a-b3dc-4f0dad07260b",
+      "type": "soloentry",
+      "text": "Affect (theory)",
+      "locators": [
+        "3",
+        "13-17",
+        "26",
+        "43-44",
+        "49",
+        "67",
+        "73",
+        "79",
+        "85",
+        "91",
+        "135",
+        "154-157"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "7537d6bb-c6d6-424a-b3dc-4f0dad07260b"
+    },
+    {
+      "id": "ecdcd0cb-7dd8-439f-8271-214ab597e94d",
+      "type": "soloentry",
+      "text": "Algorithms",
+      "locators": [
+        "1",
+        "43",
+        "50",
+        "54",
+        "58",
+        "81",
+        "91",
+        "104",
+        "119-120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ecdcd0cb-7dd8-439f-8271-214ab597e94d"
+    },
+    {
+      "id": "5290836a-8c15-4389-aaef-7514b891edc7",
+      "type": "soloentry",
+      "text": "Anonymity",
+      "locators": [
+        "103",
+        "104-109",
+        "115",
+        "143",
+        "158-162",
+        "206n16"
+      ],
+      "see": [],
+      "see_also": [
+        "Right to loiter"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5290836a-8c15-4389-aaef-7514b891edc7"
+    },
+    {
+      "id": "2d7d6721-f550-4502-acf2-9f3aa2e55475",
+      "type": "soloentry",
+      "text": "Artificial intelligence (AI)",
+      "locators": [
+        "59-60"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2d7d6721-f550-4502-acf2-9f3aa2e55475"
+    },
+    {
+      "id": "3cf5af9e-13d4-48ca-8715-ab453b342eec",
+      "type": "groupingentry",
+      "text": "Authentic",
+      "locators": [
+        "21",
+        "22",
+        "23",
+        "41",
+        "57",
+        "75",
+        "104—105",
+        "114",
+        "120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "7271cfba-9833-492d-ba1c-d3efb69c544c",
+      "type": "subentry",
+      "text": "authenticating intimacy",
+      "locators": [
+        "17",
+        "110"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "cfe9a660-1ce4-4b05-9a90-bfff4976f855",
+      "type": "subentry",
+      "text": "authentic images",
+      "locators": [
+        "107"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "6a3dbf1d-aa42-4a78-be98-5493914b8797",
+      "type": "subentry",
+      "text": "authenticity",
+      "locators": [
+        "75",
+        "103",
+        "112",
+        "116-117",
+        "132-133",
+        "141-142",
+        "148-149",
+        "161"
+      ],
+      "see": [],
+      "see_also": [
+        "Branding"
+      ],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "6f6e729d-2be9-43c6-8482-1144a7a4ad8d",
+      "type": "subentry",
+      "text": "and inauthentic",
+      "locators": [
+        "141",
+        "149"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "2a237a09-2c3e-43f9-a954-59989bd59678",
+      "type": "subentry",
+      "text": "information",
+      "locators": [
+        "109"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "65833f20-69e5-4704-a061-d12ceffa3a81",
+      "type": "subentry",
+      "text": "privately",
+      "locators": [
+        "107"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "83738587-65d1-49c4-8528-bcad1ebe6ef0",
+      "type": "subentry",
+      "text": "real names",
+      "locators": [
+        "52",
+        "61",
+        "94",
+        "99",
+        "107",
+        "109-110"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Authentic",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3cf5af9e-13d4-48ca-8715-ab453b342eec"
+    },
+    {
+      "id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804",
+      "type": "groupingentry",
+      "text": "Belief",
+      "locators": [
+        "118"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "d2b3eebb-b4e1-474a-9a53-c27df0e19ad4",
+      "type": "subentry",
+      "text": "habit and",
+      "locators": [
+        "7",
+        "71",
+        "104",
+        "154"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "e81facd9-f61c-465a-841a-e0edf6545dae",
+      "type": "subentry",
+      "text": "Hume and Deleuze on",
+      "locators": [
+        "57 (see also Deleuze",
+        "Gilles"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "187c42b1-3f60-4557-a21c-0068a1621df5",
+      "type": "subentry",
+      "text": "Hume",
+      "locators": [
+        "David)"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "56493f91-1169-41e5-80e0-234e28f68918",
+      "type": "subentry",
+      "text": "in memory as storage",
+      "locators": [
+        "55 (see also Memory"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "592a6efa-f4cf-479a-91a8-dffc6a9153c3",
+      "type": "subentry",
+      "text": "Politics: of memory as storage)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "afd32cd0-58b2-4ce2-a58b-ae7656076d89",
+      "type": "subentry",
+      "text": "in a utopian Internet",
+      "locators": [
+        "78"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Belief",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c5ab3f81-f9ff-463f-95f0-d39d71bf0804"
+    },
+    {
+      "id": "425ef1f7-4d45-496f-b846-69ac36941f31",
+      "type": "groupingentry",
+      "text": "Big Data",
+      "locators": [
+        "23",
+        "39-40",
+        "54-59",
+        "117",
+        "123",
+        "171",
+        "192n63"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "425ef1f7-4d45-496f-b846-69ac36941f31"
+    },
+    {
+      "id": "706a6c05-2532-4909-b8fa-bfecc181267b",
+      "type": "subentry",
+      "text": "as drama",
+      "locators": [
+        "62",
+        "94"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Big Data",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "425ef1f7-4d45-496f-b846-69ac36941f31"
+    },
+    {
+      "id": "a44a39e8-4f5b-42af-80b2-090d22089aa7",
+      "type": "soloentry",
+      "text": "]BlackBerry Messaging (BBM)",
+      "locators": [
+        "117",
+        "167"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "a44a39e8-4f5b-42af-80b2-090d22089aa7"
+    },
+    {
+      "id": "1d440d44-447f-4b5e-bbb0-16a9f7d8cd34",
+      "type": "groupingentry",
+      "text": "Bodies",
+      "locators": [
+        "3",
+        "41-43",
+        "59",
+        "74",
+        "89",
+        "104-106",
+        "148",
+        "157",
+        "159-161",
+        "173"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d440d44-447f-4b5e-bbb0-16a9f7d8cd34"
+    },
+    {
+      "id": "331c027d-be33-4597-b3e8-ad6b5226bb83",
+      "type": "subentry",
+      "text": "as/and the archive",
+      "locators": [
+        "xi",
+        "120-122"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Bodies",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d440d44-447f-4b5e-bbb0-16a9f7d8cd34"
+    },
+    {
+      "id": "8466fbda-2e53-4ba0-a155-8e2d6fd27080",
+      "type": "subentry",
+      "text": "and habits",
+      "locators": [
+        "6",
+        "8-9",
+        "168"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits"
+      ],
+      "parent_text": "Bodies",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d440d44-447f-4b5e-bbb0-16a9f7d8cd34"
+    },
+    {
+      "id": "76e35759-f11f-40ca-b158-2bc950f3ef1d",
+      "type": "soloentry",
+      "text": "Branding",
+      "locators": [
+        "132",
+        "146",
+        "148-149",
+        "162"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "76e35759-f11f-40ca-b158-2bc950f3ef1d"
+    },
+    {
+      "id": "8502fee6-3cce-4294-adcc-dcebfbe20778",
+      "type": "soloentry",
+      "text": "Bullying",
+      "locators": [],
+      "see": [
+        "Cyberbullying"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8502fee6-3cce-4294-adcc-dcebfbe20778"
+    },
+    {
+      "id": "c29a7684-e85c-4b2e-a624-8327cdee75fa",
+      "type": "groupingentry",
+      "text": "Capture",
+      "locators": [
+        "1",
+        "3",
+        "16",
+        "23",
+        "25",
+        "48",
+        "49",
+        "75",
+        "123",
+        "127",
+        "193nn71-74"
+      ],
+      "see": [],
+      "see_also": [
+        "Actions"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c29a7684-e85c-4b2e-a624-8327cdee75fa"
+    },
+    {
+      "id": "2c5fc8f4-acbf-4ab0-909c-d1504f5cb230",
+      "type": "subentry",
+      "text": "and storage",
+      "locators": [
+        "120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Capture",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c29a7684-e85c-4b2e-a624-8327cdee75fa"
+    },
+    {
+      "id": "caf0ac21-19c4-4567-8b52-a49f7e624ad4",
+      "type": "subentry",
+      "text": "systems",
+      "locators": [
+        "39-40",
+        "59-62",
+        "69",
+        "79",
+        "93"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Capture",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c29a7684-e85c-4b2e-a624-8327cdee75fa"
+    },
+    {
+      "id": "57fcca33-49f9-49fa-baec-1285e53af8f8",
+      "type": "groupingentry",
+      "text": "Care",
+      "locators": [
+        "70",
+        "78",
+        "90",
+        "110",
+        "123",
+        "126-127",
+        "150"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "57fcca33-49f9-49fa-baec-1285e53af8f8"
+    },
+    {
+      "id": "5206afb3-05f8-4659-b254-aa4a134e757d",
+      "type": "subentry",
+      "text": "as caring actions",
+      "locators": [
+        "18",
+        "124"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Care",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "57fcca33-49f9-49fa-baec-1285e53af8f8"
+    },
+    {
+      "id": "96e6079c-36ff-4218-86e6-4ad681b5aca7",
+      "type": "soloentry",
+      "text": "Causality",
+      "locators": [
+        "14",
+        "41",
+        "53-57"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits: and causality/correlation"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "96e6079c-36ff-4218-86e6-4ad681b5aca7"
+    },
+    {
+      "id": "ea628aea-72cf-46f2-8ba3-473696088f6a",
+      "type": "soloentry",
+      "text": "Cell phones",
+      "locators": [
+        "50-52",
+        "63-66",
+        "117",
+        "167-168"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ea628aea-72cf-46f2-8ba3-473696088f6a"
+    },
+    {
+      "id": "77bd983f-25df-4fbc-9e06-4d8033bf4196",
+      "type": "soloentry",
+      "text": "Child pornography",
+      "locators": [
+        "108",
+        "110",
+        "117"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberporn"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "77bd983f-25df-4fbc-9e06-4d8033bf4196"
+    },
+    {
+      "id": "beed3cbd-150a-487b-b3f0-16244018f51a",
+      "type": "groupingentry",
+      "text": "Code",
+      "locators": [
+        "17",
+        "50",
+        "70",
+        "79",
+        "80",
+        "82-89",
+        "199nSO",
+        "199n5S3"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "beed3cbd-150a-487b-b3f0-16244018f51a"
+    },
+    {
+      "id": "016dda4f-f5e9-479e-9a90-10d71e267fee",
+      "type": "subentry",
+      "text": "as logos",
+      "locators": [
+        "83",
+        "85",
+        "86"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Code",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "beed3cbd-150a-487b-b3f0-16244018f51a"
+    },
+    {
+      "id": "5e6b4b5b-eee1-4c04-98d0-b8f51f8aab92",
+      "type": "soloentry",
+      "text": "Coming out",
+      "locators": [
+        "101",
+        "129-133",
+        "152",
+        "173"
+      ],
+      "see": [],
+      "see_also": [
+        "Outing"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5e6b4b5b-eee1-4c04-98d0-b8f51f8aab92"
+    },
+    {
+      "id": "ae308d06-56c0-4586-b5ea-1f6afa87f169",
+      "type": "soloentry",
+      "text": "Communal",
+      "locators": [
+        "3",
+        "28",
+        "125-127",
+        "157"
+      ],
+      "see": [],
+      "see_also": [
+        "Community",
+        "Subjects: communal"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae308d06-56c0-4586-b5ea-1f6afa87f169"
+    },
+    {
+      "id": "eba360b4-cf92-45e7-bc24-101937191d98",
+      "type": "groupingentry",
+      "text": "Community",
+      "locators": [
+        "ix",
+        "3",
+        "4",
+        "26-28",
+        "40",
+        "85",
+        "112-116",
+        "126",
+        "164-167",
+        "171-173"
+      ],
+      "see": [],
+      "see_also": [
+        "Internet: as gated communities",
+        "Neighborhoods",
+        "New media"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "eba360b4-cf92-45e7-bc24-101937191d98"
+    },
+    {
+      "id": "ec68c962-f04e-444b-9350-c12afc955cfa",
+      "type": "subentry",
+      "text": "and hatred",
+      "locators": [
+        "98",
+        "141-142",
+        "157-158",
+        "161",
+        "163"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Community",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "eba360b4-cf92-45e7-bc24-101937191d98"
+    },
+    {
+      "id": "91bbb445-d298-4a98-8e61-6dc7d21d546b",
+      "type": "subentry",
+      "text": "and shame",
+      "locators": [
+        "141",
+        "155",
+        "157-158",
+        "161-162"
+      ],
+      "see": [],
+      "see_also": [
+        "Shame"
+      ],
+      "parent_text": "Community",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "eba360b4-cf92-45e7-bc24-101937191d98"
+    },
+    {
+      "id": "d19c2700-9f99-4c88-9c78-3f3b57765d16",
+      "type": "soloentry",
+      "text": "Confession",
+      "locators": [
+        "133",
+        "141-142",
+        "154-155",
+        "160",
+        "162-163"
+      ],
+      "see": [],
+      "see_also": [
+        "Templates"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "d19c2700-9f99-4c88-9c78-3f3b57765d16"
+    },
+    {
+      "id": "03d637bf-90dd-4e29-80ac-f78ec7604ff4",
+      "type": "soloentry",
+      "text": "Consent",
+      "locators": [
+        "11",
+        "96",
+        "146-147",
+        "172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "03d637bf-90dd-4e29-80ac-f78ec7604ff4"
+    },
+    {
+      "id": "5a5fb4e6-c11f-4296-a8b9-c1be8754e314",
+      "type": "soloentry",
+      "text": "Correlation",
+      "locators": [
+        "14",
+        "15",
+        "54",
+        "56-58",
+        "112",
+        "120",
+        "192n63"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5a5fb4e6-c11f-4296-a8b9-c1be8754e314"
+    },
+    {
+      "id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c",
+      "type": "groupingentry",
+      "text": "Crisis",
+      "locators": [
+        "2-4",
+        "10-13",
+        "15-17",
+        "27",
+        "36",
+        "39",
+        "57",
+        "61-62",
+        "69-80",
+        "85-86",
+        "89-91",
+        "114",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits: and crisis and catastrophe, 66-67, 74-75, 171, 197n26"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c"
+    },
+    {
+      "id": "e0e6155f-d563-49ee-a6df-fd78a18892ae",
+      "type": "subentry",
+      "text": "as “crisis ordinary,” 3",
+      "locators": [
+        "69",
+        "78",
+        "90",
+        "198n33"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Crisis",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c"
+    },
+    {
+      "id": "e921b271-7151-4600-99a4-c3e294cb0229",
+      "type": "subentry",
+      "text": "and desire for",
+      "locators": [
+        "73"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Crisis",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c"
+    },
+    {
+      "id": "925dd3ba-243c-4e70-97e5-ee89c7621cfd",
+      "type": "subentry",
+      "text": "economic",
+      "locators": [
+        "75",
+        "174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Crisis",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c"
+    },
+    {
+      "id": "a8762d0b-a476-459d-9d40-bed4f5f15ab1",
+      "type": "subentry",
+      "text": "political",
+      "locators": [
+        "67",
+        "74"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Crisis",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "54b19c8e-c43a-49c1-8c90-8afcc940d63c"
+    },
+    {
+      "id": "2e7c8902-2986-4900-a21a-ce1ef1c92e6a",
+      "type": "soloentry",
+      "text": "Cruel optimism",
+      "locators": [
+        "69",
+        "78"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2e7c8902-2986-4900-a21a-ce1ef1c92e6a"
+    },
+    {
+      "id": "1dfba405-936d-4cef-9baf-d189f2cbd40f",
+      "type": "soloentry",
+      "text": "Cyberbullying",
+      "locators": [
+        "18",
+        "72",
+        "97",
+        "110",
+        "116-117",
+        "135-137",
+        "141-143",
+        "146",
+        "206-207n20"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1dfba405-936d-4cef-9baf-d189f2cbd40f"
+    },
+    {
+      "id": "992f6057-9ebe-4352-ae53-ebd3df7733d2",
+      "type": "soloentry",
+      "text": "Cyberporn",
+      "locators": [
+        "104",
+        "108",
+        "110-111",
+        "151"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "992f6057-9ebe-4352-ae53-ebd3df7733d2"
+    },
+    {
+      "id": "b8e047e1-4b38-49fd-8362-5a6f45738573",
+      "type": "soloentry",
+      "text": "Cyberpunk",
+      "locators": [
+        "105-106"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b8e047e1-4b38-49fd-8362-5a6f45738573"
+    },
+    {
+      "id": "ddac4b21-5da6-4f75-82d7-98065cd84f52",
+      "type": "soloentry",
+      "text": "Cyberspace",
+      "locators": [
+        "ix",
+        "17",
+        "19",
+        "71",
+        "104-107"
+      ],
+      "see": [],
+      "see_also": [
+        "Internet: as utopian"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ddac4b21-5da6-4f75-82d7-98065cd84f52"
+    },
+    {
+      "id": "9dd8ef6d-711f-48b0-811f-5ec92d4468ba",
+      "type": "soloentry",
+      "text": "Cyborg",
+      "locators": [
+        "50"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9dd8ef6d-711f-48b0-811f-5ec92d4468ba"
+    },
+    {
+      "id": "31dea4cd-9b28-402b-9dad-66768e15c4c9",
+      "type": "soloentry",
+      "text": "Dasein",
+      "locators": [],
+      "see": [
+        "‘They’"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "31dea4cd-9b28-402b-9dad-66768e15c4c9"
+    },
+    {
+      "id": "bcc5e73f-86ef-4cba-a40a-e2e2c28aa676",
+      "type": "soloentry",
+      "text": "Data analytics",
+      "locators": [],
+      "see": [
+        "Big Data"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bcc5e73f-86ef-4cba-a40a-e2e2c28aa676"
+    },
+    {
+      "id": "bf5d5fa9-28f1-4082-be53-732bafb2e644",
+      "type": "soloentry",
+      "text": "Data mining",
+      "locators": [
+        "109"
+      ],
+      "see": [],
+      "see_also": [
+        "Big Data"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bf5d5fa9-28f1-4082-be53-732bafb2e644"
+    },
+    {
+      "id": "0a5959e9-1336-4deb-a249-10bf63d04845",
+      "type": "soloentry",
+      "text": "DDOS attacks",
+      "locators": [],
+      "see": [
+        "Denial of service"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0a5959e9-1336-4deb-a249-10bf63d04845"
+    },
+    {
+      "id": "85960266-6f92-4e2a-b223-3daabaa74982",
+      "type": "soloentry",
+      "text": "Dean, Jodi",
+      "locators": [
+        "152-153"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "85960266-6f92-4e2a-b223-3daabaa74982"
+    },
+    {
+      "id": "354657d4-3167-481b-839b-3b9022b220d7",
+      "type": "groupingentry",
+      "text": "Democracy",
+      "locators": [
+        "ix",
+        "10",
+        "13",
+        "18",
+        "60-61",
+        "68",
+        "70-73",
+        "83-84",
+        "101",
+        "143"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "354657d4-3167-481b-839b-3b9022b220d7"
+    },
+    {
+      "id": "87a1130d-84d3-40ff-b5de-d3c946250212",
+      "type": "subentry",
+      "text": "and society",
+      "locators": [
+        "109",
+        "152",
+        "156"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Democracy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "354657d4-3167-481b-839b-3b9022b220d7"
+    },
+    {
+      "id": "9b3d85da-4f0a-4a87-961a-bfba24327535",
+      "type": "soloentry",
+      "text": "Denial of service",
+      "locators": [
+        "127",
+        "164"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9b3d85da-4f0a-4a87-961a-bfba24327535"
+    },
+    {
+      "id": "1de011ea-bbdb-4466-9419-bb195a3a25ce",
+      "type": "groupingentry",
+      "text": "Difference",
+      "locators": [
+        "xi",
+        "18",
+        "49",
+        "52",
+        "66",
+        "85",
+        "94",
+        "127",
+        "160"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "8003609f-5f10-4b70-8d54-6129c94f7b3a",
+      "type": "subentry",
+      "text": "as critical",
+      "locators": [
+        "17",
+        "70",
+        "74-75"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Difference",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "76fdede4-85cb-48c4-b2d6-7074e10e860b",
+      "type": "subentry",
+      "text": "differently",
+      "locators": [
+        "17",
+        "27",
+        "40",
+        "158",
+        "160",
+        "174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Difference",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "64e721d0-edcd-49c4-bdc4-c4fb2f32f77d",
+      "type": "subentry",
+      "text": "and indifference",
+      "locators": [
+        "22-23"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Difference",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "1107100c-7265-4dc7-a2db-44315071ff9a",
+      "type": "subentry",
+      "text": "and neighborhoods",
+      "locators": [
+        "54",
+        "104",
+        "119"
+      ],
+      "see": [],
+      "see_also": [
+        "Neighborhoods"
+      ],
+      "parent_text": "Difference",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "1bf8537a-3151-42bc-b3ce-dde1b64c65b1",
+      "type": "subentry",
+      "text": "and repetition",
+      "locators": [
+        "9",
+        "52",
+        "82",
+        "88-89"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Difference",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1de011ea-bbdb-4466-9419-bb195a3a25ce"
+    },
+    {
+      "id": "9dd5b7bf-bea0-4b0a-8de7-37dadb9b67ea",
+      "type": "groupingentry",
+      "text": "Discovery",
+      "locators": [
+        "46-47",
+        "60",
+        "97",
+        "108",
+        "149",
+        "172 See also Revelations"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9dd5b7bf-bea0-4b0a-8de7-37dadb9b67ea"
+    },
+    {
+      "id": "8974afee-03bc-4216-beb7-10fd3b4e033c",
+      "type": "subentry",
+      "text": "and newness",
+      "locators": [
+        "15",
+        "27",
+        "87",
+        "118"
+      ],
+      "see": [],
+      "see_also": [
+        "Ephemerality: enduring"
+      ],
+      "parent_text": "Discovery",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9dd5b7bf-bea0-4b0a-8de7-37dadb9b67ea"
+    },
+    {
+      "id": "a0d2696b-a344-4bda-a199-91347cb07d04",
+      "type": "soloentry",
+      "text": "Discrimination",
+      "locators": [
+        "58",
+        "105-106",
+        "120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "a0d2696b-a344-4bda-a199-91347cb07d04"
+    },
+    {
+      "id": "fa0dbdf3-2065-4f2c-8e6f-1034c9ed2c16",
+      "type": "soloentry",
+      "text": "Doxing",
+      "locators": [],
+      "see": [
+        "Outing"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fa0dbdf3-2065-4f2c-8e6f-1034c9ed2c16"
+    },
+    {
+      "id": "355c1f5c-2424-4d4b-83cf-6c52fdf8588c",
+      "type": "groupingentry",
+      "text": "undocumented activists",
+      "locators": [
+        "130-133",
+        "210n1",
+        "211n12"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "355c1f5c-2424-4d4b-83cf-6c52fdf8588c"
+    },
+    {
+      "id": "cc79681b-da21-47de-af05-f71a8cf27a16",
+      "type": "subentry",
+      "text": "“undocuqueer” activism",
+      "locators": [
+        "130-132"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "undocumented activists",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "355c1f5c-2424-4d4b-83cf-6c52fdf8588c"
+    },
+    {
+      "id": "15e38f84-7353-4bc3-a4ff-024c89685233",
+      "type": "soloentry",
+      "text": "Enlightenment",
+      "locators": [
+        "71",
+        "99",
+        "151-152"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "15e38f84-7353-4bc3-a4ff-024c89685233"
+    },
+    {
+      "id": "2713a782-1ce6-481a-a1da-64b0f29aa3f2",
+      "type": "groupingentry",
+      "text": "Ephemerality",
+      "locators": [
+        "x",
+        "5",
+        "37",
+        "52",
+        "118",
+        "160",
+        "172",
+        "197n21"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2713a782-1ce6-481a-a1da-64b0f29aa3f2"
+    },
+    {
+      "id": "821daad7-1cb9-4ae5-ba12-185c0ee8c95b",
+      "type": "subentry",
+      "text": "enduring",
+      "locators": [
+        "15",
+        "73",
+        "78"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Ephemerality",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2713a782-1ce6-481a-a1da-64b0f29aa3f2"
+    },
+    {
+      "id": "4afa7f5a-9a14-44b9-b0b3-75c24bf37d04",
+      "type": "soloentry",
+      "text": "Ethics",
+      "locators": [
+        "10",
+        "91",
+        "113",
+        "213n27"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "4afa7f5a-9a14-44b9-b0b3-75c24bf37d04"
+    },
+    {
+      "id": "61d8b923-e38a-42ab-b915-07b23dbd8a70",
+      "type": "groupingentry",
+      "text": "Exposure",
+      "locators": [
+        "11-15",
+        "37",
+        "58",
+        "70",
+        "94",
+        "108",
+        "116",
+        "120",
+        "131",
+        "143-156",
+        "160-165"
+      ],
+      "see": [],
+      "see_also": [
+        "Shame"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "61d8b923-e38a-42ab-b915-07b23dbd8a70"
+    },
+    {
+      "id": "c9167ee3-376c-493a-b4ac-91f2e04e024b",
+      "type": "subentry",
+      "text": "and Nancy",
+      "locators": [
+        "127",
+        "135",
+        "141",
+        "160",
+        "163-164"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Exposure",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "61d8b923-e38a-42ab-b915-07b23dbd8a70"
+    },
+    {
+      "id": "7e997d88-46ee-433a-a7d3-d72fb2c536ac",
+      "type": "subentry",
+      "text": "and secrets",
+      "locators": [
+        "13",
+        "93",
+        "133",
+        "137",
+        "141",
+        "150",
+        "152",
+        "154",
+        "156",
+        "160-161"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Exposure",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "61d8b923-e38a-42ab-b915-07b23dbd8a70"
+    },
+    {
+      "id": "06e0871d-3cf5-4500-86a1-612768f259d1",
+      "type": "subentry",
+      "text": "and TXTmob",
+      "locators": [
+        "66",
+        "68"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Exposure",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "61d8b923-e38a-42ab-b915-07b23dbd8a70"
+    },
+    {
+      "id": "d78cf193-a27a-470f-b0a5-0c7134956dee",
+      "type": "subentry",
+      "text": "and writing",
+      "locators": [
+        "5",
+        "163"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Exposure",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "61d8b923-e38a-42ab-b915-07b23dbd8a70"
+    },
+    {
+      "id": "ae09f25f-aba3-48d0-b2ad-e06b15e997a9",
+      "type": "soloentry",
+      "text": "and facebooks",
+      "locators": [
+        "114"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae09f25f-aba3-48d0-b2ad-e06b15e997a9"
+    },
+    {
+      "id": "66aab075-1d38-4898-9dfc-7c2471a4917a",
+      "type": "soloentry",
+      "text": "Faces",
+      "locators": [
+        "153-154",
+        "161"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "66aab075-1d38-4898-9dfc-7c2471a4917a"
+    },
+    {
+      "id": "ca89ec82-ee4b-4ad0-99a2-787c049ee1a1",
+      "type": "soloentry",
+      "text": "Flash mobs",
+      "locators": [
+        "64",
+        "66",
+        "124-125"
+      ],
+      "see": [],
+      "see_also": [
+        "TXTmob"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ca89ec82-ee4b-4ad0-99a2-787c049ee1a1"
+    },
+    {
+      "id": "b1195bf1-d000-4aba-981a-6d850078d054",
+      "type": "soloentry",
+      "text": "Found collectivity",
+      "locators": [
+        "173-174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b1195bf1-d000-4aba-981a-6d850078d054"
+    },
+    {
+      "id": "b5931a7d-db26-4ff8-b634-c038262baab0",
+      "type": "groupingentry",
+      "text": "Freedom",
+      "locators": [
+        "ix—x",
+        "6",
+        "10-11",
+        "31",
+        "60-61",
+        "90",
+        "103-109",
+        "127"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b5931a7d-db26-4ff8-b634-c038262baab0"
+    },
+    {
+      "id": "c666df6f-7c16-49c1-9dbd-0f93b742b5fd",
+      "type": "subentry",
+      "text": "and technology",
+      "locators": [
+        "ix",
+        "18-19",
+        "54",
+        "72"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Freedom",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b5931a7d-db26-4ff8-b634-c038262baab0"
+    },
+    {
+      "id": "1ef58710-9dd7-4579-8d6c-c0cf52c5d6c2",
+      "type": "soloentry",
+      "text": "“Free labour",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1ef58710-9dd7-4579-8d6c-c0cf52c5d6c2"
+    },
+    {
+      "id": "875f4566-bf34-46ef-b360-e45d90369a5f",
+      "type": "groupingentry",
+      "text": "Friends",
+      "locators": [
+        "2",
+        "12",
+        "16",
+        "35",
+        "101",
+        "108-118",
+        "120",
+        "126",
+        "136",
+        "142-143."
+      ],
+      "see": [],
+      "see_also": [
+        "Neighborhoods",
+        "YOUs/YOUR"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "f1b629f2-8704-4b85-82cf-cf4f61954909",
+      "type": "subentry",
+      "text": "and friending",
+      "locators": [
+        "1",
+        "17",
+        "104",
+        "110",
+        "114",
+        "117",
+        "123",
+        "125"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Friends",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "cc3c120a-7eeb-4ad0-b726-9aac0892b05c",
+      "type": "subentry",
+      "text": "and friendship",
+      "locators": [
+        "14",
+        "17-18",
+        "43",
+        "53",
+        "97",
+        "103-104",
+        "110-117",
+        "123",
+        "127",
+        "205n4"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Friends",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "8bf36a0e-e436-4903-b51f-803b5870328c",
+      "type": "subentry",
+      "text": "and friends lists",
+      "locators": [
+        "111",
+        "125"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Friends",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "eda43f04-9670-4979-85c9-3c586e151337",
+      "type": "subentry",
+      "text": "as leaky technology",
+      "locators": [
+        "58",
+        "103"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Friends",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "622b7d28-f532-4855-bb53-2772a84558f4",
+      "type": "subentry",
+      "text": "and request",
+      "locators": [
+        "116",
+        "135"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Friends",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "875f4566-bf34-46ef-b360-e45d90369a5f"
+    },
+    {
+      "id": "4a65afde-c103-4f51-8af4-3e7636f9a6e3",
+      "type": "soloentry",
+      "text": "Gender",
+      "locators": [
+        "18",
+        "40",
+        "58",
+        "102",
+        "120",
+        "141",
+        "147-150"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "4a65afde-c103-4f51-8af4-3e7636f9a6e3"
+    },
+    {
+      "id": "8614b729-8761-4ce0-be63-b4ae991434e0",
+      "type": "groupingentry",
+      "text": "Habits",
+      "locators": [
+        "x—xi",
+        "1-11",
+        "13-17",
+        "39-40",
+        "52-59",
+        "75",
+        "85-90",
+        "101-102",
+        "145",
+        "147",
+        "167-169",
+        "171-172"
+      ],
+      "see": [],
+      "see_also": [
+        "Memory"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "14fb52b3-7581-4e10-ac79-982f0bf92edf",
+      "type": "subentry",
+      "text": "and addiction",
+      "locators": [
+        "4",
+        "8",
+        "10",
+        "69",
+        "168",
+        "171-172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "c0330741-13f7-465e-89f9-7149ccf1dbf0",
+      "type": "subentry",
+      "text": "and causality/correlation",
+      "locators": [
+        "53-57 (see also Causality"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "80188049-492f-4364-bd9f-9dc3aeb088ed",
+      "type": "subentry",
+      "text": "Correlation)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "9564757f-a828-4500-bad6-2cadd54339d6",
+      "type": "subentry",
+      "text": "as code/programs",
+      "locators": [
+        "6",
+        "17",
+        "58",
+        "69-70",
+        "79-82",
+        "85-86",
+        "90"
+      ],
+      "see": [],
+      "see_also": [
+        "Algorithms"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "132e473e-622b-4501-ad6d-9458d559ed73",
+      "type": "subentry",
+      "text": "and crisis",
+      "locators": [
+        "2—4",
+        "10",
+        "13",
+        "15-17",
+        "57",
+        "61-62",
+        "66",
+        "69-70",
+        "73",
+        "75-76",
+        "78-79",
+        "85-86",
+        "90-91",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "0fb26cde-0eb1-40ec-96df-f40b8c27338a",
+      "type": "subentry",
+      "text": "and debt",
+      "locators": [
+        "4-5"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "279899d2-70c8-4764-a08c-80c418ec4194",
+      "type": "subentry",
+      "text": "and/as discipline",
+      "locators": [
+        "61",
+        "101"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "08a56a10-1fa4-4227-a8d6-e1d823ac660f",
+      "type": "subentry",
+      "text": "and disruption",
+      "locators": [
+        "2",
+        "67",
+        "70",
+        "82",
+        "85-86",
+        "160"
+      ],
+      "see": [],
+      "see_also": [
+        "Updating"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "0d3e6a07-f363-464f-9596-ac7fc3c32206",
+      "type": "subentry",
+      "text": "and environment",
+      "locators": [
+        "6-9",
+        "95"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "5a9cdf2a-edf4-4dac-bd8c-82cd4927d114",
+      "type": "subentry",
+      "text": "and habitable future",
+      "locators": [
+        "169"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "1a55a6cf-aa55-4016-bb95-9a7b1158276e",
+      "type": "subentry",
+      "text": "and habituation",
+      "locators": [
+        "2",
+        "8-10",
+        "15",
+        "57",
+        "69",
+        "85-87",
+        "89",
+        "101",
+        "132",
+        "167-169",
+        "171-174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "02ac576d-7f06-4b51-bd70-8a54a175d92e",
+      "type": "subentry",
+      "text": "as ideology",
+      "locators": [
+        "7",
+        "65"
+      ],
+      "see": [],
+      "see_also": [
+        "Ideology"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "2d66acbc-aa40-406b-b5ce-6d423fe27052",
+      "type": "subentry",
+      "text": "as imagined connections",
+      "locators": [],
+      "see": [
+        "Networks: as imagined"
+      ],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "ee2dc263-9bc6-41fc-a189-91d9786c35d7",
+      "type": "subentry",
+      "text": "and impoverished privacy",
+      "locators": [
+        "102"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "465778ba-2da6-4d97-a6d8-7f5f84b71a98",
+      "type": "subentry",
+      "text": "and individuals/collectives",
+      "locators": [
+        "xi",
+        "3",
+        "6-7",
+        "23",
+        "27",
+        "39",
+        "53",
+        "57",
+        "62",
+        "89",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "a4c95f0b-376d-4964-a681-f7ea621d987d",
+      "type": "subentry",
+      "text": "as information",
+      "locators": [
+        "3",
+        "11",
+        "17",
+        "40",
+        "53-54"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "91ddcbf7-c775-4e57-860c-a32a2ec0d45f",
+      "type": "subentry",
+      "text": "as inhabiting",
+      "locators": [
+        "xi",
+        "5",
+        "15-19",
+        "23",
+        "61-62",
+        "103",
+        "135",
+        "160-164",
+        "171-174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "ea1fc946-ea83-47d2-9c1e-0da921cff83b",
+      "type": "subentry",
+      "text": "and inhabitation of alterity",
+      "locators": [
+        "16",
+        "95"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "ae9a4623-4f81-4f14-b40d-54301112c49c",
+      "type": "subentry",
+      "text": "and/of leaking",
+      "locators": [
+        "59",
+        "145",
+        "147"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "6b5c75f2-e18e-448c-b1c3-c09f5e8d368f",
+      "type": "subentry",
+      "text": "of living",
+      "locators": [
+        "90"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "cfaf8550-24fb-487e-9d94-4ef9a9c8f285",
+      "type": "subentry",
+      "text": "and memory",
+      "locators": [
+        "6",
+        "16-17",
+        "69-70",
+        "80-81",
+        "85-89",
+        "160",
+        "172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "67accaf5-1653-44b9-82fe-887bf3b86d5e",
+      "type": "subentry",
+      "text": "and modes of action",
+      "locators": [
+        "67"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "c66098db-8b55-477d-9d16-4977ea6d8406",
+      "type": "subentry",
+      "text": "and neoliberalism",
+      "locators": [
+        "xi",
+        "3",
+        "8",
+        "10-15"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "4a807986-7290-4297-8104-6f17e27a6583",
+      "type": "subentry",
+      "text": "and networks",
+      "locators": [
+        "3-4",
+        "19",
+        "39-40",
+        "68-69",
+        "160",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "fcdb99ca-a222-4ca0-85c4-1545ffba8165",
+      "type": "subentry",
+      "text": "and neuroscience",
+      "locators": [],
+      "see": [
+        "Memory: in neuroscience"
+      ],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "d3d25c05-cf16-41e4-8ecc-e862145eaaf7",
+      "type": "subentry",
+      "text": "and new media",
+      "locators": [
+        "x",
+        "1-2",
+        "5",
+        "15-18",
+        "52",
+        "70",
+        "167-169",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "New media: as habitual"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "ad25ad20-b7a6-4095-82fa-9af2a3fbc88f",
+      "type": "subentry",
+      "text": "as pharmakon",
+      "locators": [
+        "8"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "7ea9a145-ce95-4cf7-9934-0ece84824e07",
+      "type": "subentry",
+      "text": "and prediction",
+      "locators": [
+        "80-82",
+        "90"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "13a27939-b5ff-4631-a829-fffd797c3002",
+      "type": "subentry",
+      "text": "and probability",
+      "locators": [
+        "53-56"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "2ef8e77b-e35f-430e-8d5d-2f06d7d7bece",
+      "type": "subentry",
+      "text": "and publicity",
+      "locators": [
+        "95",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "42b24cea-45ac-4292-a3af-6653b69560ad",
+      "type": "subentry",
+      "text": "and repetition",
+      "locators": [
+        "3",
+        "6",
+        "9",
+        "17",
+        "23",
+        "40",
+        "52-55",
+        "57",
+        "69",
+        "89-90",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "Repetition: and habit"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "a2fe9814-9c26-42b0-8ae7-fc06b2603559",
+      "type": "subentry",
+      "text": "and users",
+      "locators": [
+        "xi",
+        "1",
+        "2",
+        "16",
+        "173"
+      ],
+      "see": [],
+      "see_also": [
+        "YOUs/YOUR"
+      ],
+      "parent_text": "Habits",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8614b729-8761-4ce0-be63-b4ae991434e0"
+    },
+    {
+      "id": "0ce092b3-6520-4dcf-aa74-196a68e88313",
+      "type": "soloentry",
+      "text": "Habitus",
+      "locators": [
+        "7",
+        "14",
+        "85",
+        "182n22",
+        "183n27"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0ce092b3-6520-4dcf-aa74-196a68e88313"
+    },
+    {
+      "id": "426e7585-6083-4efc-bb13-6dcea1670abd",
+      "type": "soloentry",
+      "text": "Hatred",
+      "locators": [
+        "142-143",
+        "157-158",
+        "161"
+      ],
+      "see": [],
+      "see_also": [
+        "Community: and hatred",
+        "Love"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "426e7585-6083-4efc-bb13-6dcea1670abd"
+    },
+    {
+      "id": "6295bce1-c998-4afa-bfc5-f900ccb2abf3",
+      "type": "soloentry",
+      "text": "“Homonationalism,” 131",
+      "locators": [
+        "133"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "6295bce1-c998-4afa-bfc5-f900ccb2abf3"
+    },
+    {
+      "id": "99b8e95c-06d1-4f94-b5a2-8b408eea308d",
+      "type": "soloentry",
+      "text": "Identity",
+      "locators": [
+        "26",
+        "28",
+        "89",
+        "99",
+        "109",
+        "112",
+        "154",
+        "163"
+      ],
+      "see": [],
+      "see_also": [
+        "YOUs/YOUR"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "99b8e95c-06d1-4f94-b5a2-8b408eea308d"
+    },
+    {
+      "id": "ab42d81f-183a-4320-9ebe-b8c9bf25f1d5",
+      "type": "soloentry",
+      "text": "Ideology",
+      "locators": [
+        "6-8",
+        "42",
+        "65",
+        "121-123",
+        "152"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ab42d81f-183a-4320-9ebe-b8c9bf25f1d5"
+    },
+    {
+      "id": "ebba5c68-f60d-4c91-8ff9-ec16045c1b66",
+      "type": "soloentry",
+      "text": "Immigration",
+      "locators": [
+        "129-131"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ebba5c68-f60d-4c91-8ff9-ec16045c1b66"
+    },
+    {
+      "id": "486d13a7-595a-4c46-b8e3-bcdc5402644c",
+      "type": "soloentry",
+      "text": "Individual",
+      "locators": [],
+      "see": [
+        "Habits: and individuals/collectives",
+        "Neoliberalism: and individuality/collectivity"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "486d13a7-595a-4c46-b8e3-bcdc5402644c"
+    },
+    {
+      "id": "72547e7b-6fde-4fb0-8c69-6be27496821b",
+      "type": "groupingentry",
+      "text": "Information",
+      "locators": [
+        "ix—x",
+        "11-12",
+        "17",
+        "40",
+        "49-56",
+        "64-65",
+        "67",
+        "70-78",
+        "86",
+        "93-95",
+        "102",
+        "107-108",
+        "114-118",
+        "123-124",
+        "152"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "897e7888-5d95-45d5-99e4-8e627884e827",
+      "type": "subentry",
+      "text": "172",
+      "locators": [],
+      "see": [
+        "also Habits and commodity value, 117-118"
+      ],
+      "see_also": [
+        "YOUs/YOUR: YOUs value"
+      ],
+      "parent_text": "Information",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "aecd7858-2dd3-488e-b270-7dbe53fdafbb",
+      "type": "subentry",
+      "text": "flow of",
+      "locators": [
+        "49",
+        "77",
+        "116"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Information",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "1780c934-44d3-4a5d-bcc6-90e7568e6096",
+      "type": "subentry",
+      "text": "“Information Superhighway,” 72",
+      "locators": [
+        "108"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Information",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "af240028-a85b-4dd8-bbf4-058f2d15fff3",
+      "type": "subentry",
+      "text": "as power",
+      "locators": [
+        "42",
+        "117"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Information",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "646fdea5-29fc-4b26-b5c7-1c5b984cb441",
+      "type": "subentry",
+      "text": "as undead",
+      "locators": [
+        "3",
+        "15",
+        "70",
+        "78",
+        "91",
+        "172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Information",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "72547e7b-6fde-4fb0-8c69-6be27496821b"
+    },
+    {
+      "id": "30c4911f-a4bd-48a4-9134-6a0079285172",
+      "type": "groupingentry",
+      "text": "Internet",
+      "locators": [
+        "ix—xi",
+        "12-18",
+        "43",
+        "49",
+        "56-57",
+        "70-77",
+        "103-110",
+        "116-117",
+        "124",
+        "145-147",
+        "160-161"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "0dc7af08-be3f-499b-b119-e70e1dc6ee90",
+      "type": "subentry",
+      "text": "in the 1990s",
+      "locators": [
+        "ix",
+        "71-72",
+        "103-106",
+        "109-110",
+        "185n56"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "eb96f192-1f5e-4f83-b457-cd2b434c966e",
+      "type": "subentry",
+      "text": "as critical",
+      "locators": [
+        "70-73"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "f3a1063b-ff75-466e-8623-91124f3d2b1e",
+      "type": "subentry",
+      "text": "and desire",
+      "locators": [
+        "116",
+        "124"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "ba0bdb7e-0856-413f-bbc3-98e806568ca1",
+      "type": "subentry",
+      "text": "as gated communities",
+      "locators": [
+        "ix",
+        "4",
+        "17",
+        "94",
+        "99",
+        "103",
+        "116",
+        "119 (see also Community"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "b3f50733-518f-436d-ba6b-b9c8f0563e36",
+      "type": "subentry",
+      "text": "Neighborhoods)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "d0fdafaa-49d4-433a-9dcb-ab2f75943a52",
+      "type": "subentry",
+      "text": "as network",
+      "locators": [],
+      "see": [
+        "Networks"
+      ],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "14d56452-d401-4232-b674-28ffcded5eb6",
+      "type": "subentry",
+      "text": "“nobody knows you're a dog,” ix",
+      "locators": [
+        "xi",
+        "105",
+        "107"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "ad2aa9d6-76a4-46a5-9102-35dc9b10cff7",
+      "type": "subentry",
+      "text": "as Planning Tool for Resource Integration, Synchronization and Management (PRISM)",
+      "locators": [
+        "52",
+        "73",
+        "93"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "f9cb80c5-8d90-4ecc-b6dd-2ba9877f1e3f",
+      "type": "subentry",
+      "text": "and privacy",
+      "locators": [
+        "12-13",
+        "93-95",
+        "99"
+      ],
+      "see": [],
+      "see_also": [
+        "Windows"
+      ],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "04cf8726-fd1a-47f9-8808-c338aaaeb327",
+      "type": "subentry",
+      "text": "protocol (TCP/IP)",
+      "locators": [
+        "ix—x",
+        "12",
+        "51-52",
+        "57",
+        "96",
+        "106-107",
+        "145"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "53e6e8ce-3fb4-4d1e-8e34-1b44e4e8d68e",
+      "type": "subentry",
+      "text": "and publicity",
+      "locators": [
+        "ix",
+        "13",
+        "145",
+        "160"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "1266b5e5-c87d-4a25-8979-8be3206d249b",
+      "type": "subentry",
+      "text": "and race",
+      "locators": [
+        "71",
+        "104",
+        "105-106",
+        "116"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "1db5a555-a141-416e-9bac-6d57b9da24cb",
+      "type": "subentry",
+      "text": "as safe space",
+      "locators": [
+        "99",
+        "116"
+      ],
+      "see": [],
+      "see_also": [
+        "Safe spaces"
+      ],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "e5114c21-9f04-487f-99c7-3077a366ca29",
+      "type": "subentry",
+      "text": "as utopian",
+      "locators": [
+        "17",
+        "71",
+        "106",
+        "109"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberspace"
+      ],
+      "parent_text": "Internet",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "30c4911f-a4bd-48a4-9134-6a0079285172"
+    },
+    {
+      "id": "7ed896db-a8cc-4af1-b62b-0f58fda1f7e4",
+      "type": "soloentry",
+      "text": "Interpellation",
+      "locators": [
+        "122-123"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "7ed896db-a8cc-4af1-b62b-0f58fda1f7e4"
+    },
+    {
+      "id": "c51a8c67-e3ef-432d-a1b9-64731f69ce92",
+      "type": "soloentry",
+      "text": "Intimacy",
+      "locators": [
+        "ix",
+        "17-19",
+        "95",
+        "103",
+        "110",
+        "113",
+        "116",
+        "124"
+      ],
+      "see": [],
+      "see_also": [
+        "Authentic",
+        "Friends"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c51a8c67-e3ef-432d-a1b9-64731f69ce92"
+    },
+    {
+      "id": "dc0e493c-60d2-4bb0-b787-f6b6620600de",
+      "type": "soloentry",
+      "text": "Law",
+      "locators": [
+        "80",
+        "82-84",
+        "122",
+        "147",
+        "198n39"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "dc0e493c-60d2-4bb0-b787-f6b6620600de"
+    },
+    {
+      "id": "6f4d7fd1-2261-4a28-a708-21f04e16ce48",
+      "type": "soloentry",
+      "text": "Likes",
+      "locators": [
+        "104",
+        "118-120",
+        "123"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "6f4d7fd1-2261-4a28-a708-21f04e16ce48"
+    },
+    {
+      "id": "bf8036a2-e497-494c-82eb-805c5d04afcb",
+      "type": "soloentry",
+      "text": "Logos",
+      "locators": [
+        "70",
+        "79-80",
+        "82-86",
+        "195n4"
+      ],
+      "see": [],
+      "see_also": [
+        "Code: as logos",
+        "Repetition: and logos"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bf8036a2-e497-494c-82eb-805c5d04afcb"
+    },
+    {
+      "id": "b9c358c0-3fc5-42b5-a39c-68b29685a43c",
+      "type": "soloentry",
+      "text": "Love",
+      "locators": [
+        "10",
+        "103-104",
+        "113",
+        "126-127",
+        "141-142",
+        "156-158",
+        "163"
+      ],
+      "see": [],
+      "see_also": [
+        "Hatred",
+        "Spam"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b9c358c0-3fc5-42b5-a39c-68b29685a43c"
+    },
+    {
+      "id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b",
+      "type": "groupingentry",
+      "text": "Maps and mapping",
+      "locators": [
+        "1",
+        "13-19",
+        "27",
+        "39-50",
+        "83"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "a4fbb1fc-806a-47fe-97ef-7f5309bd54db",
+      "type": "subentry",
+      "text": "cognitive",
+      "locators": [
+        "17",
+        "39-42",
+        "55-59",
+        "65",
+        "188n5"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "9d71878b-2a26-4060-abba-fd08f75eb9a4",
+      "type": "subentry",
+      "text": "friendship",
+      "locators": [
+        "104"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "5a99fcda-f424-4b44-85c8-935ed4197895",
+      "type": "subentry",
+      "text": "Google",
+      "locators": [
+        "46"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "81ec5757-00d9-4409-9d7d-92d8a11a2402",
+      "type": "subentry",
+      "text": "network",
+      "locators": [
+        "2-3",
+        "13",
+        "15-17",
+        "19",
+        "27",
+        "37",
+        "39-44",
+        "47-50",
+        "52-53",
+        "62",
+        "164"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "6cec7bf6-ef1a-4c97-90f8-42dd4d0cf749",
+      "type": "subentry",
+      "text": "neural",
+      "locators": [
+        "81"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "e1956241-ed07-4f67-9a6e-142937c0e5bf",
+      "type": "subentry",
+      "text": "public and private",
+      "locators": [
+        "108"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "3d9ec782-40b2-4307-bbb0-fc13ab4a46b6",
+      "type": "subentry",
+      "text": "as rhizome",
+      "locators": [
+        "43"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "9e74ca51-3379-48ae-9e65-2f4882675c86",
+      "type": "subentry",
+      "text": "social",
+      "locators": [
+        "14",
+        "41-43"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "82293dd5-866f-42be-b634-f2e0177ccfaa",
+      "type": "subentry",
+      "text": "spatial",
+      "locators": [
+        "88"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Maps and mapping",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2c278da7-9b4d-4963-9cfa-ff020b5a6d8b"
+    },
+    {
+      "id": "eb24e677-f2b5-4429-b10c-22dd48b3ec70",
+      "type": "soloentry",
+      "text": "Mass Ornament",
+      "locators": [],
+      "see": [
+        "Bookchin, Natalie"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "eb24e677-f2b5-4429-b10c-22dd48b3ec70"
+    },
+    {
+      "id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38",
+      "type": "groupingentry",
+      "text": "Memory",
+      "locators": [
+        "16-19",
+        "69-71",
+        "191n40"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "6ae8ca71-1330-46da-9004-3d96f9ee7f3e",
+      "type": "subentry",
+      "text": "as an action",
+      "locators": [
+        "81",
+        "86-89"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "04dad680-1237-444f-a337-5d5a0d902afa",
+      "type": "subentry",
+      "text": "chunks",
+      "locators": [
+        "6",
+        "80-82"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "df4113c0-27b2-428d-bf39-2a441f864741",
+      "type": "subentry",
+      "text": "and habit",
+      "locators": [],
+      "see": [
+        "Habits: and memory"
+      ],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "913e9527-4f07-4411-b24f-a364fdf23f3b",
+      "type": "subentry",
+      "text": "implicit and explicit",
+      "locators": [
+        "86-88"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "22b2deac-eb8d-4f10-ac0f-1284b38805bb",
+      "type": "subentry",
+      "text": "in neuroscience",
+      "locators": [
+        "70",
+        "80-81",
+        "85-88",
+        "201nn78-82",
+        "202n88"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "2049cf86-2d51-4b7b-8121-9a7d6fce735f",
+      "type": "subentry",
+      "text": "and storage",
+      "locators": [],
+      "see": [
+        "Politics: of memory as storage"
+      ],
+      "see_also": [],
+      "parent_text": "Memory",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1d8cf3cb-41a7-41e4-b20f-361dd3b9ec38"
+    },
+    {
+      "id": "df9f3ac5-1510-4695-90ff-441244755967",
+      "type": "soloentry",
+      "text": "Models",
+      "locators": [
+        "18",
+        "46",
+        "62",
+        "81",
+        "90-91",
+        "148-149"
+      ],
+      "see": [],
+      "see_also": [
+        "Maps and mapping",
+        "Networks"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "df9f3ac5-1510-4695-90ff-441244755967"
+    },
+    {
+      "id": "d139f342-228e-49ef-b424-368fd734efeb",
+      "type": "soloentry",
+      "text": "Neighborhoods",
+      "locators": [
+        "40",
+        "54",
+        "103-104",
+        "119-120"
+      ],
+      "see": [],
+      "see_also": [
+        "Community",
+        "Internet: as gated communities"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "d139f342-228e-49ef-b424-368fd734efeb"
+    },
+    {
+      "id": "75b519f0-979f-4f30-aa34-d0e0f2e26420",
+      "type": "groupingentry",
+      "text": "Neoliberalism",
+      "locators": [
+        "3",
+        "10-13",
+        "16-17",
+        "85",
+        "117",
+        "198n33"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "bcfb3f66-58c5-4382-8d33-3f1570a12476",
+      "type": "subentry",
+      "text": "and capture economization",
+      "locators": [
+        "60-61"
+      ],
+      "see": [],
+      "see_also": [
+        "Capture"
+      ],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "58d26c27-f8f7-488e-8070-4bbfd82b4cd9",
+      "type": "subentry",
+      "text": "imaginary of",
+      "locators": [
+        "26"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "69b141aa-caff-448a-adf4-63fc4733352e",
+      "type": "subentry",
+      "text": "and individuality/collectivity",
+      "locators": [
+        "xi",
+        "8",
+        "10-11",
+        "19",
+        "27",
+        "39-40",
+        "148",
+        "163",
+        "172-174",
+        "185n56 (see also ‘We’"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "176535da-8771-456d-8b98-50cda9305af9",
+      "type": "subentry",
+      "text": "YOUs/YOUR)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "6c14af5d-9fe1-49b3-be00-d463b76956b3",
+      "type": "subentry",
+      "text": "and loneliness",
+      "locators": [
+        "103"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "b2e4df0d-e140-4d87-ab66-ac76fa2186f2",
+      "type": "subentry",
+      "text": "and love",
+      "locators": [
+        "113 (see also Friends: and"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "3018851c-70eb-4266-8813-7dda8458f3d5",
+      "type": "subentry",
+      "text": "friendship",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "d872b3e1-3255-4027-bb3f-19014bd04780",
+      "type": "subentry",
+      "text": "Love)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "a0d5ca9b-d691-448c-b9b9-3904bcb1b0be",
+      "type": "subentry",
+      "text": "and modes of empowerment",
+      "locators": [
+        "132",
+        "163"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "b8cce787-cde0-45b4-bff1-146db21491f6",
+      "type": "subentry",
+      "text": "and privacy",
+      "locators": [],
+      "see": [
+        "Privacy: and neoliberalism"
+      ],
+      "see_also": [],
+      "parent_text": "Neoliberalism",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "75b519f0-979f-4f30-aa34-d0e0f2e26420"
+    },
+    {
+      "id": "22200c95-a36d-4a23-bfed-8a826a4aadd3",
+      "type": "groupingentry",
+      "text": "Networks",
+      "locators": [
+        "ix—x",
+        "2-4",
+        "10-19",
+        "25-28",
+        "30-31",
+        "36-37",
+        "39-62",
+        "66",
+        "69-72",
+        "84",
+        "91",
+        "102-103",
+        "110-120",
+        "123-127",
+        "158",
+        "171-172",
+        "187n3"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits",
+        "Maps and mapping"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "af1432c5-cfad-4b65-bfeb-de246446bc99",
+      "type": "subentry",
+      "text": "analysis",
+      "locators": [
+        "14",
+        "25",
+        "39-40",
+        "43",
+        "46-47",
+        "51",
+        "53",
+        "54",
+        "69",
+        "118-120",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "Big Data"
+      ],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "19201476-b065-48fd-bdc5-2318e7be0eaa",
+      "type": "subentry",
+      "text": "belatedly too early",
+      "locators": [
+        "17",
+        "37",
+        "50"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "8fca78e5-0bfd-4056-b47c-97e1c8383267",
+      "type": "subentry",
+      "text": "and control",
+      "locators": [
+        "42-44",
+        "116"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "3da4c0bf-330b-4b73-b708-6f81799bc8a0",
+      "type": "subentry",
+      "text": "and discrimination",
+      "locators": [
+        "120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "56ce6165-4cbf-47f6-a4a9-0ac0f197cb8a",
+      "type": "subentry",
+      "text": "of friends",
+      "locators": [],
+      "see": [
+        "Friends"
+      ],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "13cdc4d0-3765-450b-aa00-ae8fec60ab18",
+      "type": "subentry",
+      "text": "and glocal",
+      "locators": [
+        "2-3",
+        "15",
+        "27",
+        "62"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "8cc9db96-afc8-4b2c-81f5-808fe218ea52",
+      "type": "subentry",
+      "text": "as imagined",
+      "locators": [
+        "x",
+        "2-3",
+        "15-17",
+        "19",
+        "26-28",
+        "37",
+        "40-42",
+        "44",
+        "49-53",
+        "59",
+        "68",
+        "103",
+        "164",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "0587c2df-735b-4e54-8886-081f4e45b70e",
+      "type": "subentry",
+      "text": "infrastructure",
+      "locators": [
+        "12",
+        "49",
+        "160"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "797b08b8-d632-4f51-b3cb-9be7593061e5",
+      "type": "subentry",
+      "text": "leakiness",
+      "locators": [
+        "4",
+        "12-13",
+        "17-18",
+        "40",
+        "51-53",
+        "58-59",
+        "102",
+        "145",
+        "153"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "40730e35-d305-46b2-b72f-7afb73eab4fe",
+      "type": "subentry",
+      "text": "as made of time",
+      "locators": [
+        "69-70"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "9f2eb32c-67e5-4df7-8245-9cded6371499",
+      "type": "subentry",
+      "text": "maps",
+      "locators": [],
+      "see": [
+        "Maps and mapping"
+      ],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "bcdaee64-6a81-463c-87fd-72edccf13c50",
+      "type": "subentry",
+      "text": "and neoliberalism",
+      "locators": [
+        "3",
+        "16-17",
+        "19",
+        "26",
+        "39",
+        "44",
+        "103"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits: and crisis"
+      ],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "6108c124-9f13-411b-ad2e-2b0b6a2a32fd",
+      "type": "subentry",
+      "text": "as nodes and edges",
+      "locators": [
+        "2-3",
+        "13",
+        "19",
+        "26",
+        "36",
+        "39-41",
+        "43",
+        "48-51",
+        "53-54",
+        "118",
+        "164-165"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "fd0e233e-89d9-47b8-8d6b-d61a130d2b38",
+      "type": "subentry",
+      "text": "as performative",
+      "locators": [
+        "43",
+        "59"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "fce8985a-5a71-4dba-96e5-a9b17c63a638",
+      "type": "subentry",
+      "text": "as promiscuous/monogamous",
+      "locators": [
+        "x",
+        "12-13",
+        "18",
+        "51-52",
+        "102",
+        "107",
+        "141",
+        "145",
+        "154",
+        "160"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "88f38137-5bef-459c-b9ea-967e233b80cc",
+      "type": "subentry",
+      "text": "social networking sites (SNSs)",
+      "locators": [
+        "12",
+        "30-31",
+        "46",
+        "53",
+        "113-114",
+        "116-117",
+        "119",
+        "126",
+        "141",
+        "164"
+      ],
+      "see": [],
+      "see_also": [
+        "Social media"
+      ],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "69d115eb-5341-43b9-bd61-cfd3611fe052",
+      "type": "subentry",
+      "text": "subjects",
+      "locators": [],
+      "see": [
+        "Subjects: networked"
+      ],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "feb4ca93-f955-4ee2-bd7c-30d83d0672b1",
+      "type": "subentry",
+      "text": "as theoretical and empirical",
+      "locators": [
+        "17",
+        "39",
+        "46-47"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "a0e7ba43-11f6-413f-8bf4-9b2ea4b80859",
+      "type": "subentry",
+      "text": "as universal concept",
+      "locators": [
+        "16",
+        "25",
+        "39",
+        "47",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "e0a85525-f80f-4183-873a-750788194302",
+      "type": "subentry",
+      "text": "value",
+      "locators": [],
+      "see": [
+        "YOUs/YOUR: YOUs value"
+      ],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "bc357d24-6fb2-4fed-a102-2206fe2c5e0c",
+      "type": "subentry",
+      "text": "as weapon",
+      "locators": [
+        "28",
+        "112-113"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Networks",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22200c95-a36d-4a23-bfed-8a826a4aadd3"
+    },
+    {
+      "id": "fc41d7f6-aae8-49d5-b41a-92050d4ff92a",
+      "type": "soloentry",
+      "text": "Neuromancer (Gibson)",
+      "locators": [
+        "104-105"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberspace",
+        "Science fiction"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fc41d7f6-aae8-49d5-b41a-92050d4ff92a"
+    },
+    {
+      "id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da",
+      "type": "groupingentry",
+      "text": "New media",
+      "locators": [
+        "1-3",
+        "15-19",
+        "27",
+        "82",
+        "123",
+        "163"
+      ],
+      "see": [],
+      "see_also": [
+        "YOUs/YOUR"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "f813dde8-38e1-4b42-a3ba-f69aa536685a",
+      "type": "subentry",
+      "text": "and agency",
+      "locators": [
+        "74",
+        "79"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "4361e095-ada0-416b-8aaa-1d51b5e0a5b4",
+      "type": "subentry",
+      "text": "contradictions",
+      "locators": [
+        "ix",
+        "15",
+        "19",
+        "66",
+        "243"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "6dec0e1e-6a79-40e1-8ecd-70f15c7df254",
+      "type": "subentry",
+      "text": "and creepiness",
+      "locators": [
+        "ix—xi",
+        "4",
+        "18",
+        "52",
+        "99",
+        "102",
+        "152"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "e304e66d-6ed3-4e6c-a446-2db2bdc5eba1",
+      "type": "subentry",
+      "text": "and crisis (see Crisis",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "ed248d96-967b-425b-a35b-d871d7289c4c",
+      "type": "subentry",
+      "text": "Habits: and crisis)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "927619b7-cf89-4ecf-bd81-505fe773e9ef",
+      "type": "subentry",
+      "text": "and critical difference",
+      "locators": [
+        "17",
+        "70",
+        "73-79"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "e9efda4c-77bc-42a1-ab27-d7ec2a2781f6",
+      "type": "subentry",
+      "text": "as enduring ephemeral",
+      "locators": [
+        "5",
+        "15",
+        "73",
+        "78",
+        "90",
+        "197n21"
+      ],
+      "see": [],
+      "see_also": [
+        "Ephemerality"
+      ],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "b3544eab-1e0f-483a-9c3a-017a933bda14",
+      "type": "subentry",
+      "text": "as habitual",
+      "locators": [
+        "16",
+        "167-168",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "Habits: and new media"
+      ],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "7fad6efa-8166-4543-9d12-1b535b978cf8",
+      "type": "subentry",
+      "text": "as leaky",
+      "locators": [
+        "17",
+        "52",
+        "147"
+      ],
+      "see": [],
+      "see_also": [
+        "Networks: leakiness"
+      ],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "f7a3ec4c-e4b3-403c-91cf-18dbb83393b7",
+      "type": "subentry",
+      "text": "and newness",
+      "locators": [
+        "2",
+        "19",
+        "70",
+        "73",
+        "151"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "fd49ef2d-b389-43f7-90d9-94d40f2742be",
+      "type": "subentry",
+      "text": "as N(YOU) media",
+      "locators": [
+        "3",
+        "16",
+        "42",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "7f9311c4-5129-4917-aa5d-d79a4456e06f",
+      "type": "subentry",
+      "text": "and privacy/publicity",
+      "locators": [
+        "ix",
+        "12-13",
+        "98-99",
+        "151"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "2c308a2a-e9d7-4fa7-b313-76daba891928",
+      "type": "subentry",
+      "text": "temporality",
+      "locators": [
+        "66",
+        "73",
+        "75",
+        "79 (see also Crisis"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "ff98c4e7-ad77-44a7-abec-ef7a44736aa4",
+      "type": "subentry",
+      "text": "Habits: and crisis)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "New media",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae7006e5-8b85-4eb8-ae9a-7ad7f93520da"
+    },
+    {
+      "id": "ecc228b6-6067-4123-b555-c6870cfb7acc",
+      "type": "soloentry",
+      "text": "Notecard videos",
+      "locators": [
+        "135-163"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ecc228b6-6067-4123-b555-c6870cfb7acc"
+    },
+    {
+      "id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950",
+      "type": "groupingentry",
+      "text": "Open secrets",
+      "locators": [
+        "13",
+        "95",
+        "108",
+        "141",
+        "150",
+        "161"
+      ],
+      "see": [],
+      "see_also": [
+        "Discovery",
+        "Revelations"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "f932d308-8c60-4d7b-95d2-943ea36f649a",
+      "type": "subentry",
+      "text": "Osucha, Eden",
+      "locators": [
+        "102",
+        "147-148"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Open secrets",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "a5fd28c0-3fb6-4cee-80eb-e49ddfd44615",
+      "type": "subentry",
+      "text": "Other, the",
+      "locators": [
+        "114",
+        "127",
+        "150",
+        "153-154",
+        "156-157"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Open secrets",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "ee0576eb-4904-4e06-b51f-a6f6f761aca0",
+      "type": "subentry",
+      "text": "Outing",
+      "locators": [
+        "126",
+        "132",
+        "142-143",
+        "158",
+        "160",
+        "162",
+        "173"
+      ],
+      "see": [],
+      "see_also": [
+        "Coming out"
+      ],
+      "parent_text": "Open secrets",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "d1212457-c189-4d26-a3b2-c79008398433",
+      "type": "subentry",
+      "text": "Secrets",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Open secrets",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "ac006996-5952-4a7e-a5a6-4756b3995eeb",
+      "type": "subentry",
+      "text": "epistemology of",
+      "locators": [
+        "13",
+        "15-16",
+        "18",
+        "95",
+        "141",
+        "146-147",
+        "150-154"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Open secrets",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c38d00f1-e4d4-44b8-a987-14fc4aebe950"
+    },
+    {
+      "id": "5d805125-eea4-42d9-b522-b4c3d21e93f3",
+      "type": "soloentry",
+      "text": "Panopticon",
+      "locators": [
+        "99-100"
+      ],
+      "see": [],
+      "see_also": [
+        "Anonymous",
+        "Santa Claus"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5d805125-eea4-42d9-b522-b4c3d21e93f3"
+    },
+    {
+      "id": "8ea0f826-ad08-40eb-89e3-acc33072d988",
+      "type": "soloentry",
+      "text": "Phishing",
+      "locators": [
+        "108",
+        "126"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8ea0f826-ad08-40eb-89e3-acc33072d988"
+    },
+    {
+      "id": "5fa2d4e4-9cd4-4e70-b2eb-1991007a51cd",
+      "type": "soloentry",
+      "text": "Photographic evidence",
+      "locators": [
+        "120"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5fa2d4e4-9cd4-4e70-b2eb-1991007a51cd"
+    },
+    {
+      "id": "f3a8230e-10f9-4657-aafd-becb171aba9e",
+      "type": "groupingentry",
+      "text": "Politics",
+      "locators": [
+        "22",
+        "25-26",
+        "29",
+        "39",
+        "42-43",
+        "47",
+        "63-69",
+        "74",
+        "84",
+        "103",
+        "106",
+        "113",
+        "115",
+        "117",
+        "130",
+        "174"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "38ec0ef3-151e-4957-84d6-58fcb80528df",
+      "type": "subentry",
+      "text": "of fore-giving and deletion",
+      "locators": [
+        "5",
+        "18-19",
+        "160-165",
+        "172",
+        "191n40"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Politics",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "68c18afb-6cfd-4cb4-9cf6-3b1d93dc5bed",
+      "type": "subentry",
+      "text": "of memory as storage",
+      "locators": [
+        "x",
+        "4-5",
+        "19",
+        "52",
+        "57",
+        "78",
+        "86",
+        "88-89",
+        "119",
+        "160",
+        "172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Politics",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "d22180ba-f8fc-4881-be23-11f2ba9c4dfc",
+      "type": "subentry",
+      "text": "and protests",
+      "locators": [
+        "13",
+        "63-68"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Politics",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "93592edb-ea86-4fc8-a4b8-254df82f0b68",
+      "type": "subentry",
+      "text": "of publicity and privacy",
+      "locators": [
+        "ix",
+        "10-13",
+        "18",
+        "66",
+        "94-95",
+        "125",
+        "151-152",
+        "172"
+      ],
+      "see": [],
+      "see_also": [
+        "Windows"
+      ],
+      "parent_text": "Politics",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "9ba9ee8f-6baf-4dbe-a45f-905bdee4528d",
+      "type": "subentry",
+      "text": "of “silent masses,” 21-23",
+      "locators": [
+        "123",
+        "154",
+        "163"
+      ],
+      "see": [],
+      "see_also": [
+        "Baudrillard, Jean"
+      ],
+      "parent_text": "Politics",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f3a8230e-10f9-4657-aafd-becb171aba9e"
+    },
+    {
+      "id": "870b7c8f-9474-4b22-9ef7-45c3da0a0a34",
+      "type": "soloentry",
+      "text": "Pornography",
+      "locators": [
+        "ix",
+        "108-110",
+        "117",
+        "119"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberporn"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "870b7c8f-9474-4b22-9ef7-45c3da0a0a34"
+    },
+    {
+      "id": "0e03306e-17ff-4b0d-9697-c40f66aae022",
+      "type": "soloentry",
+      "text": "Postfeminist empowerment",
+      "locators": [
+        "148-149"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0e03306e-17ff-4b0d-9697-c40f66aae022"
+    },
+    {
+      "id": "aaee0690-b1a7-4dfb-8402-0aca681cb99d",
+      "type": "soloentry",
+      "text": "Postmodernism",
+      "locators": [
+        "15-16",
+        "25-26",
+        "39-41",
+        "44",
+        "55",
+        "188n5"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "aaee0690-b1a7-4dfb-8402-0aca681cb99d"
+    },
+    {
+      "id": "071f1cdd-9e4c-4e99-8b3f-7c52e56590f7",
+      "type": "soloentry",
+      "text": "Power",
+      "locators": [],
+      "see": [
+        "Information: as power"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "071f1cdd-9e4c-4e99-8b3f-7c52e56590f7"
+    },
+    {
+      "id": "67edf423-35e3-496a-8b29-6d53e706092b",
+      "type": "soloentry",
+      "text": "Precarity",
+      "locators": [
+        "17",
+        "39",
+        "44",
+        "69"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "67edf423-35e3-496a-8b29-6d53e706092b"
+    },
+    {
+      "id": "efe6382c-4e70-44b7-be28-29601c4d7b5f",
+      "type": "groupingentry",
+      "text": "Privacy",
+      "locators": [
+        "26",
+        "58",
+        "64-66",
+        "116-117",
+        "145-154"
+      ],
+      "see": [
+        "Community",
+        "Neoliberalism: and individuality collectivity"
+      ],
+      "see_also": [
+        "Publicity and community"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "306e506e-414d-4682-b57a-b5e40e323ddc",
+      "type": "subentry",
+      "text": "and gender and race",
+      "locators": [
+        "18",
+        "102",
+        "147-150"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "cd1be6b5-cb60-4e9e-9c6b-78ed4d52826f",
+      "type": "subentry",
+      "text": "as illusion",
+      "locators": [
+        "151"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "77210562-3680-4b87-9943-b6c34e997512",
+      "type": "subentry",
+      "text": "and the Internet",
+      "locators": [],
+      "see": [
+        "Internet: and privacy"
+      ],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "116dbc6d-10a9-4d05-852c-88d964189ca9",
+      "type": "subentry",
+      "text": "and neoliberalism",
+      "locators": [
+        "xi",
+        "10-13",
+        "16-17",
+        "60",
+        "103",
+        "145"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "c64f91a7-cfab-4ae0-bf42-b89f4138e8dd",
+      "type": "subentry",
+      "text": "and protection",
+      "locators": [],
+      "see": [
+        "Right to loiter"
+      ],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "4e2ad056-4dc9-4798-89b8-54babc5b2a4d",
+      "type": "subentry",
+      "text": "and publicity",
+      "locators": [
+        "ix",
+        "xi",
+        "10-13",
+        "15-18",
+        "21",
+        "61",
+        "64-65",
+        "93-104",
+        "107-110",
+        "114",
+        "125-126",
+        "133",
+        "145-153",
+        "158-161",
+        "172-173",
+        "185n56"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "f304fd84-8592-47fe-96a3-d6b9ef03879a",
+      "type": "subentry",
+      "text": "and public sphere",
+      "locators": [
+        "11-12",
+        "102-103",
+        "114",
+        "152-153"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "22314780-7bd8-4f6e-bbae-03cf2c8c8a5d",
+      "type": "subentry",
+      "text": "right to",
+      "locators": [
+        "18",
+        "147-148"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "f3971e72-30b3-4cae-899c-af50928ca2dd",
+      "type": "subentry",
+      "text": "semiprivate and semipublic",
+      "locators": [
+        "107",
+        "116"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "74668804-3126-482d-9f5a-b63564eed31c",
+      "type": "subentry",
+      "text": "and shame",
+      "locators": [
+        "102",
+        "147-150",
+        "153-154",
+        "158"
+      ],
+      "see": [],
+      "see_also": [
+        "Exposure"
+      ],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "10bfbac1-eac0-4d8e-901d-e0dd57eb5ae0",
+      "type": "subentry",
+      "text": "and social networking sites",
+      "locators": [
+        "ix",
+        "12",
+        "58",
+        "97-102"
+      ],
+      "see": [],
+      "see_also": [
+        "Networks: social networking sites"
+      ],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "e168e349-346e-4e6e-91c3-500a97b0b913",
+      "type": "subentry",
+      "text": "and space",
+      "locators": [
+        "9",
+        "11",
+        "94-96",
+        "99",
+        "107",
+        "133",
+        "149-150",
+        "153-154",
+        "158-159",
+        "161",
+        "172"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "9286f42d-8af5-47cb-a9a2-497b65027fce",
+      "type": "subentry",
+      "text": "and surveillance",
+      "locators": [
+        "ix-x",
+        "12-13",
+        "60-61",
+        "94-95",
+        "131-133"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Privacy",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "efe6382c-4e70-44b7-be28-29601c4d7b5f"
+    },
+    {
+      "id": "02f2ab1b-4473-4167-8f3d-3f08b1e55915",
+      "type": "soloentry",
+      "text": "Produsers",
+      "locators": [
+        "84",
+        "110",
+        "149"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "02f2ab1b-4473-4167-8f3d-3f08b1e55915"
+    },
+    {
+      "id": "afa93388-2344-427a-bab0-d2c23afa6c08",
+      "type": "soloentry",
+      "text": "Programmed Visions (Chun)",
+      "locators": [
+        "18-19",
+        "82",
+        "85"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "afa93388-2344-427a-bab0-d2c23afa6c08"
+    },
+    {
+      "id": "2cc392d9-034a-40d9-b908-8248204bb976",
+      "type": "groupingentry",
+      "text": "Publicity",
+      "locators": [
+        "37",
+        "67",
+        "71-72",
+        "106",
+        "112",
+        "132-133",
+        "171",
+        "203n10"
+      ],
+      "see": [],
+      "see_also": [
+        "Privacy"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "6f4b6ccf-ddc2-42d2-afb3-59703210ca94",
+      "type": "subentry",
+      "text": "and democracy",
+      "locators": [
+        "152"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "7b4312a0-f6f7-41cd-ad82-ff63dd4c8373",
+      "type": "subentry",
+      "text": "and privacy",
+      "locators": [],
+      "see": [
+        "Privacy: and publicity"
+      ],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "0c7d0fba-3a49-42fb-8da2-961a519ef7d9",
+      "type": "subentry",
+      "text": "and public sphere",
+      "locators": [
+        "11-12",
+        "19",
+        "71",
+        "102-103",
+        "105",
+        "109",
+        "114",
+        "152-153"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "8d07fb2e-05e2-45b8-a282-d6fdb3ed83f8",
+      "type": "subentry",
+      "text": "and rights",
+      "locators": [
+        "xi",
+        "10",
+        "94",
+        "96",
+        "125",
+        "146",
+        "159",
+        "172-173"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "0c793522-a9cd-4da6-ac66-a5a368145bfd",
+      "type": "subentry",
+      "text": "as shame (see Shame",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "a160fd1c-799d-4812-8149-962d27926c6f",
+      "type": "subentry",
+      "text": "Slut shaming)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Publicity",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2cc392d9-034a-40d9-b908-8248204bb976"
+    },
+    {
+      "id": "b98103d4-f308-4d36-b6a7-7b7fca2c6a52",
+      "type": "soloentry",
+      "text": "Queer theory",
+      "locators": [
+        "130-132"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b98103d4-f308-4d36-b6a7-7b7fca2c6a52"
+    },
+    {
+      "id": "b2caafd3-0663-48c3-a25d-4c5abb6bcbb3",
+      "type": "soloentry",
+      "text": "Race and racism",
+      "locators": [
+        "27",
+        "40",
+        "58",
+        "71-72",
+        "102-106",
+        "116",
+        "120",
+        "147",
+        "149"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b2caafd3-0663-48c3-a25d-4c5abb6bcbb3"
+    },
+    {
+      "id": "e60f9e63-b73c-4edf-8867-815c983cfaca",
+      "type": "soloentry",
+      "text": "Real time",
+      "locators": [
+        "66",
+        "69-70",
+        "75-76",
+        "78-79",
+        "94"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "e60f9e63-b73c-4edf-8867-815c983cfaca"
+    },
+    {
+      "id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec",
+      "type": "groupingentry",
+      "text": "Repetition",
+      "locators": [
+        "1-3",
+        "91",
+        "118",
+        "131",
+        "141-142",
+        "152",
+        "160",
+        "162-164",
+        "173"
+      ],
+      "see": [],
+      "see_also": [
+        "Virality"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec"
+    },
+    {
+      "id": "c0db3bbd-6591-4af2-97e0-73e20f6a4430",
+      "type": "subentry",
+      "text": "and difference",
+      "locators": [],
+      "see": [
+        "Difference: and repetition"
+      ],
+      "see_also": [],
+      "parent_text": "Repetition",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec"
+    },
+    {
+      "id": "8d492847-becc-48cf-868a-197cd1bd8027",
+      "type": "subentry",
+      "text": "and habit",
+      "locators": [
+        "3",
+        "6",
+        "9",
+        "17",
+        "23",
+        "40",
+        "52-55",
+        "57",
+        "69",
+        "89-90",
+        "171"
+      ],
+      "see": [
+        "Habits: and repetition"
+      ],
+      "see_also": [],
+      "parent_text": "Repetition",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec"
+    },
+    {
+      "id": "acbf2ae6-442f-49bb-8f0f-9d4b0c2ba84e",
+      "type": "subentry",
+      "text": "and logos",
+      "locators": [
+        "82",
+        "84",
+        "86 (see also Code",
+        "as logos"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Repetition",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec"
+    },
+    {
+      "id": "2f565d2d-41cb-4132-b267-a677da7ec83c",
+      "type": "subentry",
+      "text": "Logos)",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Repetition",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "49eae7f8-ade4-46f2-983d-f39ee4aea9ec"
+    },
+    {
+      "id": "82e6100d-b577-4b8c-a655-d45ffa3625f3",
+      "type": "soloentry",
+      "text": "Responsibility",
+      "locators": [
+        "17",
+        "62",
+        "70",
+        "75",
+        "79",
+        "89-91",
+        "109",
+        "145"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "82e6100d-b577-4b8c-a655-d45ffa3625f3"
+    },
+    {
+      "id": "0d6232c7-bc8a-48f7-af92-37ba2bb54ecb",
+      "type": "soloentry",
+      "text": "Revelations",
+      "locators": [
+        "137",
+        "141",
+        "155",
+        "169"
+      ],
+      "see": [],
+      "see_also": [
+        "Discovery",
+        "Open secrets"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0d6232c7-bc8a-48f7-af92-37ba2bb54ecb"
+    },
+    {
+      "id": "63ded082-ffe2-42ba-8952-afd712806663",
+      "type": "soloentry",
+      "text": "Revenge porn",
+      "locators": [
+        "147"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberporn",
+        "Pornography"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "63ded082-ffe2-42ba-8952-afd712806663"
+    },
+    {
+      "id": "f94340d2-fa6d-442d-a59d-ee899cb0b7bb",
+      "type": "soloentry",
+      "text": "Safe spaces",
+      "locators": [
+        "94",
+        "99",
+        "110",
+        "116",
+        "125",
+        "159"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f94340d2-fa6d-442d-a59d-ee899cb0b7bb"
+    },
+    {
+      "id": "c6527fd9-72d0-48c8-ab93-76dd7f363ffb",
+      "type": "soloentry",
+      "text": "Science fiction",
+      "locators": [
+        "1",
+        "50",
+        "104"
+      ],
+      "see": [],
+      "see_also": [
+        "Cyberspace",
+        "Neuromancer"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c6527fd9-72d0-48c8-ab93-76dd7f363ffb"
+    },
+    {
+      "id": "b3c64589-451b-4b57-b859-8beafb7ec6e2",
+      "type": "soloentry",
+      "text": "Secrets",
+      "locators": [
+        "132-133",
+        "137",
+        "141",
+        "150-156",
+        "160-161"
+      ],
+      "see": [],
+      "see_also": [
+        "Coming out",
+        "Discovery",
+        "Exposure",
+        "Open secrets",
+        "Outing",
+        "Revelations"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "b3c64589-451b-4b57-b859-8beafb7ec6e2"
+    },
+    {
+      "id": "6a6d4965-7d16-47b4-89b6-235f4c26838b",
+      "type": "soloentry",
+      "text": "Selfies",
+      "locators": [
+        "147"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "6a6d4965-7d16-47b4-89b6-235f4c26838b"
+    },
+    {
+      "id": "367b41f7-1162-4e28-a187-0335d007cd10",
+      "type": "soloentry",
+      "text": "Sexting",
+      "locators": [
+        "110",
+        "117"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "367b41f7-1162-4e28-a187-0335d007cd10"
+    },
+    {
+      "id": "5f037ee0-2229-4cb0-8027-3b600f84314a",
+      "type": "soloentry",
+      "text": "Sexuality",
+      "locators": [
+        "40",
+        "58",
+        "120",
+        "130",
+        "137",
+        "150-151",
+        "154-155"
+      ],
+      "see": [],
+      "see_also": [
+        "Queer theory"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5f037ee0-2229-4cb0-8027-3b600f84314a"
+    },
+    {
+      "id": "be3ac28d-09c9-41d5-b60a-3544e79fd19a",
+      "type": "soloentry",
+      "text": "Shame",
+      "locators": [
+        "102",
+        "141",
+        "145-148",
+        "150",
+        "153-158",
+        "160-162",
+        "212n19",
+        "213n30"
+      ],
+      "see": [],
+      "see_also": [
+        "Community",
+        "Slut shaming",
+        "Subjects: subjectivity"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "be3ac28d-09c9-41d5-b60a-3544e79fd19a"
+    },
+    {
+      "id": "c144e90d-0031-4b4f-bdc9-082288f10228",
+      "type": "soloentry",
+      "text": "Signals",
+      "locators": [
+        "5",
+        "44",
+        "SO-S2",
+        "86",
+        "158",
+        "160",
+        "164"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c144e90d-0031-4b4f-bdc9-082288f10228"
+    },
+    {
+      "id": "f0185fc6-5dc1-4b68-9089-0982a07efa97",
+      "type": "soloentry",
+      "text": "Singular plural",
+      "locators": [],
+      "see": [
+        "YOUs/YOUR"
+      ],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f0185fc6-5dc1-4b68-9089-0982a07efa97"
+    },
+    {
+      "id": "bde25209-83b2-4541-87e1-34978dae6407",
+      "type": "soloentry",
+      "text": "Slacktivism",
+      "locators": [
+        "36"
+      ],
+      "see": [],
+      "see_also": [
+        "Kony 2012"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bde25209-83b2-4541-87e1-34978dae6407"
+    },
+    {
+      "id": "76b378ce-3ca8-4982-8c98-d285ae239d0e",
+      "type": "soloentry",
+      "text": "Slut shaming",
+      "locators": [
+        "95-96",
+        "102",
+        "145-147",
+        "148-150",
+        "153",
+        "157"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "76b378ce-3ca8-4982-8c98-d285ae239d0e"
+    },
+    {
+      "id": "2b4fcb4e-c814-4f95-8bf8-7575e69c1c72",
+      "type": "soloentry",
+      "text": "Social media",
+      "locators": [
+        "ix—x",
+        "12",
+        "22",
+        "25-26",
+        "57-58",
+        "66",
+        "67",
+        "73",
+        "95",
+        "97-99",
+        "113",
+        "155",
+        "162"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2b4fcb4e-c814-4f95-8bf8-7575e69c1c72"
+    },
+    {
+      "id": "bb1546f2-0054-45bb-89fe-e93dde4e59b7",
+      "type": "soloentry",
+      "text": "Spam",
+      "locators": [
+        "108",
+        "124",
+        "126-127"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bb1546f2-0054-45bb-89fe-e93dde4e59b7"
+    },
+    {
+      "id": "64c58844-44f2-4867-b2f6-052430d8a88b",
+      "type": "soloentry",
+      "text": "Spillers, Hortense",
+      "locators": [
+        "147-148",
+        "213n27"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "64c58844-44f2-4867-b2f6-052430d8a88b"
+    },
+    {
+      "id": "9ccd1042-72c1-44e0-b184-29d1e891d766",
+      "type": "soloentry",
+      "text": "State of exception",
+      "locators": [
+        "70",
+        "79-80",
+        "83-84",
+        "198n39"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9ccd1042-72c1-44e0-b184-29d1e891d766"
+    },
+    {
+      "id": "0b39c6a2-24a7-4b8d-b7cc-a7a0f015b607",
+      "type": "soloentry",
+      "text": "Steubenville rape case",
+      "locators": [
+        "97-98",
+        "101",
+        "110"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0b39c6a2-24a7-4b8d-b7cc-a7a0f015b607"
+    },
+    {
+      "id": "f1f33980-0c3c-4bbe-8c37-f4ef3ce5136e",
+      "type": "soloentry",
+      "text": "‘Stranger danger",
+      "locators": [],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "f1f33980-0c3c-4bbe-8c37-f4ef3ce5136e"
+    },
+    {
+      "id": "fede9019-2c41-421b-98f3-68e6377cc06a",
+      "type": "groupingentry",
+      "text": "Subjects",
+      "locators": [
+        "3",
+        "16",
+        "21-23",
+        "40-41",
+        "59",
+        "99-101",
+        "122-123",
+        "152-157"
+      ],
+      "see": [],
+      "see_also": [
+        "Windows"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "ab3d78aa-fe8b-48fa-a589-880713a02e89",
+      "type": "subentry",
+      "text": "communal",
+      "locators": [
+        "118"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "2fa93157-0d27-4c8e-9985-bb3305f37128",
+      "type": "subentry",
+      "text": "neoliberal",
+      "locators": [
+        "xi",
+        "17",
+        "39",
+        "211n12"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "99f4de89-2fc7-4d54-8e4a-d57ba806755b",
+      "type": "subentry",
+      "text": "networked",
+      "locators": [
+        "39",
+        "46",
+        "84",
+        "154"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "fb8d293b-7976-4bc7-ab5d-e6a3e9de71ee",
+      "type": "subentry",
+      "text": "private",
+      "locators": [
+        "11",
+        "148",
+        "153"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "0a5d537c-7d99-4d1f-8fac-5ef76c12d327",
+      "type": "subentry",
+      "text": "public",
+      "locators": [
+        "12",
+        "94-96"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "4e40e0b2-b1be-477f-b263-e9613f6f70f7",
+      "type": "subentry",
+      "text": "sovereign",
+      "locators": [
+        "70",
+        "80-85",
+        "100"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "50c7dc59-23bf-44f7-adf6-413da9abe4fc",
+      "type": "subentry",
+      "text": "subjectivity",
+      "locators": [
+        "6",
+        "127",
+        "151",
+        "154",
+        "163"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": "Subjects",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "fede9019-2c41-421b-98f3-68e6377cc06a"
+    },
+    {
+      "id": "ef5e29df-f6d8-4169-a61b-0b0921355c52",
+      "type": "soloentry",
+      "text": "Surveillance",
+      "locators": [
+        "ix—x",
+        "12-13",
+        "52",
+        "60",
+        "61",
+        "66-67",
+        "94-95",
+        "109-113",
+        "131-133"
+      ],
+      "see": [],
+      "see_also": [
+        "Capture",
+        "Privacy: and surveillance"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ef5e29df-f6d8-4169-a61b-0b0921355c52"
+    },
+    {
+      "id": "55be9837-0626-499b-ab84-533111c18488",
+      "type": "soloentry",
+      "text": "Swarming",
+      "locators": [
+        "27",
+        "64-65",
+        "100",
+        "125"
+      ],
+      "see": [],
+      "see_also": [
+        "Flash mobs",
+        "TXTmob"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "55be9837-0626-499b-ab84-533111c18488"
+    },
+    {
+      "id": "a3d055a4-8619-4fae-9f0a-120260026b97",
+      "type": "soloentry",
+      "text": "Tarde, Gabriel",
+      "locators": [
+        "6"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "a3d055a4-8619-4fae-9f0a-120260026b97"
+    },
+    {
+      "id": "8cf7b662-fe76-4f14-8768-0ef9f57495fc",
+      "type": "soloentry",
+      "text": "Teen suicide",
+      "locators": [
+        "18",
+        "135-165",
+        "206—207n20"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8cf7b662-fe76-4f14-8768-0ef9f57495fc"
+    },
+    {
+      "id": "50067d00-b145-4c6e-9146-cc7bab34a0cc",
+      "type": "soloentry",
+      "text": "Television",
+      "locators": [
+        "63",
+        "71",
+        "74-75",
+        "95",
+        "106",
+        "123",
+        "137",
+        "197n26"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "50067d00-b145-4c6e-9146-cc7bab34a0cc"
+    },
+    {
+      "id": "84e3a87e-4dfb-4621-b7bb-1be31a732742",
+      "type": "soloentry",
+      "text": "Templates",
+      "locators": [
+        "16",
+        "131-133",
+        "142",
+        "162-163"
+      ],
+      "see": [],
+      "see_also": [
+        "Confession"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "84e3a87e-4dfb-4621-b7bb-1be31a732742"
+    },
+    {
+      "id": "ae882441-44b6-4029-ad37-118516268cac",
+      "type": "groupingentry",
+      "text": "Terranova, Tiziana",
+      "locators": [
+        "25",
+        "44",
+        "49",
+        "114",
+        "118"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae882441-44b6-4029-ad37-118516268cac"
+    },
+    {
+      "id": "1bc8fa8c-9f39-409a-bdb1-6b64fe865b25",
+      "type": "subentry",
+      "text": "Testament",
+      "locators": [],
+      "see": [
+        "Bookchin, Natalie"
+      ],
+      "see_also": [],
+      "parent_text": "Terranova, Tiziana",
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "ae882441-44b6-4029-ad37-118516268cac"
+    },
+    {
+      "id": "c4ebb3f6-bc4d-44b5-9763-301fa516c8e2",
+      "type": "soloentry",
+      "text": "‘They,’ 21-22",
+      "locators": [
+        "26",
+        "171"
+      ],
+      "see": [],
+      "see_also": [
+        "Heidegger, Martin"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "c4ebb3f6-bc4d-44b5-9763-301fa516c8e2"
+    },
+    {
+      "id": "bdae988e-7051-46d1-bac9-339e9181b53f",
+      "type": "soloentry",
+      "text": "This American Life",
+      "locators": [
+        "118"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "bdae988e-7051-46d1-bac9-339e9181b53f"
+    },
+    {
+      "id": "7e2279f4-2ecd-493a-9c1d-4d1a1c1e81ff",
+      "type": "soloentry",
+      "text": "Tiqqun",
+      "locators": [
+        "149-150"
+      ],
+      "see": [],
+      "see_also": [
+        "Produsers",
+        "Slut shaming",
+        "“Young-Girl”"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "7e2279f4-2ecd-493a-9c1d-4d1a1c1e81ff"
+    },
+    {
+      "id": "9dfcada7-6f97-499d-b0b2-06c75bd9fe17",
+      "type": "soloentry",
+      "text": "Traceability",
+      "locators": [
+        "2",
+        "27",
+        "51",
+        "57",
+        "62",
+        "123",
+        "160"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9dfcada7-6f97-499d-b0b2-06c75bd9fe17"
+    },
+    {
+      "id": "babd8a6d-bf19-4336-b56f-83bf4ae6a405",
+      "type": "soloentry",
+      "text": "Trolls",
+      "locators": [
+        "1",
+        "13",
+        "76",
+        "97",
+        "108",
+        "110",
+        "151",
+        "158"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "babd8a6d-bf19-4336-b56f-83bf4ae6a405"
+    },
+    {
+      "id": "5ede61ed-5c8c-41cc-b855-01d9805ab4cb",
+      "type": "soloentry",
+      "text": "Twitter.com",
+      "locators": [
+        "22",
+        "25",
+        "43",
+        "66",
+        "97",
+        "118",
+        "126"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "5ede61ed-5c8c-41cc-b855-01d9805ab4cb"
+    },
+    {
+      "id": "7ac85305-54fc-4bcc-9d26-0a16de84d3b2",
+      "type": "soloentry",
+      "text": "Twitter revolutions",
+      "locators": [
+        "26",
+        "67-68",
+        "72",
+        "73"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "7ac85305-54fc-4bcc-9d26-0a16de84d3b2"
+    },
+    {
+      "id": "3ce75240-5a1b-4f04-a4ae-c0f42e62e2d7",
+      "type": "soloentry",
+      "text": "Two Girls, One Cup",
+      "locators": [
+        "118",
+        "123"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "3ce75240-5a1b-4f04-a4ae-c0f42e62e2d7"
+    },
+    {
+      "id": "1209a509-ef51-497a-bc98-48b74c650f83",
+      "type": "soloentry",
+      "text": "TXTmob",
+      "locators": [
+        "63-68",
+        "125"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "1209a509-ef51-497a-bc98-48b74c650f83"
+    },
+    {
+      "id": "22484727-1c20-4f7c-952f-f1cf3e11bef0",
+      "type": "soloentry",
+      "text": "Undocumented and unafraid",
+      "locators": [
+        "129-133"
+      ],
+      "see": [],
+      "see_also": [
+        "DREAM Act"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "22484727-1c20-4f7c-952f-f1cf3e11bef0"
+    },
+    {
+      "id": "9193f937-39ed-48da-87e5-9a8a0a482bae",
+      "type": "soloentry",
+      "text": "Updating",
+      "locators": [
+        "1-5",
+        "16-17",
+        "23",
+        "26",
+        "67",
+        "69-70",
+        "72-73",
+        "82",
+        "85",
+        "113",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "9193f937-39ed-48da-87e5-9a8a0a482bae"
+    },
+    {
+      "id": "8170d1e6-d789-4e6e-98a3-243592059958",
+      "type": "soloentry",
+      "text": "Victim",
+      "locators": [
+        "18",
+        "98",
+        "126",
+        "142",
+        "145",
+        "147",
+        "149",
+        "153",
+        "157-158",
+        "162"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "8170d1e6-d789-4e6e-98a3-243592059958"
+    },
+    {
+      "id": "cc811c12-b22c-49ae-955d-a95f23456a59",
+      "type": "soloentry",
+      "text": "Violence",
+      "locators": [
+        "80",
+        "83",
+        "85",
+        ".150",
+        "158-159"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "cc811c12-b22c-49ae-955d-a95f23456a59"
+    },
+    {
+      "id": "23183709-89b4-4b71-81e7-8f2595ac869e",
+      "type": "soloentry",
+      "text": "Virality",
+      "locators": [
+        "x",
+        "1-2",
+        "13-15",
+        "25",
+        "29-31",
+        "48",
+        "76",
+        "118",
+        "124",
+        "136-137",
+        "142",
+        "163",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "23183709-89b4-4b71-81e7-8f2595ac869e"
+    },
+    {
+      "id": "01547fd4-9c6a-4274-bf28-4396f2c7828c",
+      "type": "soloentry",
+      "text": "Vulnerability",
+      "locators": [
+        "12-13",
+        "18-19",
+        "110",
+        "141",
+        "145",
+        "158-164"
+      ],
+      "see": [],
+      "see_also": [
+        "Windows"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "01547fd4-9c6a-4274-bf28-4396f2c7828c"
+    },
+    {
+      "id": "4f0ec091-c964-4bb0-9a94-82656cd0236f",
+      "type": "soloentry",
+      "text": "‘We,’ 1",
+      "locators": [
+        "3",
+        "18",
+        "21",
+        "26-28",
+        "33",
+        "35",
+        "36-37",
+        "40",
+        "118",
+        "127",
+        "148-149",
+        "157",
+        "163-164",
+        "171",
+        "173",
+        "188n4"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "4f0ec091-c964-4bb0-9a94-82656cd0236f"
+    },
+    {
+      "id": "d51569a2-3632-4a70-9644-0f52b5e866e2",
+      "type": "soloentry",
+      "text": "Web 2.0",
+      "locators": [
+        "17",
+        "73",
+        "107",
+        "109",
+        "115",
+        "145"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "d51569a2-3632-4a70-9644-0f52b5e866e2"
+    },
+    {
+      "id": "2f529dd0-a6f2-48ed-9ce6-def90db45b23",
+      "type": "soloentry",
+      "text": "White supremacy",
+      "locators": [
+        "158"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "2f529dd0-a6f2-48ed-9ce6-def90db45b23"
+    },
+    {
+      "id": "caa90a57-bd88-4113-8e8e-ed90323a07e5",
+      "type": "soloentry",
+      "text": "Windows",
+      "locators": [
+        "94-95",
+        "99",
+        "133",
+        "151-153"
+      ],
+      "see": [],
+      "see_also": [
+        "Keenan, Thomas",
+        "Politics: of publicity and privacy",
+        "Subjects"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "caa90a57-bd88-4113-8e8e-ed90323a07e5"
+    },
+    {
+      "id": "20e9bcf2-284e-4393-a1ba-aeb2a21c55e5",
+      "type": "soloentry",
+      "text": "“Young-Girl,” 149-150",
+      "locators": [
+        "153"
+      ],
+      "see": [],
+      "see_also": [
+        "Produsers",
+        "Slut shaming",
+        "Tiqqun"
+      ],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "20e9bcf2-284e-4393-a1ba-aeb2a21c55e5"
+    },
+    {
+      "id": "0f4fddc3-1ee0-4844-b316-578a7015b83a",
+      "type": "soloentry",
+      "text": "YOUs/YOUR",
+      "locators": [
+        "3-5",
+        "15-18",
+        "22-23",
+        "27",
+        "35-36",
+        "40",
+        "56",
+        "68",
+        "71",
+        "84",
+        "104",
+        "119-122",
+        "129",
+        "154",
+        "163-164"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "0f4fddc3-1ee0-4844-b316-578a7015b83a"
+    },
+    {
+      "id": "4d2f24c0-c2f2-4ccc-91b4-6a8a8ed5be28",
+      "type": "soloentry",
+      "text": "YOUs value",
+      "locators": [
+        "107",
+        "117-119",
+        "123",
+        "127",
+        "171"
+      ],
+      "see": [],
+      "see_also": [],
+      "parent_text": null,
+      "citation": {
+        "title": "Updating to Remain the Same: Habitual New Media",
+        "author": "Wendy Hui Kyong Chun"
+      },
+      "source_file": "Chun.txt",
+      "raw_chunk_id": "4d2f24c0-c2f2-4ccc-91b4-6a8a8ed5be28"
+    }
+  ]
+}

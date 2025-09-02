@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Process 3</title>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index.Training</title>
+  <link rel="icon" type="image/x-icon" href="../SYSED002.ICO">
     <style>
         body {
             margin: 0;
@@ -14,30 +15,111 @@
             justify-content: center;
             height: 100vh;
             width: 100vw;
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            position: relative;
         }
+
+
 
         canvas {
             display: block;
             width: 100%;
             height: 100%;
+            filter: blur(0.5px);
+        }
+        .glassy-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.4;
+            background-image: 
+                repeating-linear-gradient(
+                    45deg, 
+                    transparent, 
+                    transparent 8px, 
+                    rgba(255,255,255,0.25) 8px, 
+                    rgba(255,255,255,0.25) 16px
+                ),
+                repeating-linear-gradient(
+                    -45deg, 
+                    transparent, 
+                    transparent 8px, 
+                    rgba(255,255,255,0.2) 8px, 
+                    rgba(255,255,255,0.2) 16px
+                );
+            filter: blur(4px);
+            z-index: 9999;
+        }
+
+        .diffused-texture {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.3;
+            background-image: 
+                repeating-linear-gradient(
+                    0deg, 
+                    transparent, 
+                    transparent 4px, 
+                    rgba(255,255,255,0.15) 4px, 
+                    rgba(255,255,255,0.15) 8px
+                );
+            filter: blur(6px);
+            z-index: 9998;
         }
 
         #info {
             position: absolute;
             top: 10px;
             left: 10px;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px;
+            color: #1f2937;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 6px 10px;
             display: none;
+            border-radius: 0;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            max-width: 300px;
+            line-height: 1.3;
+            z-index: 10000;
         }
 
         .entry {
-            position: absolute;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2px;
+            position: fixed;
+            color: #1f2937;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 4px 8px;
             cursor: pointer;
+            border-radius: 0;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            line-height: 1.2;
+            max-width: 280px;
+            z-index: 10000;
+        }
+        
+        .entry:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-1px);
         }
 
         #legend {
@@ -46,9 +128,8 @@
             width: 100%;
             color: black;
             padding: 5px;
-            display: flex;
-            justify-content: space-evenly;
-
+            text-align: center;
+            z-index: 10000;
         }
 
         .legend-item {
@@ -61,16 +142,128 @@
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             margin-right: 5px;
-            font-style: bold;
+            font-weight: bold;
         }
 
         .legend-title {
             font-size: 0.8em;
         }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            pointer-events: none;
+            z-index: 10000;
+        }
+
+        .centerheader {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            color: #444;
+            text-align: center;
+            font-size: 13px;
+            pointer-events: none;
+            z-index: 10000;
+        }
+
+        .header .subheader {
+            font-size: 20px;
+        }
+
+        .header .link {
+            font-size: 15px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            text-align: left;
+            color: #444;
+            z-index: 10000;
+        }
+        
+
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: right;
+            z-index: 10000;
+        }
+        
+
+
+        /* Modern legend styling */
+        #legend {
+            text-align: center;
+            color: #1f2937;
+            font-family: Arial, sans-serif;
+            margin-bottom: 8px;
+            padding: 0 24px;
+        }
+        .legend-label {
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        .legend-items {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .legend-item {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .legend-title {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.05px;
+            line-height: 1.3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
+        }
+        
+        /* Responsive truncation for smaller screens */
+        @media (max-width: 768px) {
+            .legend-title {
+                max-width: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .legend-title {
+                max-width: 120px;
+            }
+        }
+
+        .legend-author {
+            font-size: 9px;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-left: 2px;
+        }
     </style>
 </head>
 
+
 <body>
+    <!-- Glassy overlays with maximum z-index -->
+    <div class="glassy-overlay"></div>
+    <div class="diffused-texture"></div>
+    
     <div id="info"></div>
     <footer>
         <div id="legend"></div>
@@ -90,11 +283,25 @@
         document.body.appendChild(info);
         const start = Date.now();
 
-        const symbols = {
-            "Updating to Remain the Same: Habitual New Media": "▲",
-            "Code and Clay, Data and Dirt: Five Thousand Years of Urban Media": "●",
-            "The Moment of Complexity: Emerging Network Culture": "■"
+        const bookColors = {
+            "Updating to Remain the Same: Habitual New Media": "#059669",
+            "Code and Clay, Data and Dirt: Five Thousand Years of Urban Media": "#e53e3e",
+            "The Moment of Complexity: Emerging Network Culture": "#2563eb"
         };
+        
+        const bookColorDescriptions = {
+            "Updating to Remain the Same: Habitual New Media": "green",
+            "Code and Clay, Data and Dirt: Five Thousand Years of Urban Media": "red", 
+            "The Moment of Complexity: Emerging Network Culture": "blue"
+        };
+
+        const bookTitlesWithAuthors = {
+            "Updating to Remain the Same: Habitual New Media": "Wendy Hui Kyong Chun",
+            "Code and Clay, Data and Dirt: Five Thousand Years of Urban Media": "Shannon Mattern",
+            "The Moment of Complexity: Emerging Network Culture": "Mark C. Taylor"
+        };
+
+
 
         async function loadEmbeddings() {
             const response = await fetch('../data/mapped_embeddings_3d.json');
@@ -119,11 +326,9 @@
 
             geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
 
-            let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.5 }); 
+            let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.5 });
             points = new THREE.Points(geometry, material);
             scene.add(points);
-
-            // Initial selection of points
             selectRandomPoints(embeddings);
         }
 
@@ -150,16 +355,32 @@
 
         function highlightSelectedPoints(selectedIndices) {
             const colors = new Float32Array(points.geometry.attributes.position.count * 3);
+            
             for (let i = 0; i < points.geometry.attributes.position.count; i++) {
-                colors[i * 3] = 1; // R
-                colors[i * 3 + 1] = 1; // G
-                colors[i * 3 + 2] = 1; // B
+                colors[i * 3] = 1;
+                colors[i * 3 + 1] = 1;
+                colors[i * 3 + 2] = 1;
             }
             selectedIndices.forEach(index => {
-                colors[index * 3] = 1; // R
-                colors[index * 3 + 1] = 0; // G
-                colors[index * 3 + 2] = 0; // B
+                const point = pointData[index];
+                const matchingBook = Object.keys(bookColors).find(bookTitle => point.citation.title.includes(bookTitle));
+                
+                if (matchingBook) {
+                    const hex = bookColors[matchingBook].replace('#', '');
+                    const r = parseInt(hex.substr(0, 2), 16) / 255;
+                    const g = parseInt(hex.substr(2, 2), 16) / 255;
+                    const b = parseInt(hex.substr(4, 2), 16) / 255;
+                    
+                    colors[index * 3] = r;
+                    colors[index * 3 + 1] = g;
+                    colors[index * 3 + 2] = b;
+                } else {
+                    colors[index * 3] = 1;
+                    colors[index * 3 + 1] = 0;
+                    colors[index * 3 + 2] = 0;
+                }
             });
+            
             points.geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
             points.material.vertexColors = true;
         }
@@ -168,8 +389,8 @@
             if (currentMesh) {
                 scene.remove(currentMesh);
             }
-            clearTextEntries(); // Clear old text entries
-            const material = new THREE.MeshBasicMaterial({ color: 0xff00ff, opacity: 0.5, transparent: true });
+            clearTextEntries();
+            const material = new THREE.MeshBasicMaterial({ color: 0xff00f0, opacity: 0.5, transparent: true });
             const vertices = selectedPoints.map(point => new THREE.Vector3(point.x, point.y, point.z));
             const geometry = new ConvexGeometry(vertices);
             const mesh = new THREE.Mesh(geometry, material);
@@ -185,24 +406,78 @@
         function renderLegend() {
             const legend = document.getElementById('legend');
             legend.innerHTML = '';
-            const books = Object.keys(symbols);
+            
+            const labelDiv = document.createElement('div');
+            labelDiv.className = 'legend-label';
+            labelDiv.textContent = 'Words and phrases from the following books’ indexes:';
+            legend.appendChild(labelDiv);
+            
+            const itemsContainer = document.createElement('div');
+            itemsContainer.className = 'legend-items';
+            
+            const books = Object.keys(bookColors);
             books.forEach(book => {
                 const item = document.createElement('div');
                 item.className = 'legend-item';
 
-                const symbolSpan = document.createElement('span');
-                symbolSpan.className = 'legend-symbol';
-                symbolSpan.textContent = symbols[book];
-                symbolSpan.style.color = 'white'; 
-                item.appendChild(symbolSpan);
-
                 const titleSpan = document.createElement('span');
                 titleSpan.className = 'legend-title';
                 titleSpan.textContent = book;
+                titleSpan.setAttribute('aria-label', `${book} - ${bookColorDescriptions[book]} category`);
+                titleSpan.setAttribute('role', 'button');
+                titleSpan.style.color = bookColors[book];
+                titleSpan.style.fontWeight = '500';
+                titleSpan.style.padding = '4px 6px';
+                titleSpan.style.borderRadius = '0';
+                titleSpan.style.marginRight = '0';
+                titleSpan.style.whiteSpace = 'nowrap';
+                titleSpan.style.background = 'rgba(255, 255, 255, 0.9)';
+                titleSpan.style.backdropFilter = 'blur(12px)';
+                titleSpan.style.webkitBackdropFilter = 'blur(12px)';
+                titleSpan.style.border = `1px solid ${bookColors[book]}20`;
+                titleSpan.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.06)';
+                
+                const separator = document.createElement('span');
+                separator.textContent = ' | ';
+                separator.style.color = bookColors[book];
+                separator.style.fontSize = '9px';
+                separator.style.opacity = '0.6';
+                separator.style.marginLeft = '2px';
+                separator.style.marginRight = '2px';
+                
+                const authorSpan = document.createElement('span');
+                authorSpan.className = 'legend-author';
+                authorSpan.textContent = bookTitlesWithAuthors[book];
+                authorSpan.style.color = bookColors[book];
+                
+                titleSpan.appendChild(separator);
+                titleSpan.appendChild(authorSpan);
                 item.appendChild(titleSpan);
 
-                legend.appendChild(item);
+                itemsContainer.appendChild(item);
             });
+            
+            legend.appendChild(itemsContainer);
+        }
+
+        function renderHeader() {
+            const headerContainer = document.createElement('div');
+            headerContainer.className = 'header';
+
+            const topLeftHeader = document.createElement('div');
+            topLeftHeader.className = 'top-left';
+            topLeftHeader.innerHTML = '<div style="font-weight: bold;">Index.Training</div><div class="subheader" style="font-size: 13px; color: #444;">mapping index data</div>';
+            document.body.appendChild(topLeftHeader);
+
+            const centerHeader = document.createElement('div');
+            centerHeader.className = 'centerheader';
+            centerHeader.innerHTML = '<div>Click, drag and scroll to explore</div>';
+            document.body.appendChild(centerHeader);
+
+            const topRightHeader = document.createElement('div');
+            topRightHeader.className = 'top-right';
+            topRightHeader.innerHTML = '<div class="link"><a href="../method.html" aria-label="Information about this visualization">ℹ</a></div>';
+            document.body.appendChild(topRightHeader);
         }
 
 
@@ -211,24 +486,32 @@
             const width = window.innerWidth;
             const height = window.innerHeight;
 
-            // Renderer
+
+
             renderer = new THREE.WebGLRenderer();
             renderer.setSize(width, height);
             document.body.appendChild(renderer.domElement);
 
-            // ASCII Effect
             effect = new AsciiEffect(renderer, ' ■', { invert: true });
             effect.setSize(width, height);
 
-            document.body.removeChild(renderer.domElement); // Remove original renderer
-            document.body.appendChild(effect.domElement); // Append ASCII effect element
+            document.body.removeChild(renderer.domElement);
+            
+            document.body.appendChild(effect.domElement);
+            
+            setTimeout(() => {
+                const currentWidth = window.innerWidth;
+                const currentHeight = window.innerHeight;
+                effect.setSize(currentWidth, currentHeight);
+                if (scene && camera) {
+                    effect.render(scene, camera);
+                }
+            }, 100);
 
-            // Scene and Camera
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera(70, width / height, 1, 1000);
             camera.position.z = 40;
 
-            // Add lights
             const light = new THREE.PointLight(0xffffff, 1.5);
             light.position.set(500, 500, 500);
             scene.add(light);
@@ -237,38 +520,37 @@
             light2.position.set(-500, -500, -500);
             scene.add(light2);
 
-            // Load and create point cloud
             const embeddings = await loadEmbeddings();
             createPointCloud(embeddings);
 
-            // Calculate and set camera position
             const boundingBox = new THREE.Box3().setFromObject(points);
             const center = boundingBox.getCenter(new THREE.Vector3());
             const size = boundingBox.getSize(new THREE.Vector3());
             const maxDim = Math.max(size.x, size.y, size.z);
             const fov = camera.fov * (Math.PI / 180);
             let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
-            cameraZ *= 1.5;
+            
+            const isMobile = window.innerWidth <= 768;
+            cameraZ *= isMobile ? 3.0 : 1.8;
+            
             camera.position.z = cameraZ;
             camera.lookAt(center);
 
-            // Controls
             controls = new OrbitControls(camera, effect.domElement);
             controls.enableZoom = true;
             controls.update();
 
-            // Raycaster and Mouse
             raycaster = new THREE.Raycaster();
             mouse = new THREE.Vector2();
 
-            // Event listeners
             window.addEventListener('resize', onWindowResize, false);
             window.addEventListener('mousemove', onMouseMove, false);
-            window.addEventListener('click', onMouseClick, false); // Add click event listener
+            window.addEventListener('click', onMouseClick, false);
 
-            onWindowResize(); // Initial resize
+            onWindowResize();
 
-            renderLegend(); // Render the legend
+            renderLegend();
+            renderHeader();
         }
 
         function onWindowResize() {
@@ -280,6 +562,10 @@
 
             renderer.setSize(width, height);
             effect.setSize(width, height);
+            
+            if (effect && scene && camera) {
+                effect.render(scene, camera);
+            }
         }
 
         function onMouseMove(event) {
@@ -289,15 +575,16 @@
         }
 
         function onMouseClick(event) {
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObject(points);
+            if (raycaster && points) {
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObject(points);
 
-            if (intersects.length > 0) {
-                const intersect = intersects[0];
-                const index = intersect.index;
-                const point = pointData[index];
-                console.log('Clicked point:', point); // Debug log to verify the clicked point
-                selectRandomPoints(pointData, point);
+                if (intersects.length > 0) {
+                    const intersect = intersects[0];
+                    const index = intersect.index;
+                    const point = pointData[index];
+                    selectRandomPoints(pointData, point);
+                }
             }
         }
 
@@ -309,22 +596,31 @@
         function render() {
             const timer = Date.now() - start;
 
-            raycaster.setFromCamera(mouse, camera);
-            const intersects = raycaster.intersectObject(points);
+            if (raycaster && points) {
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObject(points);
 
-            if (intersects.length > 0) {
-                const intersect = intersects[0];
-                const index = intersect.index;
-                const point = pointData[index];
-                info.style.display = 'block';
-                info.innerHTML = point.entry;
-                info.style.left = `${(mouse.x + 1) / 2 * window.innerWidth}px`;
-                info.style.top = `${-(mouse.y - 1) / 2 * window.innerHeight}px`;
-            } else {
-                info.style.display = 'none';
+                if (intersects.length > 0) {
+                    const intersect = intersects[0];
+                    const index = intersect.index;
+                    const point = pointData[index];
+                    const matchingBook = Object.keys(bookColors).find(bookTitle => point.citation.title.includes(bookTitle));
+                    
+                    info.style.display = 'block';
+                    info.innerHTML = point.entry;
+                    info.style.left = `${(mouse.x + 1) / 2 * window.innerWidth}px`;
+                    info.style.top = `${-(mouse.y - 1) / 2 * window.innerHeight}px`;
+                    
+                    if (matchingBook) {
+                        info.setAttribute('aria-label', `${point.entry} - ${bookColorDescriptions[matchingBook]} category`);
+                    } else {
+                        info.setAttribute('aria-label', `${point.entry} - uncategorized`);
+                    }
+                } else {
+                    info.style.display = 'none';
+                }
             }
 
-            // Display selected point entries next to the points
             selectedPoints.forEach(point => {
                 const screenPosition = pointToScreenPosition(new THREE.Vector3(point.x, point.y, point.z), camera);
                 let entryDiv = document.getElementById(`entry-${point.x}-${point.y}-${point.z}`);
@@ -335,9 +631,21 @@
                     document.body.appendChild(entryDiv);
                 }
 
-                // Find the matching symbol for the citation title
-                const matchingSymbol = Object.keys(symbols).find(bookTitle => point.citation.title.includes(bookTitle));
-                entryDiv.innerHTML = `${point.entry} ${matchingSymbol ? symbols[matchingSymbol] : ''}`;
+                const matchingBook = Object.keys(bookColors).find(bookTitle => point.citation.title.includes(bookTitle));
+                if (matchingBook) {
+                    entryDiv.style.color = bookColors[matchingBook];
+                    entryDiv.style.fontWeight = '500';
+                    entryDiv.style.background = `rgba(255, 255, 255, 0.85)`;
+                    entryDiv.style.border = `1px solid ${bookColors[matchingBook]}20`;
+                    entryDiv.setAttribute('aria-label', `${point.entry} - ${bookColorDescriptions[matchingBook]} category`);
+                } else {
+                    entryDiv.style.color = '#6b7280';
+                    entryDiv.style.fontWeight = '400';
+                    entryDiv.style.background = 'rgba(255, 255, 255, 0.85)';
+                    entryDiv.style.border = '1px solid rgba(0, 0, 0, 0.1)';
+                    entryDiv.setAttribute('aria-label', `${point.entry} - uncategorized`);
+                }
+                entryDiv.innerHTML = point.entry;
                 entryDiv.style.left = `${screenPosition.x}px`;
                 entryDiv.style.top = `${screenPosition.y}px`;
             });
@@ -352,13 +660,14 @@
             const halfWidth = window.innerWidth / 2;
             const halfHeight = window.innerHeight / 2;
 
-            vector.x = (vector.x * halfWidth) + halfWidth; // Adjust as needed
+            vector.x = (vector.x * halfWidth) + halfWidth;
             vector.y = -(vector.y * halfHeight) + halfHeight;
             return vector;
         }
 
-        init();
-        animate();
+        init().then(() => {
+            animate();
+        });
     </script>
 </body>
 

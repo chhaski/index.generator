@@ -3669,23 +3669,29 @@
                 
                 // Position camera to see the data
                 if (this.textSprites.length > 0) {
-                    const box = new THREE.Box3();
+                    // Compute centroid of sprite positions for a visually balanced center
+                    const centroid = new THREE.Vector3();
+                    this.textSprites.forEach(sprite => centroid.add(sprite.position));
+                    centroid.multiplyScalar(1 / this.textSprites.length);
+
+                    // Compute a bounding-sphere radius from centroid for distance fit
+                    let maxDistanceFromCentroid = 0;
                     this.textSprites.forEach(sprite => {
-                        box.expandByObject(sprite);
+                        const d = centroid.distanceTo(sprite.position);
+                        if (d > maxDistanceFromCentroid) maxDistanceFromCentroid = d;
                     });
-                    const center = box.getCenter(new THREE.Vector3());
-                    const size = box.getSize(new THREE.Vector3());
-                    const maxDim = Math.max(size.x, size.y, size.z);
+
                     const fov = this.camera.fov * (Math.PI / 180);
-                    let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
-                    
+                    let cameraZ = Math.abs(maxDistanceFromCentroid / Math.tan(fov / 2));
+
                     const isMobile = window.innerWidth <= 768;
-                    const distanceFitFactor = isMobile ? 1.25 : 0.9; // keep mobile slightly farther, desktop slightly closer
-                    cameraZ *= distanceFitFactor; // start closer instead of far away
-                    
-                    this.camera.position.z = cameraZ;
-                    this.camera.lookAt(center);
-                    this.controls.target.copy(center);
+                    const distanceFitFactor = isMobile ? 1.25 : 0.9; // mobile slightly farther, desktop slightly closer
+                    cameraZ *= distanceFitFactor;
+
+                    // Place camera on Z axis aligned with centroid so content is properly centered
+                    this.camera.position.copy(new THREE.Vector3(centroid.x, centroid.y, centroid.z + cameraZ));
+                    this.camera.lookAt(centroid);
+                    this.controls.target.copy(centroid);
                     this.controls.update();
                 }
                 
@@ -4934,7 +4940,8 @@
         let howMadeIndex = 0;
 
         async function loadHowMadeImages() {
-            const base = 'Process documentation/';
+            // Use workspace-relative path that exists under /process/
+            const base = 'process/';
             const manifestUrls = [base + 'manifest.json', base + 'index.json'];
             // Try manifest first
             for (const url of manifestUrls) {

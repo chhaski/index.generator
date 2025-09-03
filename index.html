@@ -697,128 +697,162 @@
             padding-left: 12px;
         }
         
+        /* Reference Tree Tokens */
+        :root {
+            --tree-text: #2b2b2b;
+            --tree-subtle: #6b6b6b;
+            --tree-hairline: #e6e6e6;
+            --tree-parent: #3b82f6;
+            --tree-children: #8b5cf6;
+            --tree-see: #10b981;
+            --tree-see-also: #f59e0b;
+            --tree-hover-bg: rgba(0,0,0,0.04);
+            --tree-focus: #1a73e8;
+        }
+
         /* Hierarchical Reference Tree Styles */
         .reference-tree {
             margin-top: 15px;
             font-family: inherit;
             font-size: 12px;
-            line-height: 1.6;
-            color: #333;
-            position: relative;
-        }
-        
-        .tree-item {
-            position: relative;
-            margin: 6px 0;
-            padding: 8px 12px;
-            border-radius: 4px;
-            transition: all 0.2s;
-            border-left: 3px solid transparent;
-            margin-left: 12px;
-            /* Remove cursor pointer from container to avoid conflicts */
-        }
-        
-        .tree-item:hover {
-            background: rgba(0,0,0,0.08);
-            transform: translateX(3px);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        /* Connection lines for tree items */
-        .tree-item::before {
-            content: '';
-            position: absolute;
-            left: -12px;
-            top: 50%;
-            width: 10px;
-            height: 2px;
-            background: #ccc;
-            transform: translateY(-50%);
-        }
-        
-        .tree-section {
-            margin: 16px 0;
+            line-height: 1.35;
+            color: var(--tree-text);
             position: relative;
             padding-left: 20px;
         }
         
-        .tree-section-label {
-            font-weight: 600;
-            margin-bottom: 8px;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        .tree-item {
             position: relative;
+            margin: 2px 0;
+            padding: 6px 8px 6px 0;
+            border-radius: 4px;
+            transition: background-color 0.12s ease;
+            margin-left: 12px;
         }
         
-        /* Horizontal connection lines from main tree line to each section */
-        .tree-section::before {
+        .tree-item:hover {
+            background: var(--tree-hover-bg);
+        }
+        
+        /* Connection lines for tree items (disabled for minimal look; children use custom connectors) */
+        .tree-item::before { content: none; }
+        
+        .tree-section {
+            margin: 16px 0;
+            position: relative;
+            padding-left: 12px; /* tighter to align tree visually */
+        }
+
+        /* Index-style indentation rules */
+        .tree-parent,
+        .tree-current,
+        .tree-see,
+        .tree-see-also {
+            padding-left: 0; /* Unindented sections */
+        }
+
+        .tree-parent .tree-item,
+        .tree-current .tree-item,
+        .tree-see .tree-item,
+        .tree-see-also .tree-item {
+            margin-left: 0; /* Unindented items */
+        }
+
+        .tree-children {
+            position: relative;
+            padding-left: 16px; /* Slight indent for children section */
+        }
+
+        /* Global indentation helper */
+        .tree-item.tree-indented { margin-left: 12px; }
+
+        /* Children respect type-based indentation */
+        .tree-children .tree-item { margin-left: 0; }
+        .tree-children .tree-item.tree-indented { margin-left: 12px; }
+
+        /* Remove vertical rails anywhere (children, nested, etc.) */
+        .tree-children::before { content: none; }
+
+        .tree-children .tree-item::after { content: none; }
+
+        /* Single elbow rule: show a grey elbow only when an item is indented */
+        .tree-item.tree-indented::before {
             content: '';
             position: absolute;
-            left: -18px;
-            top: 20px;
+            left: -16px;
+            top: 50%;
             width: 16px;
             height: 2px;
-            background: currentColor;
-            opacity: 0.4;
+            transform: translateY(-50%);
         }
         
-        .tree-parent {
-            border-left-color: #3b82f6;
-            background: rgba(59, 130, 246, 0.05);
+        .tree-section-label {
+            font-weight: 600;
+            margin-bottom: 4px;
+            padding: 0;
+            border-radius: 0;
+            font-size: 10px; /* smaller label */
+            text-transform: none; /* not all caps */
+            letter-spacing: 0.02em;
+            position: relative;
+            color: var(--tree-subtle);
+            text-align: right; /* right aligned labels */
         }
+
+        /* Hide redundant "Current Selection" label */
+        .tree-current .tree-section-label { display: block; }
         
-        .tree-parent .tree-section-label {
-            color: #3b82f6;
-            background: rgba(59, 130, 246, 0.1);
-        }
+        /* Minimal horizontal connectors are added only for children items; section line removed */
+        .tree-section::before { content: none; }
         
-        .tree-parent::before {
-            background: #3b82f6 !important;
+        #from-book-container .book-info {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
         }
-        
-        .tree-see {
-            border-left-color: #10b981;
-            background: rgba(16, 185, 129, 0.05);
+        #from-book-container .book-cover-display { display: none; }
+        #from-book-container .book-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
         }
-        
-        .tree-see .tree-section-label {
-            color: #10b981;
-            background: rgba(16, 185, 129, 0.1);
+        #from-book-container .book-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 12px;
+            line-height: 1.3;
         }
-        
-        .tree-see::before {
-            background: #10b981 !important;
+        #from-book-container .book-author {
+            color: var(--tree-subtle);
+            font-size: 11px;
+            line-height: 1.2;
+            margin-top: 2px;
         }
-        
-        .tree-see-also {
-            border-left-color: #f59e0b;
-            background: rgba(245, 158, 11, 0.05);
+
+        .tree-parent,
+        .tree-see,
+        .tree-see-also,
+        .tree-children {
+            border-left-color: transparent;
+            background: transparent;
         }
-        
-        .tree-see-also .tree-section-label {
-            color: #f59e0b;
-            background: rgba(245, 158, 11, 0.1);
-        }
-        
-        .tree-see-also::before {
-            background: #f59e0b !important;
-        }
-        
-        /* Enhanced relationship indicators */
-        .tree-parent .tree-item {
-            border-left-color: #3b82f6;
-        }
-        
-        .tree-see .tree-item {
-            border-left-color: #10b981;
-        }
-        
-        .tree-see-also .tree-item {
-            border-left-color: #f59e0b;
-        }
+
+        /* Remove color-coded label backgrounds */
+        .tree-parent .tree-section-label,
+        .tree-see .tree-section-label,
+        .tree-see-also .tree-section-label,
+        .tree-children .tree-section-label { background: transparent; color: var(--tree-subtle); }
+
+        /* Children connectors in purple (horizontal ticks) */
+        .tree-children::before { content: none; }
+        .tree-children .tree-item::after { background: var(--tree-children); }
+
+        /* Neutralize left-color indicators for category items */
+        .tree-parent .tree-item,
+        .tree-see .tree-item,
+        .tree-see-also .tree-item,
+        .tree-children .tree-item { border-left-color: transparent; }
         
         .tree-connected-item {
             border-left: 4px solid #6b7280; /* Gray for general connected items */
@@ -831,8 +865,8 @@
             color: #333;
             display: flex;
             align-items: center;
-            justify-content: center; /* Center the content within the card */
-            text-align: center; /* Center the text itself */
+            justify-content: flex-start; /* Left-align content for index-style layout */
+            text-align: left; /* Left-align text */
         }
         
         .tree-item-text {
@@ -840,41 +874,45 @@
             cursor: pointer;
             z-index: 1;
             position: relative;
-            text-align: center; /* Center text within the tree item */
+            text-align: left; /* Left-align text within the tree item */
         }
         
         .tree-item-actions {
             display: flex;
             align-items: center;
             opacity: 0;
-            transition: opacity 0.2s;
+            transition: opacity 0.12s ease;
         }
         
-        .tree-item:hover .tree-item-actions {
+        .tree-item:hover .tree-item-actions,
+        .tree-item:focus-within .tree-item-actions {
             opacity: 1;
         }
         
         .magnify-btn {
-            width: 20px;
-            height: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            background: white;
+            width: 24px;
+            height: 24px;
+            border: 1px solid var(--tree-hairline);
+            border-radius: 4px;
+            background: #fff;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-left: 8px;
-            transition: all 0.2s;
+            transition: background-color 0.12s ease, border-color 0.12s ease;
             font-size: 12px;
             z-index: 10;
             position: relative;
         }
         
         .magnify-btn:hover {
-            background: #f0f0f0;
-            border-color: #999;
-            transform: scale(1.1);
+            background: #f9f9f9;
+            border-color: #d0d0d0;
+        }
+        .magnify-btn:focus-visible {
+            outline: 2px solid var(--tree-focus);
+            outline-offset: 2px;
         }
         
         .magnify-btn::before {
@@ -883,37 +921,20 @@
         }
         
         .tree-nested {
-            margin-left: 24px;
+            margin-left: 0;
             position: relative;
-            border-left: 2px solid #e0e0e0;
-            padding-left: 16px;
+            border-left: 0;
+            padding-left: 0;
             margin-top: 8px;
         }
         
-        .tree-nested::before {
-            content: '';
-            position: absolute;
-            left: -2px;
-            top: -8px;
-            width: 2px;
-            height: 16px;
-            background: #e0e0e0;
-        }
+        .tree-nested::before { content: none; }
         
         .tree-nested .tree-item {
             margin-left: 0;
         }
         
-        .tree-nested .tree-item::before {
-            content: '';
-            position: absolute;
-            left: -16px;
-            top: 50%;
-            width: 14px;
-            height: 2px;
-            background: #e0e0e0;
-            transform: translateY(-50%);
-        }
+        .tree-nested .tree-item::before { content: none; }
         
         .tree-sub-section {
             margin: 8px 0;
@@ -934,7 +955,7 @@
         }
         
         .tree-deep {
-            margin-left: 20px;
+            margin-left: 0px;
             border-left: 2px dashed #d0d0d0;
             padding-left: 12px;
             position: relative;
@@ -969,47 +990,26 @@
         }
         
         .tree-current {
-            border-left-color: #8b5cf6;
-            background: rgba(139, 92, 246, 0.1);
+            border-left-color: transparent;
+            background: transparent;
             margin-bottom: 20px;
             position: relative;
         }
         
-        .tree-current .tree-section-label {
-            color: #8b5cf6;
-            background: rgba(139, 92, 246, 0.15);
-        }
+        .tree-current .tree-section-label { display: block; }
         
         .tree-current-item {
             font-weight: 600;
-            border-left: 4px solid #8b5cf6 !important;
-            background: rgba(139, 92, 246, 0.08) !important;
+            border-left: 0 !important;
+            background: transparent !important;
             position: relative;
         }
         
         /* Connection lines from current item to related items */
-        .tree-current-item::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -10px;
-            width: 2px;
-            height: 10px;
-            background: #8b5cf6;
-            transform: translateX(-50%);
-        }
+        .tree-current-item::after { content: none; }
         
-        /* Vertical connection line for the entire tree */
-        .reference-tree::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 80px;
-            bottom: 20px;
-            width: 2px;
-            background: linear-gradient(to bottom, #8b5cf6 0%, #3b82f6 33%, #10b981 66%, #f59e0b 100%);
-            opacity: 0.3;
-        }
+        /* Vertical spine for the tree */
+        .reference-tree::before { content: none; }
 
         /* ASCII Toggle Button */
         .ascii-toggle-btn {
@@ -1273,21 +1273,22 @@
         
         <!-- From Book Container -->
         <div class="panel-container" id="from-book-container" style="display: none;">
-            <h4>From Book</h4>
-            <div class="book-info" style="display: flex; align-items: center; gap: 12px;">
+            <div class="tree-section-label">From Book</div>
+            <div class="book-info">
                 <!-- Book Cover -->
                 <div class="book-cover-display" id="current-item-book-cover" style="text-align: center;">
                     <img id="current-item-cover-image" src="" alt="Book Cover" style="width: 60px; height: 80px; object-fit: cover; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: none;">
                 </div>
-                
-                <!-- Book Title -->
-                <div class="item-book" id="current-item-book" style="font-weight: 600; color: #333; font-size: 14px;"></div>
+                <!-- Book Text -->
+                <div class="book-text">
+                    <div class="book-title" id="current-item-book-title"></div>
+                    <div class="book-author" id="current-item-book-author"></div>
+                </div>
             </div>
         </div>
 
         <!-- Current Item Info Container with Hierarchical Tree -->
         <div class="panel-container" id="item-info-container" style="display: none;">
-            <h4>Current Item</h4>
             <div class="item-info">
                 <!-- Hierarchical Reference Tree -->
                 <div class="reference-tree" id="reference-tree">
@@ -1298,7 +1299,7 @@
     
         <!-- More from Same Book Container -->
         <div class="panel-container" id="same-book-container">
-            <h4>More from Same Book</h4>
+            <div class="tree-section-label">More from same book</div>
             <div class="clickable-items" id="same-book-items">
                 <div class="no-items">No other entries</div>
             </div>
@@ -1374,6 +1375,12 @@
         import * as THREE from './three.module.js';
         import { OrbitControls } from './jsm/OrbitControls.js';
         
+        // Console logging toggle (silence logs in production/preview)
+        const LOGS_ENABLED = false;
+        if (!LOGS_ENABLED && typeof console !== 'undefined') {
+            console.log = () => {};
+        }
+        
         // Loading Screen Management
         const loadingSteps = [
             { id: 'step-data', status: 'Loading data...', progress: 20 },
@@ -1435,7 +1442,7 @@
         let itemSizeScale = 3.6; // Default size multiplier for selected items
         let zoomDistance = 40; // Default distance when focusing on items
         let baseReferenceDistance = null; // Will be calculated when first item is focused
-        const CONNECTION_LEVELS = 5; // Number of relationship levels away from focused item to include
+        const CONNECTION_LEVELS = 2; // Number of relationship levels away from focused item to include
         const PANEL_LEVELS = Math.max(1, CONNECTION_LEVELS - 1); // Sidebar shows one level less to match geometry depth
         
         // Helper function to get current opacity values from sliders (source of truth)
@@ -1578,7 +1585,8 @@
         const CONNECTION_TYPES = {
             PARENT: { color: 0x3b82f6, name: 'parent' },      // Blue
             SEE: { color: 0x10b981, name: 'see' },            // Green  
-            SEE_ALSO: { color: 0xf59e0b, name: 'see_also' }   // Orange
+            SEE_ALSO: { color: 0xf59e0b, name: 'see_also' },  // Orange
+            CHILDREN: { color: 0x8b5cf6, name: 'children' }   // Purple for child relationships
         };
 
         // Focus on item without making it selected (camera movement only)
@@ -1727,12 +1735,27 @@
             "The Moment of Complexity: Emerging Network Culture": "Mark C. Taylor"
         };
 
+        // Helper function to extract clean concept text without locators
+        function extractCleanConcept(entryText) {
+            if (!entryText) return 'Unknown';
+            
+            // Remove locators that typically appear at the end after commas
+            // Pattern: text, page numbers, page numbers, etc.
+            const cleanText = entryText.replace(/,\s*\d+[-\d]*[n]?\.?\s*\d*[-\d]*[n]?\.?\s*[a-zA-Z]*/g, '');
+            
+            // Also remove any remaining page references at the end
+            const finalClean = cleanText.replace(/,\s*\d+[-\d]*[n]?\.?\s*$/g, '');
+            
+            return finalClean.trim() || 'Unknown';
+        }
+
 
 
         async function loadEmbeddings() {
-            const response = await fetch('data/combinedv2_.json');
+            const response = await fetch('data/combinedv3.json');
             const data = await response.json();
             return data.map(entry => ({
+                text: entry.text,
                 entry: entry.entry,
                 x: entry.embedding[0] / coordinateScale, // Use dynamic coordinate scale
                 y: entry.embedding[1] / coordinateScale, // Use dynamic coordinate scale  
@@ -1743,7 +1766,8 @@
                 parent_text: entry.parent_text || null,
                 type: entry.type,
                 id: entry.id,
-                spaced_subentry: entry["spaced-subentry"]
+                spaced_subentry: entry["spaced-subentry"],
+                children: entry.children || [] // Add children field for enhanced grouping
             }));
         }
 
@@ -1769,7 +1793,9 @@
             // Create text sprites similar to text constellation but for ASCII scene
             limitedEmbeddings.forEach((embedding, index) => {
                 const position = new THREE.Vector3(embedding.x, embedding.y, embedding.z);
-                const sprite = createTextSpriteForASCII(embedding.text || embedding.entry, getBookColor(embedding.citation.title), position);
+                // Extract clean concept text without locators for sprite display
+                const displayText = extractCleanConcept(embedding.text || embedding.entry);
+                const sprite = createTextSpriteForASCII(displayText, getBookColor(embedding.citation.title), position);
                 asciiTextSprites.push(sprite);
                 scene.add(sprite);
             });
@@ -2050,6 +2076,20 @@
                 }
             }
             
+            // Children connections (NEW: enhanced grouping support)
+            if (item.children && Array.isArray(item.children)) {
+                console.log(`🔗 Processing ${item.children.length} children for "${item.text}"`);
+                item.children.forEach(childRef => {
+                    const childItem = findItemById(childRef.id, childRef.text);
+                    if (childItem) {
+                        console.log(`   ✅ Found child: "${childItem.text}" (ID: ${childItem.id})`);
+                        collectConnectedItemsRecursively(childItem, level + 1, maxLevel, processedIds, connectedItems);
+                    } else {
+                        console.log(`   ❌ Child not found: "${childRef.text}" (ID: ${childRef.id})`);
+                    }
+                });
+            }
+            
             // See connections
             if (item.see && Array.isArray(item.see)) {
                 item.see.forEach(seeRef => {
@@ -2097,6 +2137,25 @@
                     // Recursively draw parent's connections
                     drawConnectionsRecursively(parentItem, level + 1, maxLevel, processedIds, connectedItems);
                 }
+            }
+            
+            // Children connections (purple - NEW: enhanced grouping support)
+            if (item.children && Array.isArray(item.children)) {
+                item.children.forEach(childRef => {
+                    const childItem = findItemById(childRef.id, childRef.text);
+                    if (childItem) {
+                        if (level + 1 < maxLevel) {
+                            const line = createConnectionLine(item, childItem, CONNECTION_TYPES.CHILDREN, opacity);
+                            // Add to TextConstellation scene if available, otherwise main scene
+                            const targetScene = textConstellation?.scene || scene;
+                            targetScene.add(line);
+                            connectionLines.push(line);
+                        }
+                        
+                        // Recursively draw child's connections
+                        drawConnectionsRecursively(childItem, level + 1, maxLevel, processedIds, connectedItems);
+                    }
+                });
             }
             
             // See connections (green)
@@ -2342,6 +2401,9 @@
                 this.textPool = [];
                 this.activeTexts = [];
                 
+                // Child lookup optimization for enhanced grouping
+                this.childLookupMap = new Map(); // Maps parent ID to array of child items
+                
                 // Book cover data from method.html
                 this.bookCovers = {
                     'Updating to Remain the Same: Habitual New Media': 'https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIyOTAxMDM0NC9vcmlnaW5hbF82YjZlZjY2ODQwYWZmNWY4NTMyNWY2MGNkMDM5ZmExYi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJmbGF0dGVuIjp7ImJhY2tncm91bmQiOnsiciI6MjAzLCJnIjoyMDMsImIiOjIwM319LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=',
@@ -2358,7 +2420,7 @@
 
             async loadEmbeddings() {
                 try {
-                    const response = await fetch('data/combinedv2_.json');
+                    const response = await fetch('data/combinedv3.json');
                     const data = await response.json();
                     this.embeddings = data.map(entry => ({
                         text: entry.text,
@@ -2373,11 +2435,15 @@
                         parent_text: entry.parent_text || null,
                         type: entry.type,
                         id: entry.id,
-                        spaced_subentry: entry["spaced-subentry"]
+                        spaced_subentry: entry["spaced-subentry"],
+                        children: entry.children || [] // Add children field for enhanced grouping
                     }));
                     
                     // Store globally for connection lookups
                     allEmbeddingsData = this.embeddings;
+                    
+                    // Build child lookup map for enhanced grouping performance
+                    this.buildChildLookupMap();
                     
                     console.log(`Loaded ${this.embeddings.length} text embeddings for constellation`);
                     return this.embeddings;
@@ -2385,6 +2451,27 @@
                     console.error('Error loading embeddings:', error);
                     return [];
                 }
+            }
+            
+            buildChildLookupMap() {
+                // Clear existing map
+                this.childLookupMap.clear();
+                
+                // Build map of parent ID to child items for fast lookups
+                this.embeddings.forEach(entry => {
+                    if (entry.children && Array.isArray(entry.children)) {
+                        const childItems = entry.children.map(childRef => {
+                            // Find the actual child item in embeddings
+                            return this.embeddings.find(e => e.id === childRef.id);
+                        }).filter(Boolean); // Remove any undefined items
+                        
+                        if (childItems.length > 0) {
+                            this.childLookupMap.set(entry.id, childItems);
+                        }
+                    }
+                });
+                
+                console.log(`Built child lookup map with ${this.childLookupMap.size} parent entries`);
             }
 
             getBookColor(title) {
@@ -2455,7 +2542,7 @@
                 };
             }
 
-            createTextSprite(text, color, position, citation = null) {
+            createTextSprite(text, color, position, citation = null, fullEntry = null) {
                 // Create canvas for text
                 const canvas = document.createElement('canvas');
                 const context = canvas.getContext('2d');
@@ -2518,7 +2605,8 @@
                     transparent: true,
                     alphaTest: 0.1,
                     depthTest: true,
-                    depthWrite: false // Don't write to depth buffer so selected items can appear on top
+                    depthWrite: false, // Don't write to depth buffer so selected items can appear on top
+                    opacity: 1.0 // Start with full opacity (selected state)
                 });
                 
                 // Create sprite
@@ -2531,6 +2619,7 @@
                 
                 sprite.userData = {
                     text: text,
+                    entry: fullEntry || text, // Store full entry for UI display
                     color: color,
                     originalPosition: position.clone(),
                     originalScale: sprite.scale.clone(),
@@ -2565,12 +2654,19 @@
                 this.embeddings.forEach((embedding, index) => {
                     // Show all entries - no artificial limit
                         const position = new THREE.Vector3(embedding.x, embedding.y, embedding.z);
-                        const sprite = this.createTextSprite(embedding.text || embedding.entry, embedding.color, position, embedding.citation);
+                        // Extract clean concept text without locators for sprite display
+                        const displayText = extractCleanConcept(embedding.text || embedding.entry);
+                        const sprite = this.createTextSprite(displayText, embedding.color, position, embedding.citation, embedding.entry);
                         this.textSprites.push(sprite);
                         this.scene.add(sprite);
                 });
                 
                 console.log(`Created ${this.textSprites.length} text sprites`);
+                
+                // Set all sprites to start with selected opacity (full opacity)
+                this.textSprites.forEach(sprite => {
+                    sprite.material.opacity = 1.0; // Start with full opacity
+                });
             }
 
             setupScene() {
@@ -3057,8 +3153,8 @@
                 const tooltipText = document.getElementById('tooltip-text');
                 
                 if (tooltip && tooltipText) {
-                    // Get the item text (prioritize 'text' field over 'entry')
-                    const itemText = sprite.userData.text || sprite.userData.entry || 'Unknown item';
+                    // Get the full entry for complete information in tooltip
+                    const itemText = sprite.userData.entry || sprite.userData.text || 'Unknown item';
                     
                     // Truncate text if too long
                     const maxLength = 50;
@@ -3742,7 +3838,7 @@
             scene.add(light2);
 
             // Step 3: Load data and create geometry
-            updateLoadingProgress(3, 'Loading embeddings data...');
+            updateLoadingProgress(3, 'Loading data...');
             try {
                 const embeddings = await loadEmbeddings();
                 createTextSpritesForASCII(embeddings);
@@ -4128,7 +4224,8 @@
             const containerStart = performance.now();
             const fromBookContainer = document.getElementById('from-book-container');
             const itemInfoContainer = document.getElementById('item-info-container');
-            const itemBook = document.getElementById('current-item-book');
+            const bookTitleEl = document.getElementById('current-item-book-title');
+            const bookAuthorEl = document.getElementById('current-item-book-author');
             const containerEnd = performance.now();
             console.log(`⏱️ DOM element access took: ${(containerEnd - containerStart).toFixed(2)}ms`);
             
@@ -4143,8 +4240,13 @@
                 // Update book info
                 const bookStart = performance.now();
                 const bookColor = getBookColor(focusedItem.citation.title);
-                itemBook.textContent = `${focusedItem.citation.title} by ${focusedItem.citation.author}`;
-                itemBook.style.color = bookColor;
+                if (bookTitleEl) {
+                    bookTitleEl.textContent = focusedItem.citation.title || '';
+                    bookTitleEl.style.color = bookColor;
+                }
+                if (bookAuthorEl) {
+                    bookAuthorEl.textContent = focusedItem.citation.author ? focusedItem.citation.author : '';
+                }
                 const bookEnd = performance.now();
                 console.log(`⏱️ book info update took: ${(bookEnd - bookStart).toFixed(2)}ms`);
                 
@@ -4214,32 +4316,19 @@
             
             let treeHTML = '';
             
-            // Build Parent Index section first (always on top)
-            if (focusedItem.parent_text && focusedItem.parent_text.text) {
-                // Try to resolve full item to get entry (text + locators)
-                const parentResolved = findItemById(focusedItem.parent_text.id, focusedItem.parent_text.text);
-                const parentDisplay = parentResolved?.entry || focusedItem.parent_text.text;
-                const safeParentText = parentDisplay.replace(/'/g, "\\'");
-                treeHTML += `
-                <div class="tree-section tree-parent">
-                    <div class="tree-section-label">Parent Index</div>
-                    <div class="tree-item tree-current-item">
-                        <div class="tree-item-content">
-                            <div class="tree-item-text" onclick="focusOnItemById('${focusedItem.parent_text.id}', '${safeParentText}')">${parentDisplay}</div>
-                            <div class="tree-item-actions">
-                                <button class="magnify-btn" onclick="selectItemAsCurrentById('${focusedItem.parent_text.id}', '${safeParentText}')" title="Select parent"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
-            }
+            // Removed Parent Index section per design simplification
             
-            // Current selected item (highlighted) - Level 0 (below Parent Index)
+            // Parent item section (blue) - render detailed Parent section immediately after Parent Index
+            if (focusedItem.parent_text && focusedItem.parent_text.text) {
+                treeHTML += createReferenceSection('Parent', 'tree-parent', [focusedItem.parent_text], 1, PANEL_LEVELS);
+            }
+
+            // Current selected item (highlighted) - Level 0 (below Parent sections)
             const safeCurrentText = focusedItem.entry.replace(/'/g, "\\'");
             treeHTML += `
                 <div class="tree-section tree-current">
-                    <div class="tree-section-label">Current Selection</div>
-                    <div class="tree-item tree-current-item">
+                    <div class="tree-section-label">Selected</div>
+                    <div class="tree-item tree-current-item${focusedItem.parent_text ? ' tree-indented' : ''}">
                         <div class="tree-item-content">
                             <div class="tree-item-text" onclick="console.log('CLICK: Current selection text'); focusOnItemById('${focusedItem.id}', '${safeCurrentText}')">${focusedItem.entry}</div>
                             <div class="tree-item-actions">
@@ -4250,66 +4339,47 @@
                 </div>
             `;
             
-            // Parent item section (blue) - moved above as Parent Index; keep nested exploration below if needed
-            if (focusedItem.parent_text && focusedItem.parent_text.text) {
-                treeHTML += createReferenceSection('Parent', 'tree-parent', [focusedItem.parent_text], 1, PANEL_LEVELS);
-            }
-            
-            // See references section (green) - Level 1
-            if (focusedItem.see && focusedItem.see.length > 0) {
-                treeHTML += createReferenceSection('See', 'tree-see', focusedItem.see, 1, PANEL_LEVELS);
-            }
-            
-            // See also references section (orange) - Level 1
-            if (focusedItem.see_also && focusedItem.see_also.length > 0) {
-                treeHTML += createReferenceSection('See Also', 'tree-see-also', focusedItem.see_also, 1, PANEL_LEVELS);
-            }
-            
-            // Add section for all connected items (including nested)
-            if (allConnectedItems && allConnectedItems.size > 1) { // > 1 because focused item is included
+            // All Connected Items section: show only children of the focused item
+            if (focusedItem.children && focusedItem.children.length > 0) {
                 treeHTML += `
                     <div class="tree-section">
-                        <div class="tree-section-label">All Connected Items (${allConnectedItems.size - 1} items)</div>
+                        <div class="tree-section-label">Children (${focusedItem.children.length})</div>
                         <div class="tree-nested">
                 `;
-                
-                // Convert Set to Array and filter out the focused item
-                const connectedArray = Array.from(allConnectedItems).filter(item => item.id !== focusedItem.id);
-                
-                connectedArray.forEach(connectedItem => {
-                    const displayText = connectedItem.entry || connectedItem.text || '';
+                // Render each child, using full entry when available
+                focusedItem.children.forEach(childRef => {
+                    const childItem = findItemById(childRef.id, childRef.text);
+                    const displayText = (childItem && childItem.entry) ? childItem.entry : (childRef.text || '');
                     const safeText = displayText.replace(/'/g, "\\'");
-                    const truncatedText = displayText.length > 60 ? 
-                        displayText.substring(0, 60) + '...' : 
-                        displayText;
-                    
-                    // Determine connection type for color coding
-                    let connectionClass = 'tree-connected-item';
-                    if (focusedItem.parent_text && focusedItem.parent_text.id === connectedItem.id) {
-                        connectionClass = 'tree-parent';
-                    } else if (focusedItem.see && focusedItem.see.some(ref => ref.id === connectedItem.id)) {
-                        connectionClass = 'tree-see';
-                    } else if (focusedItem.see_also && focusedItem.see_also.some(ref => ref.id === connectedItem.id)) {
-                        connectionClass = 'tree-see-also';
-                    }
-                    
+                    const truncatedText = displayText.length > 60 ? displayText.substring(0, 60) + '...' : displayText;
                     treeHTML += `
-                        <div class="tree-item ${connectionClass}">
+                        <div class="tree-item tree-children${(childItem && childItem.type === 'subentry') ? ' tree-indented' : ''}">
                             <div class="tree-item-content">
-                                <div class="tree-item-text" onclick="focusOnItemById('${connectedItem.id}', '${safeText}')" title="${displayText}">${truncatedText}</div>
+                                <div class="tree-item-text" onclick="focusOnItemById('${childRef.id}', '${safeText}')" title="${displayText}">${truncatedText}</div>
                                 <div class="tree-item-actions">
-                                    <button class="magnify-btn" onclick="selectItemAsCurrentById('${connectedItem.id}', '${safeText}')" title="Select as current item"></button>
+                                    <button class="magnify-btn" onclick="selectItemAsCurrentById('${childRef.id}', '${safeText}')" title="Select as current item"></button>
                                 </div>
                             </div>
                         </div>
                     `;
                 });
-                
                 treeHTML += `
                         </div>
                     </div>
                 `;
             }
+
+            // See also references section (orange)
+            if (focusedItem.see_also && focusedItem.see_also.length > 0) {
+                treeHTML += createReferenceSection('See Also', 'tree-see-also', focusedItem.see_also, 1, PANEL_LEVELS);
+            }
+
+            // See references section (green) - place after See Also per new order
+            if (focusedItem.see && focusedItem.see.length > 0) {
+                treeHTML += createReferenceSection('See', 'tree-see', focusedItem.see, 1, PANEL_LEVELS);
+            }
+            
+            /* Former All Connected Items block removed from here (now shown above) */
             
             treeContainer.innerHTML = treeHTML;
         }
@@ -4325,11 +4395,19 @@
             `;
             
             references.forEach(ref => {
-                const safeText = ref.text.replace(/'/g, "\\'");
+                // Determine display text. For Children, prefer full entry (with page numbers)
+                let displayText = ref.text;
+                if (sectionClass === 'tree-children') {
+                    const fullChild = findItemById(ref.id, ref.text);
+                    if (fullChild && fullChild.entry) {
+                        displayText = fullChild.entry;
+                    }
+                }
+                const safeText = displayText.replace(/'/g, "\\'");
                 sectionHTML += `
                     <div class="tree-item">
                         <div class="tree-item-content">
-                            <div class="tree-item-text" onclick="focusOnItemById('${ref.id}', '${safeText}')">${ref.text}</div>
+                            <div class="tree-item-text" onclick="focusOnItemById('${ref.id}', '${safeText}')">${displayText}</div>
                             <div class="tree-item-actions">
                                 <button class="magnify-btn" onclick="selectItemAsCurrentById('${ref.id}', '${safeText}')" title="Select as current item"></button>
                             </div>
@@ -4762,7 +4840,9 @@
                                 // Create new sprites with updated coordinates
                                 textConstellation.embeddings.forEach((embedding, index) => {
                                     const position = new THREE.Vector3(embedding.x, embedding.y, embedding.z);
-                                    const sprite = textConstellation.createTextSprite(embedding.text || embedding.entry, embedding.color, position, embedding.citation);
+                                    // Extract clean concept text without locators for sprite display
+                                    const displayText = extractCleanConcept(embedding.text || embedding.entry);
+                                    const sprite = textConstellation.createTextSprite(displayText, embedding.color, position, embedding.citation, embedding.entry);
                                     textConstellation.textSprites.push(sprite);
                                     textConstellation.scene.add(sprite);
                                 });

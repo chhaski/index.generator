@@ -76,7 +76,8 @@ const bColor = options['color'] || false;
             return;
         }
 
-        const oCtx = oCanvas.getContext('2d');
+        // Hint to the browser that we'll read pixels frequently to avoid warnings and improve perf
+        const oCtx = oCanvas.getContext('2d', { willReadFrequently: true });
         if (!oCtx.getImageData) {
             return;
         }

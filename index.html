@@ -650,21 +650,23 @@
         }
 
         .clickable-item {
-            padding: 8px;
-            margin: 5px 0;
-            background: rgba(0,0,0,0.05);
-            border-radius: 4px;
+            padding: 4px 0;
+            margin: 4px 0;
+            background: transparent;
+            border-radius: 0;
             cursor: pointer;
             font-size: 12px;
-            transition: background-color 0.2s;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            transition: color 0.15s ease, opacity 0.15s ease;
+            text-align: left;
+            display: block;
+            color: rgba(26, 13, 171, 0.85); /* softened classic link blue */
+            text-decoration: underline;
         }
 
         .clickable-item:hover {
-            background: rgba(0,0,0,0.1);
+            background: transparent;
+            color: rgba(85, 26, 139, 0.9); /* softened hover purple */
+            text-decoration-thickness: from-font;
         }
 
         .no-items {
@@ -875,6 +877,8 @@
             z-index: 1;
             position: relative;
             text-align: left; /* Left-align text within the tree item */
+            color: rgba(26, 13, 171, 0.85);
+            text-decoration: underline;
         }
         
         .tree-item-actions {
@@ -889,22 +893,7 @@
             opacity: 1;
         }
         
-        .magnify-btn {
-            width: 24px;
-            height: 24px;
-            border: 1px solid var(--tree-hairline);
-            border-radius: 4px;
-            background: #fff;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 8px;
-            transition: background-color 0.12s ease, border-color 0.12s ease;
-            font-size: 12px;
-            z-index: 10;
-            position: relative;
-        }
+        .magnify-btn { display: none; }
         
         .magnify-btn:hover {
             background: #f9f9f9;
@@ -915,10 +904,7 @@
             outline-offset: 2px;
         }
         
-        .magnify-btn::before {
-            content: '🔍';
-            font-size: 10px;
-        }
+        
         
         .tree-nested {
             margin-left: 0;
@@ -1053,43 +1039,41 @@
             -webkit-backdrop-filter: blur(8px);
             z-index: 10000;
         }
-        .loading-wordmark {
+        .loading-ui { text-align: center; }
+        .loading-wordmark { font-weight: 700; letter-spacing: 3px; font-size: 16px; color: #555; }
+        .loading-caption { margin-top: 8px; font-family: Arial, sans-serif; font-size: 12px; color: #666; text-align: center; }
+        .loading-icon {
+            width: 28px;
+            height: 28px;
+            margin: 10px auto 0;
             position: relative;
-            font-family: inherit;
-            font-weight: 700;
-            letter-spacing: 6px;
-            font-size: 42px;
-            color: rgba(0,0,0,0.15); /* base faint text */
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.12);
+            animation: orbit 1.15s cubic-bezier(.6,.04,.26,.9) infinite;
         }
-        .loading-fill {
-            position: absolute;
-            inset: 0;
-            color: rgba(0,0,0,0.85); /* filled text */
-            clip-path: inset(0 100% 0 0); /* start fully clipped */
-            transition: clip-path 0.6s ease;
-        }
-        /* Shimmer overlay */
-        .loading-wordmark::after {
+        .loading-icon::before,
+        .loading-icon::after {
             content: '';
             position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
-            transform: translateX(-100%);
-            animation: shimmer 2.4s linear infinite;
-            mix-blend-mode: overlay;
-            pointer-events: none;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            background: #000;
+            transform: translate(-50%, -50%);
         }
-        @keyframes shimmer {
-            0% { transform: translateX(-120%); }
-            100% { transform: translateX(120%); }
+        .loading-icon::before {
+            width: 6px;
+            height: 6px;
+            transform: translate(-50%, -50%) translateX(10px);
+            box-shadow: 0 0 6px rgba(0,0,0,0.25);
         }
-        .loading-caption {
-            margin-top: 10px;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            color: #666;
-            text-align: center;
+        .loading-icon::after {
+            width: 3px;
+            height: 3px;
+            opacity: 0.45;
+            transform: translate(-50%, -50%) translateX(-10px);
         }
+        @keyframes orbit { to { transform: rotate(360deg); } }
         
         .loading-container {
             text-align: center;
@@ -1186,8 +1170,8 @@
         /* Tooltip styles */
         .hover-tooltip {
             position: fixed;
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
+            background: whitesmoke;
+            color: black;
             padding: 8px 12px;
             border-radius: 6px;
             font-family: Arial, sans-serif;
@@ -1228,12 +1212,10 @@
 <body>
     <!-- Loading Screen -->
     <div id="loading-screen">
-        <div style="text-align:center">
-            <div class="loading-wordmark">
-                <span>INDEX.TRAINING</span>
-                <span class="loading-fill" id="loading-fill">INDEX.TRAINING</span>
-            </div>
+        <div class="loading-ui">
+            <div class="loading-wordmark">INDEX.TRAINING</div>
             <div class="loading-caption" id="loading-status">initializing…</div>
+            <div class="loading-icon" aria-hidden="true"></div>
         </div>
     </div>
 
@@ -1395,15 +1377,10 @@
         function updateLoadingProgress(stepIndex, customStatus = null) {
             const steps = ['step-data','step-geometry','step-rendering','step-controls','step-complete'];
             const statusEl = document.getElementById('loading-status');
-            const fillEl = document.getElementById('loading-fill');
             
-            // Progress as ratio for fill
+            // Progress indicator (spinner only; keep ratios for potential future use)
             const ratios = [0.15, 0.35, 0.65, 0.85, 1.0];
             const ratio = ratios[Math.min(stepIndex, ratios.length - 1)];
-            if (fillEl) {
-                const rightClip = Math.max(0, 100 - Math.round(ratio * 100));
-                fillEl.style.clipPath = `inset(0 ${rightClip}% 0 0)`;
-            }
             
             if (statusEl) {
                 statusEl.textContent = customStatus || 'loading…';
@@ -1583,10 +1560,10 @@
         
         // Connection types and colors
         const CONNECTION_TYPES = {
-            PARENT: { color: 0x3b82f6, name: 'parent' },      // Blue
-            SEE: { color: 0x10b981, name: 'see' },            // Green  
-            SEE_ALSO: { color: 0xf59e0b, name: 'see_also' },  // Orange
-            CHILDREN: { color: 0x8b5cf6, name: 'children' }   // Purple for child relationships
+            PARENT: { color: 0x1a0dab, name: 'parent' },
+            SEE: { color: 0x7a6a3e, name: 'see' },
+            SEE_ALSO: { color: 0x6c2f33, name: 'see_also' },
+            CHILDREN: { color: 0x1a0dab, name: 'children' }
         };
 
         // Focus on item without making it selected (camera movement only)
@@ -1868,10 +1845,10 @@
         }
         
         function getBookColor(title) {
-            if (title.includes("Updating to Remain the Same")) return "#059669";
-            if (title.includes("Code and Clay")) return "#e53e3e";
-            if (title.includes("The Moment of Complexity")) return "#2563eb";
-            return "#ff0000";
+            if (title.includes("Updating to Remain the Same")) return "#6C2F33"; // Self-Portrait
+            if (title.includes("Code and Clay")) return "#3F4C6B"; // Formentera-like blue
+            if (title.includes("The Moment of Complexity")) return "#7A6A3E"; // Masterpiece Theatre
+            return "#6C2F33";
         }
 
         function selectRandomPoints(embeddings, specificPoint = null) {
@@ -2378,10 +2355,10 @@
                 this.currentMesh = null;
                 
                 // Color states for interaction feedback
-                this.originalColors = new Map(); // Store original colors
-                this.hoverColor = '#6b00ff'; // Intense purple for hover
-                this.selectedColor = '#ff0000'; // Red for selected/clicked
-                this.geometryColor = '#8b00ff'; // Purple for geometry participation
+                this.originalColors = new Map();
+                this.hoverColor = '#1a0dab';
+                this.selectedColor = '#1a0dab';
+                this.geometryColor = '#1a0dab';
                 
                 // Canvas cache for performance
                 this.canvasCache = new Map(); // Cache canvases by color+text combo
@@ -2475,10 +2452,10 @@
             }
 
             getBookColor(title) {
-                if (title.includes("Updating to Remain the Same")) return "#059669";
-                if (title.includes("Code and Clay")) return "#e53e3e";
-                if (title.includes("The Moment of Complexity")) return "#2563eb";
-                return "#ff0000";
+                if (title.includes("Updating to Remain the Same")) return "#6C2F33"; // Self-Portrait
+                if (title.includes("Code and Clay")) return "#3F4C6B"; // Formentera-like blue
+                if (title.includes("The Moment of Complexity")) return "#7A6A3E"; // Masterpiece Theatre
+                return "#6C2F33";
             }
 
             getTintedBackground(color) {
@@ -3669,22 +3646,29 @@
                 
                 // Position camera to see the data
                 if (this.textSprites.length > 0) {
-                    const box = new THREE.Box3();
+                    // Compute centroid of sprite positions for a visually balanced center
+                    const centroid = new THREE.Vector3();
+                    this.textSprites.forEach(sprite => centroid.add(sprite.position));
+                    centroid.multiplyScalar(1 / this.textSprites.length);
+
+                    // Compute a bounding-sphere radius from centroid for distance fit
+                    let maxDistanceFromCentroid = 0;
                     this.textSprites.forEach(sprite => {
-                        box.expandByObject(sprite);
+                        const d = centroid.distanceTo(sprite.position);
+                        if (d > maxDistanceFromCentroid) maxDistanceFromCentroid = d;
                     });
-                    const center = box.getCenter(new THREE.Vector3());
-                    const size = box.getSize(new THREE.Vector3());
-                    const maxDim = Math.max(size.x, size.y, size.z);
+
                     const fov = this.camera.fov * (Math.PI / 180);
-                    let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
-                    
+                    let cameraZ = Math.abs(maxDistanceFromCentroid / Math.tan(fov / 2));
+
                     const isMobile = window.innerWidth <= 768;
-                    cameraZ *= isMobile ? 9.0 : 5.4; // 3x higher zoom (much closer to items)
-                    
-                    this.camera.position.z = cameraZ;
-                    this.camera.lookAt(center);
-                    this.controls.target.copy(center);
+                    const distanceFitFactor = isMobile ? 1.25 : 0.9; // mobile slightly farther, desktop slightly closer
+                    cameraZ *= distanceFitFactor;
+
+                    // Place camera on Z axis aligned with centroid so content is properly centered
+                    this.camera.position.copy(new THREE.Vector3(centroid.x, centroid.y, centroid.z + cameraZ));
+                    this.camera.lookAt(centroid);
+                    this.controls.target.copy(centroid);
                     this.controls.update();
                 }
                 
@@ -3869,7 +3853,8 @@
             let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
             
             const isMobile = window.innerWidth <= 768;
-            cameraZ *= isMobile ? 9.0 : 5.4; // 3x higher zoom (much closer to items)
+            const distanceFitFactor = isMobile ? 1.25 : 0.9; // keep mobile slightly farther, desktop slightly closer
+            cameraZ *= distanceFitFactor; // start closer instead of far away
             
             camera.position.z = cameraZ;
             camera.lookAt(center);
@@ -4330,10 +4315,8 @@
                     <div class="tree-section-label">Selected</div>
                     <div class="tree-item tree-current-item${focusedItem.parent_text ? ' tree-indented' : ''}">
                         <div class="tree-item-content">
-                            <div class="tree-item-text" onclick="console.log('CLICK: Current selection text'); focusOnItemById('${focusedItem.id}', '${safeCurrentText}')">${focusedItem.entry}</div>
-                            <div class="tree-item-actions">
-                                <button class="magnify-btn" onclick="console.log('CLICK: Current selection magnify'); selectItemAsCurrentById('${focusedItem.id}', '${safeCurrentText}')" title="Re-select this item"></button>
-                            </div>
+                            <div class="tree-item-text" onclick="console.log('CLICK: Current selection text'); selectItemAsCurrentById('${focusedItem.id}', '${safeCurrentText}')">${focusedItem.entry}</div>
+                            <div class="tree-item-actions"></div>
                         </div>
                     </div>
                 </div>
@@ -4355,10 +4338,8 @@
                     treeHTML += `
                         <div class="tree-item tree-children${(childItem && childItem.type === 'subentry') ? ' tree-indented' : ''}">
                             <div class="tree-item-content">
-                                <div class="tree-item-text" onclick="focusOnItemById('${childRef.id}', '${safeText}')" title="${displayText}">${truncatedText}</div>
-                                <div class="tree-item-actions">
-                                    <button class="magnify-btn" onclick="selectItemAsCurrentById('${childRef.id}', '${safeText}')" title="Select as current item"></button>
-                                </div>
+                                <div class="tree-item-text" onclick="selectItemAsCurrentById('${childRef.id}', '${safeText}')" title="${displayText}">${truncatedText}</div>
+                                <div class="tree-item-actions"></div>
                             </div>
                         </div>
                     `;
@@ -4407,10 +4388,8 @@
                 sectionHTML += `
                     <div class="tree-item">
                         <div class="tree-item-content">
-                            <div class="tree-item-text" onclick="focusOnItemById('${ref.id}', '${safeText}')">${displayText}</div>
-                            <div class="tree-item-actions">
-                                <button class="magnify-btn" onclick="selectItemAsCurrentById('${ref.id}', '${safeText}')" title="Select as current item"></button>
-                            </div>
+                            <div class="tree-item-text" onclick="selectItemAsCurrentById('${ref.id}', '${safeText}')">${displayText}</div>
+                            <div class="tree-item-actions"></div>
                         </div>
                     </div>
                 `;
@@ -4457,10 +4436,8 @@
                 subHTML += `
                     <div class="tree-item ${refClass}">
                         <div class="tree-item-content">
-                            <div class="tree-item-text" onclick="focusOnItemById('${ref.id}', '${safeText}')">${ref.text}</div>
-                            <div class="tree-item-actions">
-                                <button class="magnify-btn" onclick="selectItemAsCurrentById('${ref.id}', '${safeText}')" title="Select as current item"></button>
-                            </div>
+                            <div class="tree-item-text" onclick="selectItemAsCurrentById('${ref.id}', '${safeText}')">${ref.text}</div>
+                            <div class="tree-item-actions"></div>
                         </div>
                     </div>
                 `;
@@ -4478,10 +4455,8 @@
                                 subHTML += `
                                     <div class="tree-item tree-see">
                                         <div class="tree-item-content">
-                                            <div class="tree-item-text" onclick="focusOnItemById('${deepRef.id}', '${deepSafeText}')">${deepRef.text}</div>
-                                            <div class="tree-item-actions">
-                                                <button class="magnify-btn" onclick="selectItemAsCurrentById('${deepRef.id}', '${deepSafeText}')" title="Select as current item"></button>
-                                            </div>
+                                            <div class="tree-item-text" onclick="selectItemAsCurrentById('${deepRef.id}', '${deepSafeText}')">${deepRef.text}</div>
+                                            <div class="tree-item-actions"></div>
                                         </div>
                                     </div>
                                 `;
@@ -4626,18 +4601,19 @@
                     const limitedEntries = deduped.slice(0, 10);
                     
                     limitedEntries.forEach(entry => {
-                        const clickableItem = document.createElement('div');
-                        clickableItem.className = 'clickable-item';
+                        const link = document.createElement('a');
+                        link.className = 'clickable-item';
+                        link.href = '#';
                         
                         // Truncate long entries for better display
                         const displayText = entry.entry.length > 60 ? 
                             entry.entry.substring(0, 57) + '...' : 
                             entry.entry;
                         
-                        clickableItem.textContent = displayText;
-                        clickableItem.title = entry.entry; // Full text on hover
-                        clickableItem.onclick = () => searchAndSelectItemById(entry.id, entry.entry);
-                        itemsContainer.appendChild(clickableItem);
+                        link.textContent = displayText;
+                        link.title = entry.entry; // Full text on hover
+                        link.onclick = (e) => { e.preventDefault(); searchAndSelectItemById(entry.id, entry.entry); };
+                        itemsContainer.appendChild(link);
                     });
                     
                     // Add count indicator if there are more entries
@@ -4932,7 +4908,8 @@
         let howMadeIndex = 0;
 
         async function loadHowMadeImages() {
-            const base = 'Process documentation/';
+            // Use workspace-relative path that exists under /process/
+            const base = 'process/';
             const manifestUrls = [base + 'manifest.json', base + 'index.json'];
             // Try manifest first
             for (const url of manifestUrls) {

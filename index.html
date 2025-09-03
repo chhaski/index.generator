@@ -3680,7 +3680,8 @@
                     let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
                     
                     const isMobile = window.innerWidth <= 768;
-                    cameraZ *= isMobile ? 9.0 : 5.4; // 3x higher zoom (much closer to items)
+                    const distanceFitFactor = isMobile ? 1.25 : 0.9; // keep mobile slightly farther, desktop slightly closer
+                    cameraZ *= distanceFitFactor; // start closer instead of far away
                     
                     this.camera.position.z = cameraZ;
                     this.camera.lookAt(center);
@@ -3869,7 +3870,8 @@
             let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
             
             const isMobile = window.innerWidth <= 768;
-            cameraZ *= isMobile ? 9.0 : 5.4; // 3x higher zoom (much closer to items)
+            const distanceFitFactor = isMobile ? 1.25 : 0.9; // keep mobile slightly farther, desktop slightly closer
+            cameraZ *= distanceFitFactor; // start closer instead of far away
             
             camera.position.z = cameraZ;
             camera.lookAt(center);

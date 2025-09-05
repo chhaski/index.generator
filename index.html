@@ -1280,56 +1280,19 @@
     </div>
     
         <!-- More from Same Book Container -->
-        <div class="panel-container" id="same-book-container">
+        <div class="panel-container" id="same-book-container" style="display: none;">
             <div class="tree-section-label">More from same book</div>
             <div class="clickable-items" id="same-book-items">
                 <div class="no-items">No other entries</div>
             </div>
         </div>
 
-        <!-- Opacity Control Panel - Last Container -->
-        <div class="panel-container opacity-controls" id="opacity-controls" style="display: none;">
-        <h4>Opacity Controls</h4>
-        
-        <div class="opacity-control">
-            <label class="opacity-label">Selected Text Items <span class="opacity-value" id="selected-text-value">100%</span></label>
-            <input type="range" class="opacity-slider" id="selected-text-opacity" min="0" max="100" value="100">
-        </div>
-        
-        <div class="opacity-control">
-                <label class="opacity-label">Unselected Text <span class="opacity-value" id="unselected-text-value">36%</span></label>
-                <input type="range" class="opacity-slider" id="unselected-opacity" min="0" max="100" value="36">
-        </div>
-        
-        <div class="opacity-control">
-                <label class="opacity-label">ASCII Background</label>
-                <button class="ascii-toggle-btn" id="ascii-toggle" data-enabled="false">OFF</button>
-        </div>
-        
-        <div class="opacity-control">
-                <label class="opacity-label">Text Constellation Geometry</label>
-                <button class="ascii-toggle-btn" id="text-geometry-toggle" data-enabled="true">ON</button>
-        </div>
-        
-        <div class="opacity-control">
-                <label class="opacity-label">ASCII Geometry</label>
-                <button class="ascii-toggle-btn" id="ascii-geometry-toggle" data-enabled="false">OFF</button>
-        </div>
-        
-        <div class="opacity-control">
-            <label class="opacity-label">Coordinate Scale <span class="opacity-value" id="coordinate-scale-value">3x</span></label>
-            <input type="range" class="opacity-slider" id="coordinate-scale" min="1" max="50" value="3">
-    </div>
-        
-        <div class="opacity-control">
-            <label class="opacity-label">Selected Item Size <span class="opacity-value" id="item-size-value">3.6x</span></label>
-            <input type="range" class="opacity-slider" id="item-size-scale" min="1" max="20" value="3.6" step="0.2">
-        </div>
-        
-        <div class="opacity-control">
-            <label class="opacity-label">Zoom Distance <span class="opacity-value" id="zoom-distance-value">40</span></label>
-            <input type="range" class="opacity-slider" id="zoom-distance" min="20" max="300" value="40" step="10">
-        </div>
+        <!-- More from Other Books Container -->
+        <div class="panel-container" id="other-book-container" style="display: none;">
+            <div class="tree-section-label">More from other books</div>
+            <div class="clickable-items" id="other-book-items">
+                <div class="no-items">No entries yet</div>
+            </div>
         </div>
 
     </div>
@@ -1413,6 +1376,10 @@
         import { AsciiEffect } from './jsm/AsciiEffect.js';
 
         let camera, controls, scene, renderer, effect;
+        let lastAsciiRenderTime = 0; // throttle ASCII renders
+        let needsAsciiRender = true; // event-driven ASCII renders
+        const asciiTargetMs = 1000 / 12; // ~12 FPS target for ASCII
+        const asciiIdleMs = 1000; // ensure at least one render per second when idle
         let points, raycaster, mouse, pointData;
         let asciiTextSprites = [];
         let coordinateScale = 3; // Default scale factor for coordinates (3x reduction)
@@ -1429,7 +1396,7 @@
             
             return {
                 selected: selectedSlider ? (selectedSlider.value / 100) : 1.0,
-                unselected: unselectedSlider ? (unselectedSlider.value / 100) : 0.36
+                unselected: unselectedSlider ? (unselectedSlider.value / 100) : 0.12
             };
         }
         
@@ -1773,11 +1740,22 @@
                 // Extract clean concept text without locators for sprite display
                 const displayText = extractCleanConcept(embedding.text || embedding.entry);
                 const sprite = createTextSpriteForASCII(displayText, getBookColor(embedding.citation.title), position);
+                // Start unselected ASCII sprites translucent
+                if (sprite && sprite.material && typeof window !== 'undefined') {
+                    const initialOpacity = (typeof window.unselectedAsciiOpacity === 'number') ? window.unselectedAsciiOpacity : 0.12;
+                    sprite.material.opacity = initialOpacity;
+                    if (sprite.material.needsUpdate !== undefined) sprite.material.needsUpdate = true;
+                }
                 asciiTextSprites.push(sprite);
                 scene.add(sprite);
             });
             
             selectRandomPoints(limitedEmbeddings);
+            
+            // Ensure all ASCII opacities reflect current defaults on load
+            if (typeof updateAllAsciiOpacities === 'function') {
+                updateAllAsciiOpacities();
+            }
         }
         
         function drawRoundedRectFunction(context, x, y, width, height, radius, fill = false, stroke = false) {
@@ -1825,7 +1803,7 @@
             
             // Text
             context.fillStyle = color;
-            context.font = 'bold 12px "Courier New", monospace';
+            context.font = 'bold 12px Arial, Helvetica, sans-serif';
             context.textAlign = 'center';
             context.textBaseline = 'middle';
             context.fillText(text.substring(0, 15), canvas.width/2, canvas.height/2); // Shorter text
@@ -1834,7 +1812,7 @@
             const material = new THREE.SpriteMaterial({ 
                 map: texture,
                 transparent: true,
-                opacity: 1.0
+                opacity: (typeof window !== 'undefined' && typeof window.unselectedAsciiOpacity === 'number') ? window.unselectedAsciiOpacity : 0.12
             });
             
             const sprite = new THREE.Sprite(material);
@@ -2349,8 +2327,14 @@
                 this.embeddings = [];
                 this.container = document.getElementById('text-constellation');
                 this.hoveredSprite = null;
-                this.autoOrbitEnabled = true;
+                this.autoOrbitEnabled = false;
                 this.autoOrbitSpeed = 0.002;
+                // Low-power animation controls
+                this.lowPowerMode = true;
+                this.desiredFps = 12;
+                this.minFrameMs = 1000 / this.desiredFps;
+                this.lastRenderTime = 0;
+                this.frameCounter = 0;
                 this.selectedSprites = [];
                 this.currentMesh = null;
                 
@@ -2524,75 +2508,84 @@
                 const canvas = document.createElement('canvas');
                 const context = canvas.getContext('2d');
                 
-                // Set canvas size (power of 2 for GPU optimization)
-                canvas.width = 512;
-                canvas.height = 128;
+                // Initial font setup for measurements
+                const fontSize = 24;
+                const lineHeight = 28;
+                const paddingX = 12;
+                const paddingY = 8;
+                const maxLineWidth = 360; // make sprites less wide
+                context.font = `bold ${fontSize}px Arial, Helvetica, sans-serif`;
                 
-                // Configure font (monospace for consistency)
-                context.font = 'bold 24px "Courier New", "Monaco", "Menlo", monospace';
-                
-                // Subtle tinted background with rounded corners
-                const tintedBackground = this.getTintedBackground(color);
-                const cornerRadius = 12;
-                
-                context.fillStyle = tintedBackground;
-                this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, cornerRadius, true, false);
-                
-                // Stroke color matches text color but with opacity
-                context.strokeStyle = color + '80'; // Add 50% transparency (hex 80)
-                context.lineWidth = 3;
-                this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, cornerRadius, false, true);
-                
-                // Draw text
-                context.fillStyle = color;
-                context.textAlign = 'center';
-                context.textBaseline = 'middle';
-                
-                // Wrap text if too long
-                const maxWidth = canvas.width - 40;
+                // Word wrap to target maxLineWidth
                 const words = text.split(' ');
                 let line = '';
-                let lines = [];
-                
+                const lines = [];
+                const lineWidths = [];
                 for (let i = 0; i < words.length; i++) {
                     const testLine = line + words[i] + ' ';
                     const metrics = context.measureText(testLine);
-                    
-                    if (metrics.width > maxWidth && i > 0) {
+                    if (metrics.width > maxLineWidth && i > 0) {
+                        const width = context.measureText(line.trim()).width;
                         lines.push(line.trim());
+                        lineWidths.push(width);
                         line = words[i] + ' ';
                     } else {
                         line = testLine;
                     }
                 }
                 lines.push(line.trim());
-                const totalHeight = lines.length * 28;
-                let yStart = (canvas.height - totalHeight) / 2 + 14;
+                lineWidths.push(context.measureText(lines[lines.length - 1]).width);
+                
+                // Compute tight canvas size
+                const contentWidth = Math.ceil(Math.max(...lineWidths, 1));
+                const contentHeight = lines.length * lineHeight;
+                canvas.width = contentWidth + paddingX * 2;
+                canvas.height = contentHeight + paddingY * 2;
+                
+                // Reset font after resizing canvas
+                context.font = `bold ${fontSize}px Arial, Helvetica, sans-serif`;
+                
+                // Background
+                const tintedBackground = this.getTintedBackground(color);
+                const cornerRadius = 10;
+                context.fillStyle = tintedBackground;
+                this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, cornerRadius, true, false);
+                
+                // Stroke
+                context.strokeStyle = color + '80';
+                context.lineWidth = 2;
+                this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, cornerRadius, false, true);
+                
+                // Text (left-aligned with padding)
+                context.fillStyle = color;
+                context.textAlign = 'left';
+                context.textBaseline = 'top';
+                let y = paddingY;
                 lines.forEach(l => {
-                    context.fillText(l, canvas.width / 2, yStart);
-                    yStart += 28;
+                    context.fillText(l, paddingX, y);
+                    y += lineHeight;
                 });
                 
                 // Create texture and material
                 const texture = new THREE.CanvasTexture(canvas);
                 texture.needsUpdate = true;
-                
                 const material = new THREE.SpriteMaterial({ 
                     map: texture,
                     transparent: true,
                     alphaTest: 0.1,
                     depthTest: true,
-                    depthWrite: false, // Don't write to depth buffer so selected items can appear on top
-                    opacity: 1.0 // Start with full opacity (selected state)
+                    depthWrite: false,
+                    opacity: 1.0
                 });
                 
                 // Create sprite
                 const sprite = new THREE.Sprite(material);
                 sprite.position.set(position.x, position.y, position.z);
                 
-                // Scale sprite based on text length (but keep reasonable size)
-                const scale = Math.min(Math.max(text.length * 0.1, 2), 8);
-                sprite.scale.set(scale, scale * 0.25, 1);
+                // Scale sprite proportionally to texture aspect ratio, with compact height
+                const aspect = canvas.width / canvas.height;
+                const baseHeight = 1.0; // compact visual height; selection scaling will adjust later
+                sprite.scale.set(baseHeight * aspect, baseHeight, 1);
                 
                 sprite.userData = {
                     text: text,
@@ -2640,9 +2633,10 @@
                 
                 console.log(`Created ${this.textSprites.length} text sprites`);
                 
-                // Set all sprites to start with selected opacity (full opacity)
+                // Set all sprites to start with unselected opacity for a cleaner initial view
+                const initialOpacityValues = (typeof getOpacityValues === 'function') ? getOpacityValues() : { selected: 1.0, unselected: 0.12 };
                 this.textSprites.forEach(sprite => {
-                    sprite.material.opacity = 1.0; // Start with full opacity
+                    sprite.material.opacity = initialOpacityValues.unselected;
                 });
             }
 
@@ -2990,7 +2984,7 @@
                     canvas.width = 512;
                     canvas.height = 128;
                     
-                    context.font = 'bold 24px "Courier New", "Monaco", "Menlo", monospace';
+                    context.font = 'bold 24px Arial, Helvetica, sans-serif';
                     
                     let backgroundColor, textColor, strokeColor;
                     
@@ -3006,42 +3000,51 @@
                         strokeColor = color + '80'; // Add 50% transparency
                     }
                     
-                    // Fill background with rounded corners
-                    context.fillStyle = backgroundColor;
-                    this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, 12, true, false);
-                    
-                    // Draw stroke with rounded corners
-                    context.strokeStyle = strokeColor;
-                    context.lineWidth = 3;
-                    this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, 12, false, true);
-                    
-                    // Draw text
-                    context.fillStyle = textColor;
-                    context.textAlign = 'center';
-                    context.textBaseline = 'middle';
-                    
-                    const maxWidth = canvas.width - 40;
+                    // Rebuild canvas to fit left-aligned text tightly
+                    const paddingX = 12;
+                    const paddingY = 8;
+                    const lineHeight = 28;
+                    const measureCtx = context;
                     const words = text.split(' ');
                     let line = '';
-                    let lines = [];
-                    
+                    const lines = [];
+                    const widths = [];
+                    const maxLineWidth = 360;
                     for (let i = 0; i < words.length; i++) {
                         const testLine = line + words[i] + ' ';
-                        const metrics = context.measureText(testLine);
-                        
-                        if (metrics.width > maxWidth && i > 0) {
+                        const w = measureCtx.measureText(testLine).width;
+                        if (w > maxLineWidth && i > 0) {
+                            const lw = measureCtx.measureText(line.trim()).width;
                             lines.push(line.trim());
+                            widths.push(lw);
                             line = words[i] + ' ';
                         } else {
                             line = testLine;
                         }
                     }
                     lines.push(line.trim());
-                    const totalHeight = lines.length * 28;
-                    let yStart = (canvas.height - totalHeight) / 2 + 14;
+                    widths.push(measureCtx.measureText(lines[lines.length - 1]).width);
+                    const contentWidth = Math.ceil(Math.max(...widths, 1));
+                    const contentHeight = lines.length * lineHeight;
+                    canvas.width = contentWidth + paddingX * 2;
+                    canvas.height = contentHeight + paddingY * 2;
+                    context.font = 'bold 24px Arial, Helvetica, sans-serif';
+                    
+                    // Left-aligned background and stroke
+                    context.fillStyle = backgroundColor;
+                    this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, 12, true, false);
+                    context.strokeStyle = strokeColor;
+                    context.lineWidth = 2;
+                    this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, 12, false, true);
+                    
+                    // Left-aligned text with padding
+                    context.fillStyle = textColor;
+                    context.textAlign = 'left';
+                    context.textBaseline = 'top';
+                    let y = paddingY;
                     lines.forEach(l => {
-                        context.fillText(l, canvas.width / 2, yStart);
-                        yStart += 28;
+                        context.fillText(l, paddingX, y);
+                        y += lineHeight;
                     });
                     
                     // Cache the canvas (limit cache size to prevent memory issues)
@@ -3561,8 +3564,10 @@
                     this.controls.autoRotate = false;
                 }
                 
-                // Update controls
-                this.controls.update();
+                // Update controls only every other frame in low-power mode
+                if (!this.lowPowerMode || (this.frameCounter++ % 2 === 0)) {
+                    this.controls.update();
+                }
                 
                 // Note: Distance-compensated scaling disabled for uniform selection
                 // Scaling is now only applied once after camera focus completes
@@ -3584,7 +3589,14 @@
                     render(); // This handles the ASCII background rendering
                 }
                 
-                // Render text constellation
+                // Throttle render in low-power mode
+                if (this.lowPowerMode) {
+                    const nowRender = performance.now();
+                    if (nowRender - this.lastRenderTime < this.minFrameMs) {
+                        return;
+                    }
+                    this.lastRenderTime = nowRender;
+                }
                 this.renderer.render(this.scene, this.camera);
             }
 
@@ -3789,6 +3801,7 @@
             updateLoadingProgress(1, 'Initializing renderer...');
 
             renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             renderer.setSize(width, height);
 
             effect = new AsciiEffect(renderer, ' ■', { invert: true });
@@ -3890,6 +3903,8 @@
                     autoOrbitEnabled = true;
                 }, 2000); // Resume auto-orbit after 2 seconds of inactivity
             });
+            // Mark ASCII as needing re-render on any camera/controls change
+            controls.addEventListener('change', () => { needsAsciiRender = true; });
             
             controls.update();
 
@@ -3958,7 +3973,9 @@
             effect.setSize(width, height);
             
             if (effect && scene && camera) {
+                needsAsciiRender = true;
                 effect.render(scene, camera);
+                lastAsciiRenderTime = performance.now();
             }
         }
 
@@ -3997,8 +4014,13 @@
             // Update controls for ASCII background
             controls.update();
             
-            // Always render ASCII background layer (non-interactive)
-            effect.render(scene, camera);
+            // Event-driven + throttled ASCII render
+            const now = performance.now();
+            if (!document.hidden && ((needsAsciiRender && now - lastAsciiRenderTime >= asciiTargetMs) || (now - lastAsciiRenderTime >= asciiIdleMs))) {
+                effect.render(scene, camera);
+                lastAsciiRenderTime = now;
+                needsAsciiRender = false;
+            }
         }
 
         function pointToScreenPosition(point, camera) {
@@ -4012,7 +4034,7 @@
         }
 
         // Initialize global opacity values
-        window.unselectedAsciiOpacity = 0.2; // Default for unselected ASCII
+        window.unselectedAsciiOpacity = 0.12; // Default for unselected ASCII (barely visible)
         window.selectedAsciiOpacity = 1.0;   // Default for selected ASCII
 
         // Opacity control functionality
@@ -4020,14 +4042,17 @@
             const selectedTextSlider = document.getElementById('selected-text-opacity');
             const unselectedTextSlider = document.getElementById('unselected-text-opacity');
             const asciiToggle = document.getElementById('ascii-toggle');
-            
+            // Optional display elements (may not exist)
             const selectedTextValue = document.getElementById('selected-text-value');
             const unselectedTextValue = document.getElementById('unselected-text-value');
+            const asciiShapeValue = document.getElementById('ascii-shape-opacity-value');
+            const asciiPointsValue = document.getElementById('ascii-points-opacity-value');
+            const selectedAsciiValue = document.getElementById('selected-ascii-opacity-value');
             
             // Helper function to update opacity
             function updateSelectedTextOpacity(value) {
                 const opacity = value / 100;
-                selectedTextValue.textContent = value + '%';
+                if (selectedTextValue) selectedTextValue.textContent = value + '%';
                 
                 if (textConstellation && textConstellation.selectedSprites) {
                     textConstellation.selectedSprites.forEach(sprite => {
@@ -4038,7 +4063,7 @@
             
             function updateAsciiShapeOpacity(value) {
                 const opacity = value / 100;
-                asciiShapeValue.textContent = value + '%';
+                if (asciiShapeValue) asciiShapeValue.textContent = value + '%';
                 
                 if (currentMesh && currentMesh.material) {
                     currentMesh.material.opacity = opacity;
@@ -4048,7 +4073,7 @@
             
             function updateAsciiPointsOpacity(value) {
                 const opacity = value / 100;
-                asciiPointsValue.textContent = value + '%';
+                if (asciiPointsValue) asciiPointsValue.textContent = value + '%';
                 
                 // Store the value for unselected sprites and trigger a full update
                 window.unselectedAsciiOpacity = opacity;
@@ -4061,7 +4086,7 @@
             
             function updateSelectedAsciiOpacity(value) {
                 const opacity = value / 100;
-                selectedAsciiValue.textContent = value + '%';
+                if (selectedAsciiValue) selectedAsciiValue.textContent = value + '%';
                 
                 // Store the value for selected sprites and trigger a full update
                 window.selectedAsciiOpacity = opacity;
@@ -4074,7 +4099,7 @@
             
             function updateAllAsciiOpacities() {
                 // Get current values or defaults
-                const unselectedOpacity = window.unselectedAsciiOpacity || 0.2;
+                const unselectedOpacity = window.unselectedAsciiOpacity || 0.12;
                 const selectedOpacity = window.selectedAsciiOpacity || 1.0;
                 
                 // Safety check - make sure everything exists
@@ -4146,7 +4171,8 @@
                 });
             }
             
-            // ASCII background toggle button
+            // ASCII background toggle button (optional)
+            if (asciiToggle) {
             asciiToggle.addEventListener('click', () => {
                 const isEnabled = asciiToggle.dataset.enabled === 'true';
                 const newState = !isEnabled;
@@ -4156,12 +4182,13 @@
                 
                 toggleAsciiBackground(newState);
             });
-            
-            // Initialize ASCII background to OFF by default
-            toggleAsciiBackground(false);
+            }
+            // Initialize ASCII background to ON by default
+            toggleAsciiBackground(true);
             
             // Text constellation geometry toggle button
             const textGeometryToggle = document.getElementById('text-geometry-toggle');
+            if (textGeometryToggle) {
             textGeometryToggle.addEventListener('click', () => {
                 const isEnabled = textGeometryToggle.dataset.enabled === 'true';
                 const newState = !isEnabled;
@@ -4171,9 +4198,11 @@
                 
                 toggleTextGeometry(newState);
             });
+            }
             
             // ASCII geometry toggle button
             const asciiGeometryToggle = document.getElementById('ascii-geometry-toggle');
+            if (asciiGeometryToggle) {
             asciiGeometryToggle.addEventListener('click', () => {
                 const isEnabled = asciiGeometryToggle.dataset.enabled === 'true';
                 const newState = !isEnabled;
@@ -4183,9 +4212,10 @@
                 
                 toggleAsciiGeometry(newState);
             });
+            }
             
-            // Initialize ASCII geometry to OFF by default
-            toggleAsciiGeometry(false);
+            // Initialize ASCII geometry to ON by default
+            toggleAsciiGeometry(true);
         }
 
         // Book colors for reference containers (using existing getBookColor function from above)
@@ -4240,6 +4270,12 @@
                 updateSameBookEntries(focusedItem);
                 const sameBookEnd = performance.now();
                 console.log(`⏱️ same book entries took: ${(sameBookEnd - sameBookStart).toFixed(2)}ms`);
+
+                // Update other books panel
+                const otherBookStart = performance.now();
+                updateOtherBookEntries(focusedItem);
+                const otherBookEnd = performance.now();
+                console.log(`⏱️ other book entries took: ${(otherBookEnd - otherBookStart).toFixed(2)}ms`);
                 
                 // Update book cover
                 const coverStart = performance.now();
@@ -4637,6 +4673,66 @@
             }
         }
 
+        // Populate "More from other books" with random entries from different books
+        function updateOtherBookEntries(item) {
+            const container = document.getElementById('other-book-container');
+            const itemsContainer = document.getElementById('other-book-items');
+            if (!container || !itemsContainer) return;
+            container.style.display = 'block';
+            itemsContainer.innerHTML = '';
+
+            if (!textConstellation || !textConstellation.embeddings || textConstellation.embeddings.length === 0) {
+                const noItems = document.createElement('div');
+                noItems.className = 'no-items';
+                noItems.textContent = 'No data available';
+                itemsContainer.appendChild(noItems);
+                return;
+            }
+
+            const currentBook = item && item.citation ? item.citation.title : null;
+            const pool = textConstellation.embeddings.filter(e => !currentBook || e.citation.title !== currentBook);
+            if (pool.length === 0) {
+                const noItems = document.createElement('div');
+                noItems.className = 'no-items';
+                noItems.textContent = 'No entries from other books';
+                itemsContainer.appendChild(noItems);
+                return;
+            }
+
+            // Dedupe by text and shuffle
+            const seen = new Set();
+            const deduped = pool.filter(e => {
+                const key = (e.entry || '').slice(0, 120);
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+            for (let i = deduped.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [deduped[i], deduped[j]] = [deduped[j], deduped[i]];
+            }
+
+            const limit = Math.min(10, deduped.length);
+            const sample = deduped.slice(0, limit);
+            sample.forEach(entry => {
+                const link = document.createElement('a');
+                link.className = 'clickable-item';
+                link.href = '#';
+                const displayText = entry.entry.length > 60 ? entry.entry.substring(0, 57) + '…' : entry.entry;
+                link.textContent = displayText;
+                link.title = entry.entry;
+                link.onclick = (e) => { e.preventDefault(); searchAndSelectItemById(entry.id, entry.entry); };
+                itemsContainer.appendChild(link);
+            });
+
+            if (deduped.length > limit) {
+                const more = document.createElement('div');
+                more.className = 'no-items';
+                more.textContent = `+${deduped.length - limit} more`;
+                itemsContainer.appendChild(more);
+            }
+        }
+
         function hideAllReferences() {
             // Don't hide them anymore - always show the containers
             // This function is kept for backward compatibility but doesn't hide containers
@@ -4702,6 +4798,18 @@
             
             console.log('ASCII background:', enabled ? 'enabled' : 'disabled');
         }
+
+        // Fallback: ensure loading screen dismisses even if a step silently fails
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loading-screen');
+                const mainContent = document.getElementById('main-content');
+                if (loadingScreen && mainContent && mainContent.style.display !== 'block') {
+                    try { updateLoadingProgress(4, 'Ready to explore'); } catch (e) {}
+                    try { completeLoading(); } catch (e) {}
+                }
+            }, 3000);
+        });
 
         // Text constellation geometry toggle functionality
         function toggleTextGeometry(enabled) {

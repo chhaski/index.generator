@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index.Training</title>
-  <link rel="icon" type="image/x-icon" href="SYSED002.ICO">
+  <link rel="icon" type="image/x-icon" href="../SYSED002.ICO">
     <style>
         body {
             margin: 0;
@@ -497,7 +497,6 @@
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 1; /* Single line for badge */
-            line-clamp: 1; /* Standard property for compatibility */
             -webkit-box-orient: vertical;
             white-space: nowrap;
         }
@@ -1213,7 +1212,6 @@
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loading-ui">
-            <div class="loading-wordmark">INDEX.TRAINING</div>
             <div class="loading-caption" id="loading-status">initializing…</div>
             <div class="loading-icon" aria-hidden="true"></div>
         </div>
@@ -1317,8 +1315,8 @@
     </div>
 
     <script type="module">
-        import * as THREE from './three.module.js';
-        import { OrbitControls } from './jsm/OrbitControls.js';
+        import * as THREE from '../three.module.js';
+        import { OrbitControls } from '../jsm/OrbitControls.js';
         
         // Console logging toggle (silence logs in production/preview)
         const LOGS_ENABLED = false;
@@ -1372,8 +1370,8 @@
         
         // Start with first step
         updateLoadingProgress(0);
-        import { ConvexGeometry } from './jsm/ConvexGeometry.js';
-        import { AsciiEffect } from './jsm/AsciiEffect.js';
+        import { ConvexGeometry } from '../jsm/ConvexGeometry.js';
+        import { AsciiEffect } from '../jsm/AsciiEffect.js';
 
         let camera, controls, scene, renderer, effect;
         let lastAsciiRenderTime = 0; // throttle ASCII renders
@@ -1696,7 +1694,7 @@
 
 
         async function loadEmbeddings() {
-            const response = await fetch('data/combinedv3.json');
+            const response = await fetch('../data/combinedv3.json');
             const data = await response.json();
             return data.map(entry => ({
                 text: entry.text,
@@ -2381,7 +2379,7 @@
 
             async loadEmbeddings() {
                 try {
-                    const response = await fetch('data/combinedv3.json');
+                    const response = await fetch('../data/combinedv3.json');
                     const data = await response.json();
                     this.embeddings = data.map(entry => ({
                         text: entry.text,
@@ -4878,10 +4876,11 @@
         console.log('Current URL:', window.location.href);
         console.log('Current pathname:', window.location.pathname);
         
-        // STRICT page detection - only run on exactly index.html or root
+        // STRICT page detection - only run on exactly index.html, root, or 2025.html
         const isIndexPage = window.location.pathname.endsWith('index.html') || 
                            window.location.pathname === '/' || 
                            window.location.pathname.endsWith('/') ||
+                           window.location.pathname.endsWith('2025.html') ||
                            (!window.location.pathname.includes('process') && !window.location.pathname.includes('.html'));
         
         // Don't run if other scripts have already claimed the page

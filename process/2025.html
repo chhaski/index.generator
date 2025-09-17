@@ -1799,9 +1799,9 @@
             context.fillStyle = '#ffffff';
             drawRoundedRectFunction(context, 0, 0, canvas.width, canvas.height, 6, true, false);
             
-            // Text
-            context.fillStyle = color;
-            context.font = 'bold 12px Arial, Helvetica, sans-serif';
+            // Text - match tree item styling
+            context.fillStyle = '#333'; // Use tree item text color
+            context.font = '500 12px Arial, Helvetica, sans-serif'; // Match tree item font weight
             context.textAlign = 'center';
             context.textBaseline = 'middle';
             context.fillText(text.substring(0, 15), canvas.width/2, canvas.height/2); // Shorter text
@@ -2271,9 +2271,9 @@
             // Store connected items globally for camera completion callback
             currentConnectedItems = connectedItems;
             
-            // Highlight connected items (without scaling - scaling happens after camera focus)
+            // Highlight connected items 
             const highlightStart = performance.now();
-            highlightConnectedItems(connectedItems, false); // false = don't apply scaling yet
+            highlightConnectedItems(connectedItems, false); 
             const highlightEnd = performance.now();
             console.log(`⏱️ highlightConnectedItems took: ${(highlightEnd - highlightStart).toFixed(2)}ms (no scaling applied yet)`);
             
@@ -2296,19 +2296,16 @@
             centerHeader.className = 'centerheader';
             centerHeader.id = 'center-prompt';
             centerHeader.innerHTML = '<div>Click anywhere to explore</div>';
-            centerHeader.style.display = 'none'; // Initially hidden until 3D visualization is ready
+            centerHeader.style.display = 'none'; 
             document.body.appendChild(centerHeader);
 
             const topRightHeader = document.createElement('div');
             topRightHeader.className = 'top-right';
-            topRightHeader.innerHTML = '<div class="link"><a href="method.html" aria-label="Information about this visualization">ℹ</a></div>';
+            topRightHeader.innerHTML = '<div class="link"><a href="/method.html" aria-label="Information about this visualization">ℹ</a></div>';
             document.body.appendChild(topRightHeader);
 
-            // No view switcher needed - unified view
         }
 
-
-        // 3D Text Constellation - Extremely Optimized
         class TextConstellation {
             constructor() {
                 this.scene = null;
@@ -2506,13 +2503,13 @@
                 const canvas = document.createElement('canvas');
                 const context = canvas.getContext('2d');
                 
-                // Initial font setup for measurements
+                // Initial font setup for measurements - match tree item styling
                 const fontSize = 24;
                 const lineHeight = 28;
                 const paddingX = 12;
                 const paddingY = 8;
                 const maxLineWidth = 360; // make sprites less wide
-                context.font = `bold ${fontSize}px Arial, Helvetica, sans-serif`;
+                context.font = `500 ${fontSize}px Arial, Helvetica, sans-serif`; // Match tree item font weight
                 
                 // Word wrap to target maxLineWidth
                 const words = text.split(' ');
@@ -2540,8 +2537,8 @@
                 canvas.width = contentWidth + paddingX * 2;
                 canvas.height = contentHeight + paddingY * 2;
                 
-                // Reset font after resizing canvas
-                context.font = `bold ${fontSize}px Arial, Helvetica, sans-serif`;
+                // Reset font after resizing canvas - match tree item styling
+                context.font = `500 ${fontSize}px Arial, Helvetica, sans-serif`; // Match tree item font weight
                 
                 // Background
                 const tintedBackground = this.getTintedBackground(color);
@@ -2554,8 +2551,8 @@
                 context.lineWidth = 2;
                 this.drawRoundedRect(context, 0, 0, canvas.width, canvas.height, cornerRadius, false, true);
                 
-                // Text (left-aligned with padding)
-                context.fillStyle = color;
+                // Text (left-aligned with padding) - match tree item styling
+                context.fillStyle = '#333'; // Use tree item text color instead of sprite color
                 context.textAlign = 'left';
                 context.textBaseline = 'top';
                 let y = paddingY;
@@ -2982,19 +2979,19 @@
                     canvas.width = 512;
                     canvas.height = 128;
                     
-                    context.font = 'bold 24px Arial, Helvetica, sans-serif';
+                    context.font = '500 24px Arial, Helvetica, sans-serif'; // Match tree item font weight
                     
                     let backgroundColor, textColor, strokeColor;
                     
                     if (isSelected) {
                         // Selected items: original colors (no more purple stroke)
                         backgroundColor = this.getTintedBackground(color);
-                        textColor = color;
+                        textColor = '#333'; // Use tree item text color
                         strokeColor = color; // Same color stroke
                     } else {
                         // Normal colors (includes hover - just full opacity)
                         backgroundColor = this.getTintedBackground(color);
-                        textColor = color;
+                        textColor = '#333'; // Use tree item text color
                         strokeColor = color + '80'; // Add 50% transparency
                     }
                     
@@ -3026,7 +3023,7 @@
                     const contentHeight = lines.length * lineHeight;
                     canvas.width = contentWidth + paddingX * 2;
                     canvas.height = contentHeight + paddingY * 2;
-                    context.font = 'bold 24px Arial, Helvetica, sans-serif';
+                    context.font = '500 24px Arial, Helvetica, sans-serif'; // Match tree item font weight
                     
                     // Left-aligned background and stroke
                     context.fillStyle = backgroundColor;
